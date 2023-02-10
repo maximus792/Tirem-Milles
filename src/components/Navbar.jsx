@@ -7,12 +7,12 @@ function Navbar({ actualPage }) {
       <Nav>
         <div>
           <a onClick={function(){
-            window.location.href='https://pbs.twimg.com/profile_images/3171852749/7f4a67f61cef53a5da1eeca0bb0966a2_400x400.jpeg';
+            window.location.href='#';
           }} style={{fontSize: "30px"}}>Tirem Milles</a>
         </div>
         <Pages>
-          <a style={{ opacity: actualPage == "Inici" ? 1 : 0.5 }}>Inici</a>
-          <a style={{ opacity: actualPage == "Exercicis" ? 1 : 0.5 }}>
+          <a href="/" style={{ opacity: actualPage == "Inici" ? 1 : 0.5 }}>Inici</a>
+          <a href="/exercises" style={{ opacity: actualPage == "Exercises" ? 1 : 0.5 }}>
             Exercicis
           </a>
         </Pages>
@@ -22,7 +22,7 @@ function Navbar({ actualPage }) {
 }
 
 const Container = styled.div`
-  padding-top: 1vh;
+/*   padding-top: 1vh; */
   letter-spacing: 4px;
   font-family: "Jockey One";
   text-transform: uppercase;
@@ -49,6 +49,8 @@ const Pages = styled.div`
   a {
     transition: all 1s;
     margin-right: 30px;
+    color: white;
+    text-decoration: none;
   }
   a:hover{
     opacity: 1!important;

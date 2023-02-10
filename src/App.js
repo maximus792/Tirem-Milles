@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import MainPage from './components/Pages/MainPage/MainPage';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainPage from "./components/Pages/MainPage/MainPage";
+import ExercisesPage from "./components/Pages/Exercises/ExercisesPage";
 
 function App() {
   return (
-    <div className="App">
-      <MainPage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/exercises" element={<ExercisesPage />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

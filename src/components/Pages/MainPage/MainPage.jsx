@@ -3,10 +3,9 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "../../Navbar";
 import StartButton from "./StartButton";
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 function MainPage() {
- 
   return (
     <Container>
       <Navbar actualPage={"Inici"} />
@@ -15,8 +14,9 @@ function MainPage() {
           <SupTitle>Una web d'alumnes per a alumnes</SupTitle>
           <MainTitle>Tirem Milles</MainTitle>
           <p>
-            A continuació t’oferim una serie d’exercicis interactius <br/> per tal de
-            practicar els continguts explicats per les <br/>TIETES DE LLENGUA
+            A continuació t’oferim una serie d’exercicis interactius <br /> per
+            tal de practicar els continguts explicats per les <br />
+            TIETES DE LLENGUA
           </p>
         </Titles>
         <BookDiv>
@@ -26,10 +26,10 @@ function MainPage() {
         <AngleDownIcon />
       </MainInfo>
 
-{/*  */}
+      {/*  */}
 
       <Explanation id="first-explanation">
-        <h1>Com funciona</h1>
+        <h1 className="bgtext">Com funciona</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
           blandit nibh. Cras sed rhoncus nibh. Nullam quis magna justo. Sed
@@ -48,7 +48,7 @@ function MainPage() {
         </p>
       </Explanation>
       <Explanation>
-        <h1>Objectius</h1>
+        <h1 className="bgtext">Objectius</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
           blandit nibh. Cras sed rhoncus nibh. Nullam quis magna justo. Sed
@@ -67,7 +67,7 @@ function MainPage() {
         </p>
       </Explanation>
       <Explanation>
-        <h1>Qui som</h1>
+        <h1 className="bgtext">Qui som</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
           blandit nibh. Cras sed rhoncus nibh. Nullam quis magna justo. Sed
@@ -91,19 +91,25 @@ function MainPage() {
 }
 const Container = styled.div`
   height: 100vh;
-  
 `;
 
-const AngleDownIcon = ()=>{
-  return <a href="#first-explanation"><FontAwesomeIcon icon={faAngleDown} style={{
-    color: "white",
-    position: "absolute",
-    bottom: "10px",
-    left: "50vw",
-    fontSize: "5rem",
-    animation: "updown 1s Infinite ease-in-out"
-  }}/></a>
-}
+const AngleDownIcon = () => {
+  return (
+    <a href="#first-explanation">
+      <FontAwesomeIcon
+        icon={faAngleDown}
+        style={{
+          color: "white",
+          position: "absolute",
+          bottom: "10px",
+          left: "50vw",
+          fontSize: "5rem",
+          animation: "updown 1s Infinite ease-in-out",
+        }}
+      />
+    </a>
+  );
+};
 const MainInfo = styled.div`
   height: calc(100% - 5vw);
   background: rgb(244, 81, 45);
@@ -142,11 +148,11 @@ const Titles = styled.div`
   align-items: center;
   flex-direction: column;
   width: 70%;
-  
 `;
 const Book = styled.img`
   width: 100%;
   height: 100%;
+  animation: updown 3s Infinite ease-in-out;
 `;
 const BookDiv = styled.div`
   width: 30%;
@@ -163,9 +169,6 @@ const BookDiv = styled.div`
     filter: blur(8px);
   }
 `;
-
-
-
 
 const Explanation = styled.div`
   padding: 2rem 20% 2rem 20%;

@@ -20,3 +20,36 @@
     transform: translateY(-10px);
   }
 }
+
+.bgtext{
+cursor: pointer;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 800;
+    color: black;
+    overflow: hidden;
+
+    /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%); */
+    background: rgb(244, 81, 45);
+    background: linear-gradient(
+      90deg,
+      rgba(244, 81, 45, 1) 0%,
+      rgba(245, 161, 34, 1) 50%,
+      rgba(0, 0, 0, 1) 49%,
+      rgba(0, 0, 0, 1) 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+
+    transition: background-position 275ms ease;
+  }
+
+  .bgtext:hover {
+    background-position: 0 100%;
+  }
