@@ -11,17 +11,15 @@ function StartButton() {
           color: "black",
           textAlign: "center",
           fontSize: ".7em",
-         WebkitTextFillColor: "transparent",
-         backgroundClip: "text"
+          WebkitTextFillColor: "transparent",
+          backgroundClip: "text",
         }}
       />
     );
   };
   return (
     <Container>
-      <a href="/exercises">
-        Començar {/* <Icon /> */}
-      </a>
+      <a href="/exercises">Començar {/* <Icon /> */}</a>
     </Container>
   );
 }

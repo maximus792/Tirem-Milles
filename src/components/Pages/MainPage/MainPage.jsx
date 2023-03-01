@@ -31,20 +31,11 @@ function MainPage() {
       <Explanation id="first-explanation">
         <h1 className="bgtext">Com funciona</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-          blandit nibh. Cras sed rhoncus nibh. Nullam quis magna justo. Sed
-          pharetra commodo diam, id semper massa. In lacinia, quam convallis
-          euismod auctor, orci odio tincidunt sapien, eget scelerisque odio dui
-          a lacus. Etiam vitae eleifend ante. Integer semper faucibus viverra.
-          Curabitur tempus purus vitae est tincidunt malesuada.
+          No se no hice nada jajajaja
         </p>
-        <p>
-          Duis mollis mollis neque, in tempus leo luctus sit amet. Suspendisse
-          malesuada mollis enim, at commodo lacus mollis et. Maecenas feugiat
-          lectus ac felis tristique, et pulvinar odio pretium. Cras ullamcorper
-          vel felis id auctor. Phasellus efficitur sapien orci, in sagittis erat
-          vulputate nec. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Suspendisse potenti.
+        <p text="justify">
+          Perseverança, rigor, treball, constància, assiduïtat, determinació, fermesa. Aquests són alguns trets que algú ha de tenir per superar un objectiu comú: aprovar batxillerat.
+          
         </p>
       </Explanation>
       <Explanation>
