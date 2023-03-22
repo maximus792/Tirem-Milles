@@ -71,11 +71,15 @@ function ExercisesPage() {
       target.firstChild.style.transform = "translate(-200%)";
       target.lastChild.style.transform = "translate(-100%)";
       setclickable(true);
+    } else if (targetId === "main") {
+      setclickable(false);
+      target.firstChild.style.transform = "translate(0%)";
+      target.lastChild.style.transform = "translate(0%)";
     }
   };
 
   return (
-    <Container>
+    <Container id="main">
       <Navbar actualPage={"Exercises"} />
       <Main>
         <h1>Escull el teu idioma</h1>
@@ -85,7 +89,7 @@ function ExercisesPage() {
               clickable={clickable}
               styles={{ transform: "scale(0.8)" }}
               data={chunkedIndex}
-              tapa={"tapa.png"}
+              tapa={"tapaCat.png"}
             />
           </BookDiv>
           <BookDiv id="cast">
@@ -93,7 +97,7 @@ function ExercisesPage() {
               clickable={clickable}
               styles={{ transform: "scale(0.8)" }}
               data={chunkedIndex}
-              tapa={"tapa.png"}
+              tapa={"tapaCast.png"}
             />
           </BookDiv>
         </BooksDiv>

@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 
 function BookComponent({ styles, data, clickable, tapa }) {
   const [currentPage, setcurrentPage] = useState(0);
+  const BookDivRef = useRef(null);
+
+  useEffect(() => {
+    if (!clickable) {
+      setcurrentPage(1);
+      [...BookDivRef.current.children].map((child, key) => {
+        child.classList.remove("passed");
+        child.style.zIndex = key;
+      });
+    }
+  }, [clickable]);
+
   return (
-    <BookDiv style={styles}>
+    <BookDiv style={styles} ref={BookDivRef}>
       {data.map((element, key) => {
         return (
           <Page
@@ -37,7 +49,9 @@ function BookComponent({ styles, data, clickable, tapa }) {
                   onClick={function (e) {
                     if (
                       !clickable ||
-                      e.currentTarget.parentElement.parentElement.classList.contains("passed")
+                      e.currentTarget.parentElement.parentElement.classList.contains(
+                        "passed"
+                      )
                     )
                       return;
                     console.log(key);
@@ -67,7 +81,9 @@ function BookComponent({ styles, data, clickable, tapa }) {
       <Book
         src={`images/${tapa}`}
         onClick={(e) => {
-          if (!clickable) return;
+          if (!clickable) {
+            return;
+          }
           if (e.target.classList.contains("passed")) {
             setcurrentPage(1);
             console.log(currentPage);
