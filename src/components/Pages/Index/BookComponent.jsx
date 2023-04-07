@@ -47,6 +47,7 @@ function BookComponent({ styles, data, clickable, tapa }) {
                   disabled={false}
                   key={i}
                   onClick={function (e) {
+                    BookDivRef.current.style.display="none"
                     if (
                       !clickable ||
                       e.currentTarget.parentElement.parentElement.classList.contains(

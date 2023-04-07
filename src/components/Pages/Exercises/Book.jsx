@@ -1,7 +1,7 @@
 import React, { Children } from "react";
 import styled from "styled-components";
 
-function Book({ chapter, subtitle, children }) {
+function Book({ chapter, subtitle, children, errnum, setcorrecting, marked }) {
   function changeExercise() {
     var typeofExercise = window.location.href.charAt(
       window.location.href.length - 1
@@ -20,10 +20,11 @@ function Book({ chapter, subtitle, children }) {
       {children}
       <BookButtons>
         <FirstPageButtons>
-          <PageButton>Corregir</PageButton>
+          <PageButton onClick={()=>{setcorrecting((curr)=>!curr)}}>Corregir</PageButton>
           <PageButton>Ajuda</PageButton>
         </FirstPageButtons>
         <SecondPageButtons>
+          <PageButton onClick={changeExercise}>Errors: {marked}/  {errnum}</PageButton>
           <PageButton onClick={changeExercise}>Següent ➡</PageButton>
         </SecondPageButtons>
       </BookButtons>
@@ -143,7 +144,7 @@ const FirstPageButtons = styled.div`
 const SecondPageButtons = styled.div`
   border-top: 1px solid #000;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 45%;
   padding-top: 1vh;
 `;
