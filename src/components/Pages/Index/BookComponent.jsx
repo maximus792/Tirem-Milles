@@ -92,7 +92,7 @@ function BookComponent({ styles, data, clickable, tapa }) {
             console.log(currentPage);
             e.target.style.zIndex = "10";
           } else {
-            delay(1000).then(() => (e.target.style.zIndex = "0"));
+            delay(2000).then(() => (e.target.style.zIndex = "0"));
             setcurrentPage(2);
             console.log(currentPage);
           }

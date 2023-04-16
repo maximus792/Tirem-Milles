@@ -811,35 +811,35 @@ const dataCAST = [
     "Subordinada sustantiva",
   ],
   [
-    ["Mientras estudiaba", "escuchaba música"],
+    ["","Mientras estudiaba", "escuchaba música"],
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["Como no me apetecía cocinar", "pedí comida a domicilio"],
+    ["","Como no me apetecía cocinar", "pedí comida a domicilio"],
     "Subordinada adverbial causal",
   ],
   [
-    ["Mi perro es más grande", "que el tuyo"],
+    ["Mi perro es más grande", "que el tuyo",""],
     "Construcción comparativa",
   ],
   [
-    ["Si llueve", "nos quedaremos en casa"],
+    ["","Si llueve", "nos quedaremos en casa"],
     "Subordinada adverbial condicional",
   ],
   [
-    ["Estaba tan cansado", "que me quedé dormido en el sofá"],
+    ["Estaba tan cansado", "que me quedé dormido en el sofá",""],
     "Subordinada adverbial consecutiva",
   ],
   [
-    ["Hablaba", "como si fuera un experto en el tema"],
+    ["Él Hablaba", "como si fuera un experto en el tema",""],
     "Subordinada adverbial de modo",
   ],
   [
-    ["No tenía dinero", "para comprarme un regalo"],
+    ["No tenía dinero para", "comprarme un regalo",""],
     "Subordinada sustantiva",
   ],
-  [["Quiero saber", "cuándo llega el tren"], "Subordinada sustantiva"],
-  [["Creo", "que mañana lloverá"], "Subordinada sustantiva"],
+  [["Quiero saber", "cuándo llega el tren",""], "Subordinada sustantiva"],
+  [["Creo", "que mañana lloverá",""], "Subordinada sustantiva"],
   [
     ["Ayer conocí a un chico", "que hablaba varios idiomas", ""],
     "Subordinada de relativo",
@@ -848,17 +848,14 @@ const dataCAST = [
     ["La película", "que vi anoche", "me gustó mucho"],
     "Subordinada de relativo",
   ],
-  [["No sabía", "cómo hacerlo"], "Subordinada adverbial de modo"],
+  [["No sabía", "cómo hacerlo",""], "Subordinada adverbial de modo"],
   [
-    ["Me compré el libro", "porque me lo recomendaron"],
-    "Subordinada adverbial causal",
+    ["Me compré el libro por", "-que me lo recomendaron",""],
+    "Subordinada sustantiva",
   ],
+ 
   [
-    ["Ella corre", "más rápido de lo que parece"],
-    "Construcción comparativa",
-  ],
-  [
-    ["Si tengo tiempo", "te ayudaré con el proyecto", ""],
+    [ "","Si tengo tiempo", "te ayudaré con el proyecto"],
     "Subordinada adverbial condicional",
   ],
   [
@@ -870,39 +867,39 @@ const dataCAST = [
     "Subordinada sustantiva",
   ],
   [
-    ["No pude estudiar", "porque me dolía la cabeza", "toda la tarde"],
-    "Subordinada adverbial causal",
+    ["No pude estudiar por", "-que me dolía la cabeza", "toda la tarde"],
+    "Subordinada sustantiva",
   ],
   [
     ["La casa", "donde vivo", "es muy bonita"],
     "Subordinada de relativo",
   ],
   [
-    ["Necesito que me ayudes", "", "urgentemente"],
+    ["Necesito"," que me ayudes", "urgentemente"],
     "Subordinada sustantiva",
   ],
   [
-    ["Mientras cocinaba", "escuché música", ""],
+    ["","Mientras cocinaba", "escuché música"],
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["Si llueve", "nos quedamos en casa", ""],
+    ["","Si llueve", "nos quedamos en casa"],
     "Subordinada adverbial condicional",
   ],
   [
     ["Estudié mucho", "por lo tanto, aprobé el examen", ""],
-    "Subordinada adverbial consecutiva",
+    "Subordinada adverbial Ilativa",
   ],
   [
     ["Habló tan bajo", "que no le oímos", ""],
-    "Subordinada adverbial de modo",
+    "Subordinada adverbial consecutiva",
   ],
   [
     ["No me gustan las verduras", "a pesar de que son saludables", ""],
     "Subordinada adverbial concesiva",
   ],
   [
-    ["Voy a la piscina", "para hacer ejercicio", ""],
+    ["Voy a la piscina para ", "hacer ejercicio", ""],
     "Subordinada sustantiva",
   ],
   [
@@ -915,16 +912,16 @@ const dataCAST = [
   ],
   [["Espero", "que vengas a mi fiesta", ""], "Subordinada sustantiva"],
   [
-    ["Mientras estudiaba", "me quedé dormido", ""],
+    ["","Mientras estudiaba", "me quedé dormido"],
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["Si pierdo mi pasaporte", "no podré viajar", ""],
+    ["","Si pierdo mi pasaporte", "no podré viajar"],
     "Subordinada adverbial condicional",
   ],
   [
-    ["Compré un abrigo nuevo", "porque hacía mucho frío", ""],
-    "Subordinada adverbial causal",
+    ["Compré un abrigo nuevo por", "-que hacía mucho frío", ""],
+    "Subordinada Sustantiva",
   ],
   [
     ["Habló tan bajo", "que nadie le entendió", ""],
@@ -960,7 +957,7 @@ const dataCAST = [
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["Como llovía", "decidimos quedarnos en casa", ""],
+    ["","Como llovía", "decidimos quedarnos en casa",],
     "Subordinada adverbial causal",
   ],
   [
@@ -997,7 +994,7 @@ const dataCAST = [
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["Ya que no tienes nada que hacer", "puedes ayudarme", ""],
+    ["","Ya que no tienes nada que hacer", "puedes ayudarme"],
     "Subordinada adverbial causal",
   ],
   [
@@ -1414,7 +1411,7 @@ const dataCAST = [
   [["Me alegra", "que hayas venido", ""], "Subordinada sustantiva"],
   [
     ["No entiendo", "por qué no lo hizo", ""],
-    "Subordinada adverbial causal",
+    "Subordinada sustantiva",
   ],
   [
     ["Llegaré tarde", "si hay mucho tráfico", ""],
@@ -1425,8 +1422,8 @@ const dataCAST = [
     "Subordinada sustantiva",
   ],
   [
-    ["Lo hice", "porque me lo pidió mi amigo", ""],
-    "Subordinada adverbial causal",
+    ["Lo hice por", "-que me lo pidió mi amigo", ""],
+    "Subordinada sustantiva",
   ],
   [
     ["Trabajaré hasta tarde", "a menos que termine antes", ""],
@@ -1453,8 +1450,8 @@ const dataCAST = [
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["La película fue un éxito", "gracias a que el director es muy bueno", ""],
-    "Subordinada adverbial causal",
+    ["La película fue un éxito gracias a", "que el director es muy bueno", ""],
+    "Subordinada sustantiva",
   ],
   [
     ["Jugaré al tenis", "tan pronto como termine el trabajo", ""],
@@ -1465,8 +1462,8 @@ const dataCAST = [
     "Subordinada adverbial concesiva",
   ],
   [
-    ["Comí mucho", "porque tenía mucha hambre", ""],
-    "Subordinada adverbial causal",
+    ["Comí mucho por", "-que tenía mucha hambre", ""],
+    "Subordinada sustantiva",
   ],
   [
     ["Viajaré", "en cuanto tenga el dinero", ""],
@@ -1477,8 +1474,8 @@ const dataCAST = [
     "Subordinada adverbial condicional",
   ],
   [
-    ["Ella no vendrá", "porque está enferma", ""],
-    "Subordinada adverbial causal",
+    ["Ella no vendrá por", "-que está enferma", ""],
+    "Subordinada sustantiva",
   ],
   [
     ["El cuadro", "que colgaste en la pared", "me gustó mucho"],
@@ -1497,8 +1494,8 @@ const dataCAST = [
     "Construcción comparativa",
   ],
   [
-    ["Vendré a verte", "en cuanto pueda", "porque me preocupa tu salud"],
-    "Subordinada adverbial de tiempo",
+    ["Vendré a verte en cuanto pueda por", "-que me preocupa tu salud", ""],
+    "Subordinada sustantiva",
   ],
   [
     [
@@ -1570,8 +1567,8 @@ const dataCAST = [
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["No fui a trabajar", "porque estaba enfermo", "ayer"],
-    "Subordinada adverbial causal",
+    ["No fui a trabajar por", "-que estaba enfermo", "ayer"],
+    "Subordinada sustantiva",
   ],
 
   [
@@ -1591,28 +1588,28 @@ const dataCAST = [
     "Subordinada adverbial condicional",
   ],
   [
-    ["Estoy cansado", "porque trabajé toda la noche", ""],
-    "Subordinada adverbial causal",
+    ["Estoy cansado por", "-que trabajé toda la noche", ""],
+    "Subordinada sustantiva",
   ],
   [
     ["Aprendí a cocinar", "cuando vivía en Italia", ""],
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["Me gusta caminar", "porque es bueno para la salud", ""],
-    "Subordinada adverbial causal",
+    ["Me gusta caminar por", "-que es bueno para la salud", ""],
+    "Subordinada sustantiva",
   ],
   [
     ["Pedro estudia", "como si fuera el examen más importante", "de su vida"],
     "Subordinada adverbial de modo",
   ],
   [
-    ["Me compré un abrigo", "porque hace frío", "en invierno"],
-    "Subordinada adverbial causal",
+    ["Me compré un abrigo por", "-que hace frío", "en invierno"],
+    "Subordinada sustantiva",
   ],
   [
-    ["No puedo hablar ahora", "porque estoy ocupado", ""],
-    "Subordinada adverbial causal",
+    ["No puedo hablar ahora por", "-que estoy ocupado", ""],
+    "Subordinada sustantiva",
   ],
   [
     ["Elena habla inglés", "tan bien como un nativo", ""],
@@ -1627,8 +1624,8 @@ const dataCAST = [
     "Subordinada adverbial de tiempo",
   ],
   [
-    ["Me gusta correr", "porque me hace sentir bien", ""],
-    "Subordinada adverbial causal",
+    ["Me gusta correr por", "-que me hace sentir bien", ""],
+    "Subordinada sustantiva",
   ],
   [
     ["El perro", "que se escapó ayer", "fue encontrado por su dueño"],
@@ -1649,13 +1646,13 @@ const dataCAST = [
     "Construcción comparativa",
   ],
   [
-    ["Marcel golpeó la pared", "porque se enfadó con su hermano", ""],
-    "Subordinada adverbial causal",
+    ["Marcel golpeó la pared por", "-que se enfadó con su hermano", ""],
+    "Subordinada sustantiva",
   ],
   [
     [
-      "Marcel dijo que no quería ir a la terapia",
-      "porque le daba vergüenza",
+      "Marcel dijo que no quería ir a la terapia por",
+      "-que le daba vergüenza",
       "",
     ],
     "Subordinada sustantiva",
@@ -1697,6 +1694,79 @@ const dataCAST = [
     ],
     "Subordinada sustantiva",
   ],
+  [
+    [
+      "Marcel Gruñeiro es buen alumno,",
+      "ya que va a Codelearn",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+  [
+    [
+      "Xavier Madrona es buen alumno,",
+      "ya que su padre también lo era",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+  [
+    [
+      "Marina enseña bien lengua",
+      "ya que su método es ordenado y claro",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+  [
+    [
+      "Las clases de lengua son difíciles",
+      "ya que las estructuras léxicas son complejas",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+  [
+    [
+      "Escribo",
+      "dado que es mi pasión",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+  [
+    [
+      "Practico piano",
+      "dado que es mi instrumento favorito",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+  [
+    [
+      "Trataré de hablar con él",
+      "ya que está completamente insoportable",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+  [
+    [
+      "Intentaré meditar",
+      "puesto que estoy alterado",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+  [
+    [
+      "El pingüino Xavi debe volver a su iglú",
+      "dado que la noche ya cae",
+      "",
+    ],
+    "Subordinada adverbial causal",
+  ],
+
 ];
 
 function Act4({ correcting, language }) {

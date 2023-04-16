@@ -20,7 +20,7 @@ function getIndex(language){
     {
       title: "Capítol V",
       subtitle: "I les figures retòriques?",
-    },
+    },/* 
     {
       title: "Capítol VI",
       subtitle: "Troba els errors",
@@ -36,7 +36,7 @@ function getIndex(language){
     {
       title: "Capítol IX",
       subtitle: "Troba els errors",
-    },
+    }, */
   ];
 
   const indexCAST = [
@@ -59,7 +59,7 @@ function getIndex(language){
     {
       title: "Capítulo V",
       subtitle: "Figuras Retóricas, juego de poetas",
-    },
+    },/* 
     {
       title: "Capítulo VI",
       subtitle: "Troba els errors",
@@ -75,7 +75,7 @@ function getIndex(language){
     {
       title: "Capítulo IX",
       subtitle: "Troba els errors",
-    },
+    }, */
   ];
 
   if(language == "cat")
