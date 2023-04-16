@@ -1,0 +1,6 @@
+/* VERBS:
+
++Debatre
++saber
++ser
+*/

@@ -47,7 +47,7 @@ function BookComponent({ styles, data, clickable, tapa }) {
                   disabled={false}
                   key={i}
                   onClick={function (e) {
-                    BookDivRef.current.style.display="none"
+                    BookDivRef.current.style.display = "none";
                     if (
                       !clickable ||
                       e.currentTarget.parentElement.parentElement.classList.contains(
@@ -57,7 +57,9 @@ function BookComponent({ styles, data, clickable, tapa }) {
                       return;
                     console.log(key);
                     console.log("link");
-                    window.location.href = `exercises-${i + 1}`;
+                    window.location.href = `exercises/${i + 1}/${
+                      BookDivRef.current.parentElement.id
+                    }`;
                   }}
                 >
                   <b>{page.title}</b> - {page.subtitle}

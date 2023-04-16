@@ -87,7 +87,7 @@ function Word({ text, error, errText, setmarked, correcting, showErrors }) {
             : {}
         }
       >
-        {corrected ? text.replace(/[^\w\sÀ-ÿ'-]|_/g, "") : word}
+        {corrected ? text : word}
       </WordSpan>
       <span>{afsigns}</span>
     </Container>

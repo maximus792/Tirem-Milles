@@ -5,20 +5,45 @@ import Navbar from "./../../Navbar";
 import Book from "./Book";
 import "./Bookstyles.css";
 import getData from "./Activities/Act1/getData";
+import getIndex from "../Index/indexes";
 
 function Page({ chapter, activity }) {
-  const [title, settitle] = useState("Capítol I");
-  const [subtitle, setsubtitle] = useState("Troba els errors");
+  const [loaded, setloaded] = useState(false);
+  //Títol
+  var url = window.location.href.split("/");
+  var key = url[url.length - 2];
+  var language = url[url.length - 1];
+
+  const index = getIndex(language);
+  const [title, settitle] = useState(index[key - 1].title);
+  const [subtitle, setsubtitle] = useState(index[key - 1].subtitle);
+
   const [marked, setmarked] = useState(0);
-  const [errnum, seterrnum] = useState(0);
-  /*   const [data, setdata] = useState(activity); */
+
+  const [paragrafs, setparagrafs] = useState(getData());
   var data = activity;
 
   const [numParagrafs, setnumParagrafs] = useState(data.length);
 
   const [correcting, setcorrecting] = useState(false);
+  const [showErrors, setshowErrors] = useState(false);
   const textbox = useRef();
   const bookRef = useRef();
+
+  const [errnum, seterrnum] = useState(0);
+  /*   const [data, setdata] = useState(activity); */
+
+  var errn = 0;
+  var errcount = 0;
+  const changeErr = (num) => {
+    errn += num;
+    errcount += 2;
+    console.log(`${errcount}, ${numParagrafs}`);
+    if (errcount >= numParagrafs) seterrnum(errn);
+  };
+  useEffect(() => {
+    console.log(errn);
+  }, [errn]);
 
   useEffect(() => {
     console.log(marked);
@@ -36,14 +61,26 @@ function Page({ chapter, activity }) {
     );
   });
 
-  data = data.slice(0, numParagrafs);
-const paragrafs=getData()
+  data = activity.slice(0, numParagrafs);
+
   return (
-    <div>
+    <PageContainer>
       {/*<ErrorContext.Provider value={{/* Nombre derrors totals, nombre de coses marcades, s'esta corretgint? totalErrors: false, markedWords: 0, correcting: false}}>*/}
       <Navbar actualPage={"Exercises"} />
       <Container ref={bookRef}>
-        <Book chapter={chapter} subtitle={subtitle} marked={marked} errnum={errnum}>
+        <Book
+          chapter={chapter}
+          title={title}
+          subtitle={subtitle}
+          language={language}
+          marked={marked}
+          errnum={errnum}
+          exercisenum={key}
+          setcorrecting={setcorrecting}
+          correcting={correcting}
+          setshowErrors={setshowErrors}
+          showErrors={showErrors}
+        >
           <div
             className="textbox"
             ref={textbox}
@@ -51,12 +88,66 @@ const paragrafs=getData()
             style={{ opacity: "0" }}
           >
             {data.slice(0, numParagrafs).map((element, i) => {
-              return React.cloneElement(element, { setmarked: setmarked, seterrnum:seterrnum, data:paragrafs.slice(i,i+3) });
+              if (key != "1" && key != "2")
+                return React.cloneElement(element, {
+                  setmarked: setmarked,
+                  seterrnum: changeErr,
+                  correcting: correcting,
+                  language: language,
+                  showErrors: showErrors,
+                });
+              /*  console.log(data.slice(0, numParagrafs)); */
+              console.log(paragrafs.length);
+
+              /*  if (i + 3 * i >= paragrafs.length) {
+                return null;
+              } else if (i + 3 + 3 * i >= paragrafs.length) {
+                return React.cloneElement(element, {
+                  setmarked: setmarked,
+                  seterrnum: changeErr,
+                  data: [...paragrafs.slice(i + 3 * i, paragrafs.length)],
+                  correcting: correcting,
+                  language: language,
+                  showErrors: showErrors,
+                });
+              }
+              return React.cloneElement(element, {
+                setmarked: setmarked,
+                seterrnum: changeErr,
+                data: paragrafs.slice(i + 3 * i, i + 3 + 3 * i),
+                correcting: correcting,
+                language: language,
+                showErrors: showErrors,
+              });  */
+              console.log(i);
+
+              if (2 * i >= paragrafs.length) {
+                return null;
+              } else if (2 * i + 2 >= paragrafs.length) {
+                console.log(paragrafs.slice(2 * i, paragrafs.length));
+                console.log(2 * i + 2);
+                return React.cloneElement(element, {
+                  setmarked: setmarked,
+                  seterrnum: changeErr,
+                  data: paragrafs.slice(2 * i, paragrafs.length),
+                  correcting: correcting,
+                  language: language,
+                  showErrors: showErrors,
+                });
+              }
+              return React.cloneElement(element, {
+                setmarked: setmarked,
+                seterrnum: changeErr,
+                data: paragrafs.slice(2 * i, 2 * i + 2),
+                correcting: correcting,
+                language: language,
+                showErrors: showErrors,
+              });
             })}
           </div>
         </Book>
       </Container>
-    </div> //</ErrorContext.Provider>
+    </PageContainer> //</ErrorContext.Provider>
   );
 }
 
@@ -72,4 +163,9 @@ const Container = styled.div`
   @media (max-width: 400px) {
     display: none;
   }
+`;
+
+const PageContainer = styled.div`
+  overflow: hidden;
+  max-height: 100vh;
 `;

@@ -1,19 +1,10 @@
-function he_de(word, word2, randomnum) {
-
-  
-if(word.toLowerCase() === "i" && word2.toLowerCase() === "a"){
-  return ["hi", "ha"]
-}
-
+function he_de(word, word2, i) {
   switch (word.toLowerCase()) {
     case "he":
       if (word2 == "de") {
 
         word = "tinc";
         word2 = "que";
-      }
-      else{
-        return undefined
       }
       break;
 
@@ -23,18 +14,12 @@ if(word.toLowerCase() === "i" && word2.toLowerCase() === "a"){
         word = "tens";
         word2 = "que";
       }
-      else{
-        return undefined
-      }
       break;
     case "ha":
       if (word2 == "de") {
 
         word = "té";
         word2 = "que";
-      }
-      else{
-        return undefined
       }
       break;
     case "hem":
@@ -43,9 +28,6 @@ if(word.toLowerCase() === "i" && word2.toLowerCase() === "a"){
         word = "tenim";
         word2 = "que";
       }
-      else{
-        return undefined
-      }
       break;
     case "heu":
       if (word2 == "de") {
@@ -53,18 +35,12 @@ if(word.toLowerCase() === "i" && word2.toLowerCase() === "a"){
         word = "teniu";
         word2 = "que";
       }
-      else{
-        return undefined
-      }
       break;
     case "han":
       if (word2 == "de") {
 
         word = "tenen";
         word2 = "que";
-      }
-      else{
-        return undefined
       }
       break;
     default:

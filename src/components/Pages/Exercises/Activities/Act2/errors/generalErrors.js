@@ -1,9 +1,4 @@
 function generalErrors(word) {
-  /* TREURE GUIÓ de les paraules */
-  if (word.includes("-")) {
-    return word.replace("-", "");
-  }
-
   /* NO TREURE ACCENT A SOC, O AFEGIR-LO */
   if (word === "soc" || word === "sóc") {
     return "sóc";
@@ -25,49 +20,6 @@ function generalErrors(word) {
     return "tan";
   } else if (word.toLowerCase() === "tan") {
     return "tant";
-  } else if (word.toLowerCase() === "milions") {
-    return "millons";
-  } else if (word.toLowerCase() === "edats") {
-    return "edads";
-  } else if (word.toLowerCase() === "eines") {
-    return "eïnes";
-  } else if (word.toLowerCase() === "aprendre") {
-    return "apendre";
-  } else if (word.toLowerCase() === "comprendre") {
-    return "compendre";
-  } else if (word.toLowerCase() === "bronze") {
-    return "bronce";
-  } else if (word.toLowerCase() === "perseverar") {
-    return "preservar";
-  } else if (word.toLowerCase() === "antiga") {
-    return "antigua";
-  } else if (word.toLowerCase() === "dies") {
-    return "díes";
-  } else if (word.toLowerCase() === "coet") {
-    return "cohet";
-  } else if (word.toLowerCase() === "començar") {
-    return "comensar";
-  }
-  else if (word.toLowerCase() === "descobrir") {
-    return "descubrir";
-  }
-
-  /* T FINAL DE LES PARAULES ACABADES EN -ENT*/
-  if (
-    word[word.length - 1] == "t" &&
-    word[word.length - 2] == "n" &&
-    word[word.length - 3] == "e"
-  ) {
-    return word.slice(0, word.length - 1);
-  }
-  /* Afegir accent a paraulea acabades amb ia */
-  if (word[word.length - 1] == "a" && word[word.length - 2] == "i") {
-    return word.slice(0, word.length - 2) + "ía";
-  }
-
-  /* qua -> cua */
-  if (word.includes("q") && word.includes("u") && word.includes("a")) {
-    return word.replace("qua", "cua");
   }
 
   /* CANVI DE LLETRES */

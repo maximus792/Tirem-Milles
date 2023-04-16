@@ -8,11 +8,11 @@ function Navbar({ actualPage }) {
         <div>
           <a onClick={function(){
             window.location.href='#';
-          }} style={{fontSize: "30px"}}>Tirem Milles</a>
+          }} style={{fontSize: "30px", userSelect:"none"}}>Tirem Milles</a>
         </div>
         <Pages>
-          <a href="/" style={{ opacity: actualPage == "Inici" ? 1 : 0.5 }}>Inici</a>
-          <a href="/exercises" style={{ opacity: actualPage == "Exercises" ? 1 : 0.5 }}>
+          <a href="/" style={{ opacity: actualPage == "Inici" ? 1 : 0.5, userSelect:"none" }}>Inici</a>
+          <a href="/exercises" style={{ opacity: actualPage == "Exercises" ? 1 : 0.5,userSelect:"none" }}>
             Exercicis
           </a>
         </Pages>

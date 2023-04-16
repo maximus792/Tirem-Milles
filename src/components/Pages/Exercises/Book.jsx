@@ -1,31 +1,39 @@
+import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 import React, { Children } from "react";
 import styled from "styled-components";
 
-function Book({ chapter, subtitle, children, errnum, setcorrecting, marked }) {
+function Book({ chapter, title, subtitle, children, errnum, setcorrecting,correcting, marked, language, exercisenum, setshowErrors, showErrors  }) {
   function changeExercise() {
-    var typeofExercise = window.location.href.charAt(
-      window.location.href.length - 1
-    );
-    window.location.href = `../exercises-${parseInt(typeofExercise) + 1}`;
+    window.location.href = `/exercises/${parseInt(exercisenum) + 1}/${language}`;
+  }
+  function changePrevExercise() {
+    window.location.href = `/exercises/${parseInt(exercisenum) - 1}/${language}`;
+  }
+  function help(){
+    if(exercisenum == 1){
+      setshowErrors((curr)=>!curr)
+    }
   }
   return (
     <Container>
-      <h1>
+      {/* <h1>
         Capítol{" "}
         <span style={{ fontFamily: "JetBrains Mono" }}>
           {romanize(chapter)}
         </span>
-      </h1>
+      </h1> */}
+      <h1>{title}</h1>
       <h2>{subtitle}</h2>
       {children}
       <BookButtons>
         <FirstPageButtons>
-          <PageButton onClick={()=>{setcorrecting((curr)=>!curr)}}>Corregir</PageButton>
-          <PageButton>Ajuda</PageButton>
+        {exercisenum!=1?<PageButton onClick={changePrevExercise}><b>&larr;</b>Enrere</PageButton>:""}
+          <PageButton onClick={help}>{showErrors?"Amagar errors":"Ajuda"}</PageButton>
+          <PageButton onClick={()=>{setcorrecting((curr)=>!curr)}}>{correcting?"Tornar a intentar":"Corregir"}</PageButton>
         </FirstPageButtons>
-        <SecondPageButtons>
-          <PageButton onClick={changeExercise}>Errors: {marked}/  {errnum}</PageButton>
-          <PageButton onClick={changeExercise}>Següent ➡</PageButton>
+        <SecondPageButtons style={exercisenum!=1?{justifyContent:"flex-end"}:{}}>
+          {exercisenum==1?<PageButton >ERRORS: {marked}/{errnum}</PageButton>:""}
+          <PageButton onClick={changeExercise} >Següent <b>&rarr;</b></PageButton>
         </SecondPageButtons>
       </BookButtons>
     </Container>
@@ -154,4 +162,5 @@ const PageButton = styled.p`
   font-size: 1.5rem;
   letter-spacing: 2px;
   cursor: pointer;
+  user-select: none;
 `;
