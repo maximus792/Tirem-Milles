@@ -29,7 +29,7 @@ function Act2({ setmarked, seterrnum, data, correcting, showErrors }) {
 
     //TINC QUE / HE DE
     temp = he_de(splittedText[i], splittedText[i + 1]);
-    if (temp != undefined) {
+    if (temp != undefined && (temp[0] != splittedText[i] || temp[1] != splittedText[1])) {
       error = true;
       errnum += 1;
       words.push({
@@ -93,7 +93,6 @@ function Act2({ setmarked, seterrnum, data, correcting, showErrors }) {
     }
   }
   seterrnum(errnum);
-
   return (
     <Paragraph>
       {words.map((word, i) => {
@@ -106,6 +105,7 @@ function Act2({ setmarked, seterrnum, data, correcting, showErrors }) {
             setmarked={setmarked}
             correcting={correcting}
             showErrors={showErrors}
+            seterrnum={seterrnum}
           />
         );
       })}

@@ -1,13 +1,23 @@
 import styled from "styled-components";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
-function Word({ text, error, errText, setmarked, correcting, showErrors }) {
+function Word({
+  text,
+  error,
+  errText,
+  setmarked,
+  correcting,
+  showErrors,
+  seterrnum,
+}) {
   const [marked, setMarked] = useState(false);
   const [corrected, setcorrected] = useState(false);
+  const [editing, setediting] = useState(false);
   let bfsigns = "";
   let word = "";
   let afsigns = "";
   let passedWord = false;
+  const wordRef = useRef();
 
   if (error) {
     for (const char of errText) {
@@ -41,53 +51,40 @@ function Word({ text, error, errText, setmarked, correcting, showErrors }) {
     bgcolor = "#fff6a3b2";
   }
 
-  useEffect(() => {
-    if (correcting) {
-    } else {
-      if (marked && error) {
+
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" && editing) {
+      event.preventDefault();
+      console.log(event.target.innerHTML);
+      console.log(text);
+      console.log(event.target.innerHTML == text.replace(/[^\w\s]/g, ""));
+      if (event.target.innerHTML == text.replace(/[^\w\sÀ-ÿ'-]|_/g, "")) {
+        setmarked((curr) => curr + 1);
         setcorrected(true);
-      } else if (marked && !error) {
-        setMarked(false);
-        setmarked((curr) => curr - 1);
       }
     }
-  }, [correcting]);
+  });
 
   return (
-    <Container
-      onClick={(e) => {
-        if (!correcting && !corrected) {
-          setMarked((curr) => !curr);
-          if (!marked) {
-            setmarked((curr) => curr + 1);
-          } else {
-            setmarked((curr) => curr - 1);
-          }
-          if (error) console.log("ERROR");
-        }
-      }}
-    >
+    <Container>
       <span>{bfsigns}</span>
       <WordSpan
+        onClick={() => {
+          setediting(true);
+        }}
+        contentEditable={!corrected}
+        ref={wordRef}
         className={marked ? "marked" : ""}
-        onMouseEnter={(e) => {
-          if (!correcting && !corrected)
-            e.target.style.backgroundColor = "#fff6a3b2";
-        }}
-        onMouseLeave={(e) => {
-          if (!correcting && !marked) e.target.style.backgroundColor = "";
-        }}
         style={
-          !marked && error && showErrors
-            ? {textDecoration:"underline"}
-            : marked && corrected
+          error && showErrors && !corrected
+            ? { textDecoration: "underline" }
+            : corrected && error
             ? { fontWeight: "bold", backgroundColor: "transparent" }
-            : marked
-            ? { backgroundColor: bgcolor }
             : {}
         }
       >
-        {corrected ? text : word}
+        {corrected ? text.replace(/[^\w\sÀ-ÿ'-]|_/g, "") : word}
       </WordSpan>
       <span>{afsigns}</span>
     </Container>
@@ -106,4 +103,5 @@ const WordSpan = styled.span`
     border-radius: 2px;
     cursor: pointer;
   }
+  outline: 0px solid transparent;
 `;

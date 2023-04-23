@@ -43,7 +43,7 @@ function ExercisesPage() {
       marinaRef.current.style.bottom = "40px";
       fightRef.current.style.opacity = "0";
       setclickable(true);
-    } else {
+    } else if (targetId === "main") {
       setclickable(false);
       target.firstChild.style.transform = "translate(0%)";
       target.lastChild.style.transform = "translate(0%)";

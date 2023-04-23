@@ -1824,8 +1824,16 @@ function Act4({ correcting, language }) {
 
 const Component = styled.div`
   margin-bottom: 1.3rem;
-  margin-left: 5rem;
-  max-width: 30%;
+  margin-left: 1.5rem;
+  width: 30vw;
+  @media (min-width: 1100px) {
+    margin-left: 3rem;
+    width: 30vw;
+  }
+  @media (max-width: 700px) {
+    margin-left: 1rem;
+    width: 20vw;
+  }
 
   select {
     margin-top: 0.2rem;

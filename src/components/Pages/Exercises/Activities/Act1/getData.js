@@ -1,6 +1,5 @@
-const data = [
-  /*
-     `El sol s'amagava darrere dels turons quan la Martina va arribar a la petita vila de muntanya on havia decidit passar uns dies per desconectar de la feina i la ciutat. Amb el seu equipatge a l'esquena, va caminar fins a la casa rural que havia reservat per internet, una antiga masia de pedra amb vistes a la vall.
+const dataCat = [
+  `El sol s'amagava darrere dels turons quan la Martina va arribar a la petita vila de muntanya on havia decidit passar uns dies per desconectar de la feina i la ciutat. Amb el seu equipatge a l'esquena, va caminar fins a la casa rural que havia reservat per internet, una antiga masia de pedra amb vistes a la vall.
   El propietari de la casa, en Miquel, la va rebre amb un somriure i li va ensenyar la seva habitació, amb una gran finestra des d'on es podia veure el bosc i la muntanya. La Martina va deixar la seva motxilla a un racó i va sortir al pati, on unes gallines picotejaven el sòl.
   La vida a la vila era tranquil·la i pausada, sense sorolls ni presses. La Martina va passar els primers dies fent excursions per la muntanya, respirant aire pur i descobrint paisatges espectaculars. A les tardes, llegia al balcó de la seva habitació, amb una tassa de te i unes galetes que havia comprat al forn del poble.
   Una nit, mentre sopava a la terrassa d'un restaurant del poble, la Martina va conèixer en Joan, un jove de la vila que treballava a la fàbrica de formatge del seu oncle. Van parlar de les seves vides, les seves aficions i les seves preocupacions.`,
@@ -9,11 +8,10 @@ const data = [
   Una nit, després d'un sopar a la casa de la la Martina, van seure al balcó i van veure les estrelles. En Joan li va confessar que havia estat enamorat d'ella des del primer dia, però que no volia pressionar-la. La Martina es va emocionar i li va confessar que ella també sentia alguna cosa per ell.
   Els dies van passar ràpids i, abans que s'adonessin, havien passat dues setmanes a la vila. La Martina i en Joan van decidir que volien intentar una relació a distància i es van intercanviar números de telèfon i adreces de correu electrònic. Es van besar acomiadant-se a l'estació de tren i van prometre mantenir el contacte.
   La Martina va tornar a la ciutat amb el cor ple d'emocions. La seva estada a la vila havia estat un respir d'aire fresc enmig de la seva vida estressant i havia conegut a una persona especial que, malgrat la distància, volia intentar-ho amb ella. Va prometre tornar a la vila, de ben segur.`,
- 
-  `Era una vegada un grup de lingüistes que estudiaven la fonètica. Van descobrir que hi havia una paraula en particular que era bastant interessant: «stewardesses». Aquesta paraula, segons van descobrir, és el mot més llarg que es pot escriure utilitzant únicament les tecles de la fila superior del teclat d'un ordinador QWERTY. Els lingüistes van estar molt entusiasmats amb aquesta descoberta i van començar a buscar altres paraules curioses que poguessin ser escrites només amb les tecles d'una fila del teclat. Un cop van trobar «stewardesses», els lingüistes van començar a jugar amb el teclat. Van experimentar amb altres paraules, però no n'hi havia cap altre que fos tan llarg com «stewardesses». Van decidir que això deuria ser perquè les tecles en la fila superior del teclat són les que es fan servir més per escriure les paraules més comunes de l'anglès`, 
+
+  `Era una vegada un grup de lingüistes que estudiaven la fonètica. Van descobrir que hi havia una paraula en particular que era bastant interessant: «stewardesses». Aquesta paraula, segons van descobrir, és el mot més llarg que es pot escriure utilitzant únicament les tecles de la fila superior del teclat d'un ordinador QWERTY. Els lingüistes van estar molt entusiasmats amb aquesta descoberta i van començar a buscar altres paraules curioses que poguessin ser escrites només amb les tecles d'una fila del teclat. Un cop van trobar «stewardesses», els lingüistes van començar a jugar amb el teclat. Van experimentar amb altres paraules, però no n'hi havia cap altre que fos tan llarg com «stewardesses». Van decidir que això deuria ser perquè les tecles en la fila superior del teclat són les que es fan servir més per escriure les paraules més comunes de l'anglès`,
   `Amb el temps, aquesta curiositat lingüística va començar a circular per internet i, sense saber com, es va convertir en un repte: trobar altres paraules que fossin també tan llargues com «stewardesses» i que només fessin servir les tecles d'una fila del teclat. La gent va començar a buscar i van trobar algunes paraules força curioses com «poppadums», un plat indi, o «reverberated», que significa «rebotejar». L'èxit d'aquesta cerca va fer que sorgissin altres reptes similars, com per exemple trobar paraules que utilitzessin totes les tecles del teclat. La curiositat dels lingüistes va encendre la imaginació de molta gent, i així va sorgir un joc anomenat «Typing Maniac». Es tracta d'un joc en línia en el qual has d'escriure paraules el més ràpid possible. El joc es basa en la mateixa idea que la paraula «stewardesses» i consisteix a escriure el més ràpid possible paraules que només fac  in servir les tecles d'una fila del teclat. El joc va començar a tenir molta popularitat i encara és possible trobar versions en línia actuals. En conclusió, una curiositat lingüística va despertar la imaginació de moltes persones i es va convertir en un repte a internet. La paraula «stewardesses» va obrir una porta cap a altres paraules curioses que utilitzen les tecles d'una sola fila del teclat. Va convertir-se en un joc en línia, que encara és popular avui. La curiositat humana pot ser realment sorprenent, i una paraula podria ser l'origen de moltes altres descobertes lingüístiques!`,
-  
-  
+
   `En la llengua, hi ha molts aspectes interessants i fascinants que sovint passen desapercebuts. Una d'aquestes curiositats és l'origen de les paraules i com s'han format al llarg del temps. A vegades, una paraula que fem servir avui en dia va ser creat per casualitat o per una mena de joc de paraules que es va fer popular. Així és com va néixer la paraula "serendipitat".
 
   La paraula "serendipitat" va ser creada pel poeta i escriptor anglès Horace Walpole al segle XVIII. Va inventar la paraula després d'una anècdota que va viure en la qual va descobrir per casualitat una pintura que buscava, sense haver-la cercada. Va descriure aquest descobriment com una "serendipitat" i va crear la paraula combinant "Serendip", un nom antic per a l'illa de Sri Lanka, i la paraula "feliç coincidència". A més a més de la paraula "serendipitat", hi ha moltes altres paraules amb un origen curiós. Per exemple, la paraula "groggy" que utilitzem per descriure una persona que està desorientada o atordida, es va originar a la marina britànica. Es deia que el grog, una beguda alcohòlica popular entre els mariners britànics, els deixava atordits i desorientats, i així va sorgir la paraula "groggy" per descriure aquest estat.
@@ -29,7 +27,6 @@ const data = [
   Així mateix, les paraules també poden ser creades per a donar nom a moviments socials o a ideologies polítiques, com ara "feminisme", "ecologisme" o "anarquisme". A través d'aquestes paraules, s'ha pogut donar nom a idees que abans no estaven ben definides, i que ara són reconegudes i discutides a nivell mundial.
   
   En definitiva, les paraules són la base del llenguatge i la comunicació, i la seva creació i evolució és un reflex de la societat en la qual vivim. Les paraules poden ser creades per casualitat, per jocs de paraules, per l'adaptació d'altres idiomes, per a descriure noves tecnologies o realitats, i per a donar nom a moviments socials o ideologies polítiques. La creació de noves paraules és una part fonamental de l'evolució del llenguatge, i ens permet expressar idees noves i descriure noves realitats de la manera més precisa possible.`,
-  
 
   `Una de les coses més interessants de la llengua és la seva capacitat per canviar i evolucionar amb el temps. Una forma en què es manifesta aquesta evolució és a través de l'ús i l'adopció de paraules d'altres idiomes. Això es coneix com a préstec lingüístic i és un fenomen comú en totes les llengües. El català no és una excepció, i té un bon nombre de paraules que provenen d'altres idiomes. Un exemple de préstec lingüístic al català són les paraules que provenen del llatí. Aproximadament un 70% del vocabulari català prové del llatí. Això es deu a la influència de la llengua llatina en la cultura europea durant molts anys. A més del llatí, el català ha rebut influències de moltes altres llengües al llarg dels segles. Els romans van portar el llatí a la península Ibèrica fa més de dos mil anys, i aquesta llengua va ser adoptada pels habitants locals i es va anar desenvolupant fins a arribar a ser el català que coneixem avui en dia.
 
@@ -38,10 +35,10 @@ const data = [
   També hi ha altres idiomes que han influït en la llengua catalana, com ara l'italià, l'anglès o el castellà. Així, trobem paraules com "pizza", "spaghetti", "guru", "slogan" o "fútbol", entre moltes altres, que són exemples de préstecs lingüístics d'aquests idiomes.
   
   El préstec lingüístic és una mostra de la dinàmica i la riquesa de les llengües, que evolucionen i es desenvolupen al llarg del temps. A través dels préstecs lingüístics, les llengües es nutreixen d'altres cultures i s'enriqueixen amb noves paraules i expressions. Això fa que la llengua sigui més viva i adaptable a les necessitats dels seus parlants.`,
-  
-`Paraules com "amic", "mare", "poma" i "foc" són algunes paraules del català que tenen arrels llatines. Una altre exemple interessant de préstec lingüístic són les paraules que provenen de l'àrab. Durant els segles VIII i XI, la península ibèrica estava en mans dels àrabs. Aquesta influència es veu reflectida en el català a través de paraules com "alberg", "alcalde" i "almirall." Aquests mots aporten una visió interessant del passat històric de la llengua. Alguns préstecs lingüístics no són tan evidents, i la gent pot ignorar que algunes paraules vénen d'un altre idioma. Per exemple, molta gent no sap que la paraula "xocolata" prové del nàhuatl, la llengua que es parlava pels indis a l'Amèrica Central abans de la conquesta espanyola. Això demostra que la llengua és més complexa del que la majoria de la gent pot imaginar, i que les paraules poden tenir molts orígens diferents. Tot i que als puristes de la llengua podria no agradar-los la idea de préstecs lingüístics, són part d'un procés natural d'evolució lingüística. De fet, moltes paraules que ara considerem "natives" del català es van adoptar en moments diferents de la seva història de l'adopció de paraules d'altres idiomes. Com la llengua continua evolucionant i es barreja amb altres cultures i idiomes, és probable que el nombre de préstecs lingüístics continui creixent`,
 
-`Benvinguts a l'antic Egipte, un país ple de misteris i fascinants històries. Els egipcis eren una civilització molt avançada en la seva època, amb una cultura rica i complexa que encara avui ens deixa sorpresos.
+  `Paraules com "amic", "mare", "poma" i "foc" són algunes paraules del català que tenen arrels llatines. Una altre exemple interessant de préstec lingüístic són les paraules que provenen de l'àrab. Durant els segles VIII i XI, la península ibèrica estava en mans dels àrabs. Aquesta influència es veu reflectida en el català a través de paraules com "alberg", "alcalde" i "almirall." Aquests mots aporten una visió interessant del passat històric de la llengua. Alguns préstecs lingüístics no són tan evidents, i la gent pot ignorar que algunes paraules vénen d'un altre idioma. Per exemple, molta gent no sap que la paraula "xocolata" prové del nàhuatl, la llengua que es parlava pels indis a l'Amèrica Central abans de la conquesta espanyola. Això demostra que la llengua és més complexa del que la majoria de la gent pot imaginar, i que les paraules poden tenir molts orígens diferents. Tot i que als puristes de la llengua podria no agradar-los la idea de préstecs lingüístics, són part d'un procés natural d'evolució lingüística. De fet, moltes paraules que ara considerem "natives" del català es van adoptar en moments diferents de la seva història de l'adopció de paraules d'altres idiomes. Com la llengua continua evolucionant i es barreja amb altres cultures i idiomes, és probable que el nombre de préstecs lingüístics continui creixent`,
+
+  `Benvinguts a l'antic Egipte, un país ple de misteris i fascinants històries. Els egipcis eren una civilització molt avançada en la seva època, amb una cultura rica i complexa que encara avui ens deixa sorpresos.
 
 La civilització egípcia va començar fa més de 5000 anys, a la vall del riu Nil. Els egipcis van desenvolupar una gran varietat de tècniques agrícoles per aprofitar la fertilitat del riu, i van construir nombroses infraestructures, com preses i canals, per controlar les inundacions.
 
@@ -51,8 +48,7 @@ Els egipcis també creien en la vida després de la mort i tenien una gran varie
 
 Finalment, l'antic Egipte va caure en la conquesta dels romans l'any 30 aC, però la seva cultura i les seves històries continuen sent un element important de la història mundial. La civilització egípcia ens va deixar un llegat impressionant, que encara avui en dia ens fascina i ens inspira`,
 
-
-`Benvinguts a la prehistòria, un temps fascinant on els nostres avantpassats van viure en una època sense escriptura ni tecnologia. Els humans van aparèixer fa uns 2,5 milions d'anys i van viure en comunitats nòmades.
+  `Benvinguts a la prehistòria, un temps fascinant on els nostres avantpassats van viure en una època sense escriptura ni tecnologia. Els humans van aparèixer fa uns 2,5 milions d'anys i van viure en comunitats nòmades.
 
 Durant la prehistòria, els humans van viure en diferents edats de pedra, depenent del tipus de materials que utilitzaven per fer les seves eines. A la edat de pedra antiga, utilitzaven pedra tallada i fusta per crear eines per a la caça i la recolecció d'aliments.
 
@@ -64,7 +60,7 @@ Encara que no tenim escriptures dels nostres avantpassats, podem aprendre sobre 
 
 En conclusió, la prehistòria va ser una època emocionant de descobriment i innovació per als nostres avantpassats. Encara avui en dia, la seva vida i la seva capacitat per adaptar-se a les circumstàncies difícils ens inspira i ens ajuda a comprendre el nostre propi passat`,
 
-`La Guerra Civil Espanyola va ser un conflicte armat que va tenir lloc a Espanya entre 1936 i 1939. Aquesta guerra va enfrontar el govern democràtic espanyol i les forces rebels liderades pel general Francisco Franco.
+  `La Guerra Civil Espanyola va ser un conflicte armat que va tenir lloc a Espanya entre 1936 i 1939. Aquesta guerra va enfrontar el govern democràtic espanyol i les forces rebels liderades pel general Francisco Franco.
 
 El conflicte es va iniciar el 17 de juliol de 1936 amb un cop d'estat militar que buscava enderrocar el govern de la Segona República Espanyola. Això va provocar una resposta immediata per part dels partits i sindicats de dreta i esquerra, que van mobilitzar les seves forces per resistir l'atac.
 
@@ -98,7 +94,7 @@ A mesura que la IA continua evolucionant i millorant, és important que continue
 
   `La criptomoneda més coneguda avui és el bitcoin. Va ser creat el 2009 per un individu o grup anomenat Satoshi Nakamoto. El bitcoin es basa en tecnologia blockchain, que fa possible la transferència de fons sense la necessitat d'una tercera part com un banc. La demanda del bitcoin ha augmentat dràsticament al llarg dels anys, amb un valor actual que supera els 50.000 dòlars per unitat.
 
-A pesar del seu valor alt, el bitcoin ha estat subjecte a una gran volatilitat en el passat. Es pot atribuir a diversos factors, com ara la seva natures descentralitzada i la incertesa en la regulació. Alguns defensors del bitcoin creuen que el bitcoin serà la moneda del futur, mentre que altres el consideren una aposta speculativa perillosa.
+A pesar del seu valor alt, el bitcoin ha estat subjecte a una gran volatilitat en el passat. Es pot atribuir a diversos factors, com ara la seva natures descentralitzada i la incertesa en la regulació. Alguns defensors del bitcoin creuen que el bitcoin serà la moneda del futur, mentre que altres el consideren una aposta especulativa perillosa.
 
 Al llarg dels anys, han sorgit altres criptomonedes com Ethereum, Litecoin i Ripple. Cadascuna té la seva pròpia tecnologia i objectius únics. Tot i així, el bitcoin encara manté la seva posició com la criptomoneda més popular i valuosa del món`,
 
@@ -120,13 +116,17 @@ No obstant això, els pagaments amb criptomonedes també tenen les seves limitac
 D'una banda, els bancs tradicionals veuen les criptomonedes com competència. Les criptomonedes prometen eliminar la necessitat de bancs i altres intermediaris en les transaccions financeres. Si més gent utilitza criptomonedes, podria afectar negativament els bancs i la seva capacitat per guanyar diners.
 
 D'altra banda, alguns bancs han començat a investir en criptomonedes i tecnologies blockchain. Això és perquè veuen les criptomonedes com una oportunitat per millorar la seva eficiència i reduir els costos. També veuen potencial en la tecnologia blockchain per a diferents aplicacions, incloses les transferències internacionals de diners i les votacions electorals`,
-  `Les criptomonedes tenen un paper important en la societat moderna. Les criptomonedes permeten als individus tenir control complet dels seus fons i enviar i rebre pagaments de forma segura i ràpida. També prometen ser una alternativa als sistemes bancaris tradicionals.
+  `Les criptomonedes són una tecnologia que està en auge i té un paper important en la societat moderna. Permeten als usuaris tenir control complet dels seus fons i realitzar transaccions de forma segura i ràpida sense la necessitat d'una entitat financera intermèdia. A més, les criptomonedes s'estan posicionant com una alternativa als sistemes bancaris tradicionals.
 
-Altres veuen les criptomonedes com una inversió amb potencial de guanys considerables a llarg termini. Encara que la volatilitat és un risc, alguns inversors han guanyat una gran quantitat de diners amb criptomonedes com el bitcoin.
+  Les criptomonedes també són una opció d'inversió amb potencial de guanys a llarg termini. Els inversors han de ser conscients de la volatilitat inherent d'aquesta tecnologia, però alguns han aconseguit guanys considerables, especialment amb el bitcoin. És important fer una anàlisi exhaustiva abans de prendre decisions d'inversió.
+  
+  Les criptomonedes són una tecnologia en desenvolupament. La tecnologia blockchain està sent desenvolupada per a una àmplia gamma d'aplicacions, no només per a les criptomonedes, sinó també per a altres indústries. Això ofereix un gran potencial per a la innovació i obre la possibilitat de nous usos per a la tecnologia blockchain.
+  
+  Tanmateix, hi ha riscos associats amb l'ús de criptomonedes. La falta de regulació en aquest sector fa que les criptomonedes siguin més vulnerables a la volatilitat i la manipulació. La seguretat de les carteres de criptomonedes també pot ser compromesa, el que pot resultar en la pèrdua de fons. Per tant, és important que els usuaris prenguin precaucions per protegir els seus actius.
+  
+  En conclusió, les criptomonedes són una tecnologia prometedora amb una àmplia gamma d'usos i aplicacions. Proporcionen als usuaris un control complet dels seus fons i poden ser una alternativa als sistemes bancaris tradicionals. Tanmateix, els usuaris i inversors han de ser conscients dels riscos i limitacions de les criptomonedes i prendre les mesures necessàries per a la seva protecció. La tecnologia blockchain continuarà evolucionant i oferint nous usos i oportunitats en el futur`,
 
-Finalment, és important recordar que les criptomonedes són una tecnologia relativament nova i que encara s'estan desenvolupant més aplicacions per a la tecnologia blockchain. Els defensors esperen que les criptomonedes canvien la manera en què operen els sistemes financers en el futur`,
-
-`Les xarxes socials són una part integral de la vida quotidiana moderna. A mida que més persones hi ha són en línia, molts s'han preocupat per l'impacte que tenen les xarxes socials en la salut mental. Mentre que les xarxes socials poden proporcionar connectivitat, també poden contribuir a sentiments de pressió, solitud i ansietat social. Per prevenir l'impacte negatiu de les xarxes socials en la salut mental, és important establir límits i utilitzar les xarxes socials de manera conscient.
+  `Les xarxes socials són una part integral de la vida quotidiana moderna. A mida que més persones hi ha són en línia, molts s'han preocupat per l'impacte que tenen les xarxes socials en la salut mental. Mentre que les xarxes socials poden proporcionar connectivitat, també poden contribuir a sentiments de pressió, solitud i ansietat social. Per prevenir l'impacte negatiu de les xarxes socials en la salut mental, és important establir límits i utilitzar les xarxes socials de manera conscient.
 
 Els adolescents, en particular, poden ser vulnerables a l'impacte negatiu de les xarxes socials en la salut mental. A mesura que molts joves passen més temps en línia, la pressió per ser popular o ajustar-se a la norma pot ser intensa. Això pot portar a sentiments de solitud, ansietat social i pressió per presentar una imatge perfecta en línia.
 
@@ -136,7 +136,7 @@ Per prevenir l'impacte negatiu de les xarxes socials en la salut mental, és imp
 
 La salut mental és una part important de la salut i el benestar de les persones en general. A mesura que més persones passen temps en línia, és important considerar l'impacte que poden tenir les xarxes socials en la salut mental. Mitjançant l'establiment de límits i l'ús conscient de les xarxes socials, les persones poden prevenir l'impacte negatiu i utilitzar les xarxes socials de manera responsable per millorar la seva salut mental`,
 
-`Un grup d'exploradors va decidir aventurar-se en una selva desconeguda, després d'haver escoltat rumors sobre una civilització antiga i misteriosa que habitava la zona. Van carregar amb el que van considerar necessari per a la seva expedició i van partir cap a l'interior de la jungla, sense saber exactament què esperar.
+  `Un grup d'exploradors va decidir aventurar-se en una selva desconeguda, després d'haver escoltat rumors sobre una civilització antiga i misteriosa que habitava la zona. Van carregar amb el que van considerar necessari per a la seva expedició i van partir cap a l'interior de la jungla, sense saber exactament què esperar.
 
 Durant els primers dies, van haver de fer front a tota mena de dificultats. Van haver de travessar rius, creuar muntanyes i lluitar contra la densitat de la vegetació. Malgrat això, van perseverar i van continuar endavant fins que van arribar a una clariana, on van descobrir les runes d'una antiga ciutat.
 
@@ -147,8 +147,6 @@ Va ser llavors quan van descobrir la clau per desxifrar el misteri. En un dels e
 Però també van descobrir la trista història del seu final. La civilització havia estat destruïda per una sèrie de desastres naturals i malalties, que havien acabat amb la majoria dels seus habitants. Els pocs que havien sobreviscut havien marxat, abandonant la ciutat que havia estat el seu orgull i alegria.
 
 Els exploradors van tornar a la seva pròpia civilització portant amb ells les seves notes i fotografies, i també la trista història que havien descobert. Van prometre fer tot el possible per preservar el que havia quedat de la ciutat, perquè el món pogués recordar la civilització antiga i misteriosa que havien descobert`,
-
-
 
   `La jove Alexandra havia crescut escoltant la llegenda del tresor perdut de la seva família. El seu avi li havia explicat que anys enrere un dels seus avantpassats havia estat un gran aventurer i havia aconseguit acumular una gran quantitat de riqueses.
 
@@ -197,8 +195,6 @@ Tot i que Max havia après a controlar les seves habilitats sobrenaturals, no to
 Amb el temps, Max va ser capaç de desenvolupar les seves habilitats fins al punt que va poder utilitzar-les per ajudar la gent del seu entorn. Va salvar vides i va fer el bé en situacions de crisi. Va sentir-se orgullós de la seva nova identitat i va aprendre a viure amb les seves habilitats sobrenaturals.
 
 Al final, Max va comprendre que ser diferent no era una cosa dolenta i que les seves habilitats sobrenaturals no eren un malson, sinó una benedicció. Va ser capaç de controlar-les i utilitzar-les per fer el bé. Max va ser un exemple per als altres que també tenien poders sobrenaturals i no sabien com utilitzar-los de manera segura i efectiva`,
-
-
 
   `Durant una expedició científica al fons de l'oceà, un grup d'investigadors va fer una descoberta sorprenent. Van trobar una nova espècie animal que no havia estat mai vista abans. La criatura era increïblement bella i tenia unes característiques úniques que els investigadors mai havien vist en cap altre animal.
 
@@ -311,7 +307,7 @@ L'activitat física és molt important per a la salut mental i física. La pràc
 
 La competició esportiva pot ser molt emocionant, però també pot crear rivalitats i tensions entre els aficionats. És important recordar que l'esport ha de ser una activitat lúdica i saludable, i que els esportistes i els aficionats han de respectar les normes i els valors esportius. L'esport ha de ser una oportunitat per unir persones de diferents cultures i països i per demostrar que la competició es pot fer de manera justa i respectuosa`,
 
-`Les tietes de llengua Marisa i Marina estaven molt preocupades per la manca de coneixements lingüístics dels tecnòlegs. Van decidir que era hora de fer alguna cosa per combatre la ignorància lingüística i van començar a organitzar tallers de llengua per als tecnòlegs.
+  `Les tietes de llengua Marisa i Marina estaven molt preocupades per la manca de coneixements lingüístics dels tecnòlegs. Van decidir que era hora de fer alguna cosa per combatre la ignorància lingüística i van començar a organitzar tallers de llengua per als tecnòlegs.
 
 En aquests tallers, Marisa i Marina ensenyaven als tecnòlegs la importància d'utilitzar un llenguatge clar i precís. Van començar per explicar la diferència entre "molt" i "molts", i van continuar amb altres aspectes de la llengua que els tecnòlegs no coneixien.
 
@@ -323,7 +319,7 @@ A mesura que el temps passava, Marisa i Marina van veure com la seva tasca va te
 
 Finalment, les tietes van sentir que havien aconseguit la seva missió de combatre la ignorància lingüística dels tecnòlegs. Van sentir-se satisfetes per haver ajudat a millorar la comunicació dins l'empresa i van seguir impartint els seus tallers per assegurar-se que el llenguatge clar continuava sent una prioritat`,
 
-`Durant el segle XXI, la tecnologia ha avançat exponencialment i ha influït en tots els aspectes de la vida humana. No obstant això, aquesta ràpida evolució ha creat un desfasament entre la comprensió de les llengües i el coneixement tecnològic. Els tecnolegs, que són especialistes en tecnologia, tenen una manca de coneixements en llengües, el que pot portar a malentesos i errors en la comunicació.
+  `Durant el segle XXI, la tecnologia ha avançat exponencialment i ha influït en tots els aspectes de la vida humana. No obstant això, aquesta ràpida evolució ha creat un desfasament entre la comprensió de les llengües i el coneixement tecnològic. Els tecnolegs, que són especialistes en tecnologia, tenen una manca de coneixements en llengües, el que pot portar a malentesos i errors en la comunicació.
 
 Un exemple d'això va succeir quan un equip de desenvolupament de software del Regne Unit va rebre una petició per part d'un client que volia que el seu programa tingués suport per al català. Els tecnolegs van suposar que es referia al català de Catalunya, però en realitat, el client volia que el programa fos compatible amb el català que es parla a les Illes Balears. Això va portar a confusions i a un temps perdut en la comunicació amb el client.
 
@@ -335,7 +331,7 @@ Per evitar aquestes situacions, és important que els tecnolegs tinguin una comp
 
 En resum, la tecnologia és una eina potent per a la comunicació i el desenvolupament, però també pot crear confusions i malentesos si no s'utilitza adequadament. És important que els tecnolegs tinguin una comprensió bàsica de les llengües que s'utilitzen en el desenvolupament de software per evitar errors i garantir una comunicació efectiva amb els clients i els usuaris`,
 
-`El capitalisme és un sistema econòmic que es basa en la propietat privada dels mitjans de producció i la lliure competència de mercat. Aquesta forma d'organització econòmica va néixer durant la Revolució Industrial del segle XVIII a Europa.
+  `El capitalisme és un sistema econòmic que es basa en la propietat privada dels mitjans de producció i la lliure competència de mercat. Aquesta forma d'organització econòmica va néixer durant la Revolució Industrial del segle XVIII a Europa.
 Durant aquest període, la maquinària i la tecnologia van permetre la producció en massa de béns, el que va portar a un augment de la productivitat i la creació de riquesa.
 Això va portar a l'aparició d'una classe de capitalistes que van invertir en fàbriques i altres negocis per obtenir beneficis.
 
@@ -348,7 +344,7 @@ No obstant, el capitalisme també ha estat objecte de crítiques per part de div
 
 En conclusió, la història del capitalisme ha estat marcada per una creixent concentració de poder econòmic i desigualtats socials, però també per una gran eficiència en la producció de riquesa i la creació de noves oportunitats de negoci. No obstant, és important reflexionar sobre els efectes negatius d'aquest sistema i buscar solucions que promoguin una economia més justa i sostenible per a tothom`,
 
-`El comunisme és una ideologia política que busca una societat sense classes ni propietat privada. Va néixer durant la Revolució Industrial i es va posar en pràctica al segle XX a través de revolucions i moviments socials.
+  `El comunisme és una ideologia política que busca una societat sense classes ni propietat privada. Va néixer durant la Revolució Industrial i es va posar en pràctica al segle XX a través de revolucions i moviments socials.
 
 La Revolució Bolxevic de 1917 va portar al poder els bolxevics liderats per Lenin, que van establir un govern comunista i van nacionalitzar els mitjans de producció. Això va crear l'URSS, un estat socialista que va defensar el comunisme.
 
@@ -360,9 +356,7 @@ El comunisme ha deixat un llegat important en la defensa dels drets dels treball
 
 En conclusió, el comunisme ha estat marcat per intents de transformació radical de la societat a través de la nacionalització dels mitjans de producció i la defensa d'una economia planificada, però continua sent una ideologia controversial i objecte de debat en la societat contemporània`,
 
-*/
-
-`L'emancipació de la ultra dreta és un fenomen que ha estat en el centre de la discussió política durant els últims anys. Molts grups d'ultradreta han aconseguit guanyar popularitat i influència en molts països, com ara els Estats Units o diversos països europeus.
+  `L'emancipació de la ultra dreta és un fenomen que ha estat en el centre de la discussió política durant els últims anys. Molts grups d'ultradreta han aconseguit guanyar popularitat i influència en molts països, com ara els Estats Units o diversos països europeus.
 
 Aquesta emancipació s'ha produït gràcies a diversos factors, com ara la desafecció dels ciutadans envers les institucions polítiques tradicionals, la creixent desigualtat social o les crisis econòmiques. A més, la retòrica de l'ultradreta ha aconseguit connectar amb sectors de la població que se senten oblidats o marginats pel sistema.
 
@@ -373,17 +367,115 @@ Tot i així, la ultra dreta continua mantenint una important presència en molts
 En aquest context, la clau per a combatre l'emancipació de la ultra dreta radica en la promoció dels valors democràtics i en la lluita contra la desigualtat social. Cal apostar per un discurs inclusiu i tolerant que sigui capaç de connectar amb totes les capes de la societat i no deixar espai per a la intolerància i l'odi.
 
 En definitiva, l'emancipació de la ultra dreta és un fenomen preocupant que exigeix una resposta contundent per part de les institucions i la societat en general. Només així es podrà garantir una convivència pacífica i respectuosa entre tots els ciutadans.`,
+];
+
+const dataCast = [
+  `Las lenguas son una herramienta fundamental en la comunicación humana. Se trata de sistemas complejos de símbolos y reglas que nos permiten expresar nuestros pensamientos, sentimientos y deseos.
+Existen miles de lenguas en todo el mundo, algunas habladas por millones de personas y otras por solo unas pocas. Además, cada lengua tiene sus propias características únicas, como su gramática, vocabulario y pronunciación.
+El estudio de las lenguas es fascinante, ya que nos permite entender cómo funcionan y cómo se relacionan entre sí. Por ejemplo, muchas lenguas tienen raíces comunes y se pueden clasificar en familias lingüísticas.
+La diversidad lingüística es una de las grandes riquezas culturales del mundo. Cada lengua contiene una rica historia y tradición, y es un reflejo de la identidad y la cultura de las personas que la hablan.
+Las lenguas también pueden ser una fuente de barreras y conflictos. Cuando no entendemos la lengua de otra persona, es más difícil comunicarnos y entendernos.
+  
+En conclusión, las lenguas son una parte integral de la experiencia humana y merecen nuestro respeto y protección. A través del estudio de las lenguas, podemos aprender sobre nuestra propia cultura y la de los demás, así como mejorar nuestras habilidades de comunicación y pensamiento`,
+
+  `La actualidad es compleja, con sucesos que han generado impacto mundial. La elección de Joe Biden como presidente de Estados Unidos ha sido un acontecimiento relevante, así como la crisis sanitaria del COVID-19 que sigue presente en todo el mundo.
+Las manifestaciones y protestas sociales exigiendo justicia y lucha contra la discriminación racial y de género han sido frecuentes en diversos lugares del mundo. En España, la lucha por la igualdad de género ha generado un importante debate en la sociedad.
+La crisis sanitaria ha generado incertidumbre en los mercados y ha tenido un impacto negativo en muchas empresas y trabajadores, aunque sectores como el tecnológico o alimentario han visto un aumento en la demanda debido a la pandemia.
+La tecnología avanza rápidamente, generando nuevas oportunidades y desafíos en cuanto a la privacidad y seguridad de los usuarios. La inteligencia artificial, robótica y ciberseguridad son algunos de los temas más relevantes.
+La protección del medio ambiente y la lucha contra el cambio climático son objetivos clave para garantizar un futuro sostenible. La cumbre climática COP26 en noviembre de 2021 en Glasgow será un evento clave en la agenda mundial. 
+En resumen, la actualidad es diversa y compleja, requiriendo soluciones innovadoras y compromiso de todos los actores involucrados`,
+
+`La meditación es una práctica milenaria que ha ganado popularidad en los últimos años por sus beneficios en la salud mental. Se trata de una técnica que implica concentración, relajación y atención plena, y puede ser realizada en cualquier lugar y en cualquier momento.
+
+La meditación puede reducir el estrés y la ansiedad, que son problemas de salud mental comunes en la sociedad actual. Al practicar la meditación regularmente, se puede disminuir la cantidad de hormonas del estrés en el cuerpo, lo que puede ayudar a reducir los niveles de ansiedad y estrés.
+
+Además, la meditación puede mejorar la calidad del sueño. Al disminuir el estrés y la ansiedad, se puede mejorar la capacidad de conciliar el sueño y la calidad del sueño. También puede ayudar a reducir el insomnio y los trastornos del sueño, lo que puede ser beneficioso para la salud física y mental.
+
+La meditación también puede mejorar la concentración y la memoria. Al practicar la atención plena y la concentración, se puede mejorar la capacidad de enfocarse y prestar atención a las tareas diarias. También se ha demostrado que la meditación puede aumentar el tamaño del cerebro y mejorar la función cognitiva.
+
+Otro beneficio de la meditación es que puede ayudar a mejorar la autoestima y la autoimagen. Al reducir el estrés y la ansiedad, las personas pueden tener una perspectiva más positiva sobre sí mismas y su entorno. La meditación también puede mejorar la capacidad de aceptación y compasión hacia uno mismo y los demás.
+
+En resumen, la meditación es una práctica beneficiosa para la salud mental que puede ayudar a reducir el estrés y la ansiedad, mejorar la calidad del sueño, la concentración y la memoria, y aumentar la autoestima y la autoimagen. Es una técnica sencilla y accesible que puede ser incorporada en la vida diaria para mejorar el bienestar físico y mental`,
+
+`La tecnología ha tenido un impacto significativo en la sociedad moderna, desde la manera en que nos comunicamos hasta cómo realizamos nuestras actividades diarias. En muchos sentidos, ha mejorado nuestras vidas y ha hecho posible una mayor eficiencia y comodidad.
+
+La tecnología ha mejorado la comunicación, permitiéndonos conectarnos con personas de todo el mundo en tiempo real. Las redes sociales y las aplicaciones de mensajería instantánea nos permiten mantenernos en contacto con amigos y familiares, así como con colegas de trabajo y clientes. También ha permitido el acceso a la información de manera instantánea, lo que ha mejorado la educación y la investigación.
+
+Además, la tecnología ha mejorado la eficiencia en el trabajo y en la vida diaria. Las aplicaciones y programas informáticos han simplificado muchas tareas, como la contabilidad y la planificación, y han mejorado la precisión en los procesos. También ha permitido el desarrollo de nuevas formas de entretenimiento y ha mejorado el acceso a los servicios de salud y educación.
+
+Sin embargo, la tecnología también ha tenido efectos negativos en la sociedad moderna. Por ejemplo, ha llevado a una mayor dependencia de la tecnología y a la pérdida de habilidades sociales. También ha creado una brecha digital entre aquellos que tienen acceso a la tecnología y aquellos que no, lo que puede tener efectos negativos en la igualdad y la justicia social.
+
+La tecnología también ha creado preocupaciones sobre la privacidad y la seguridad. Las redes sociales y otras plataformas digitales han llevado a la recolección masiva de datos personales, lo que ha generado preocupaciones sobre el uso indebido de esta información. Además, la tecnología ha permitido el desarrollo de nuevas formas de delitos, como el ciberacoso y la suplantación de identidad.
+
+En resumen, la tecnología ha tenido un impacto significativo en la sociedad moderna. Ha mejorado la comunicación, la eficiencia y el acceso a la información y los servicios, pero también ha llevado a la dependencia, la pérdida de habilidades sociales, la brecha digital, la privacidad y la seguridad. Es importante seguir analizando los efectos de la tecnología en la sociedad y desarrollar medidas para mitigar los efectos negativos`,
+
+`El ejercicio físico es esencial para mantener una buena salud. En primer lugar, ayuda a controlar el peso y a reducir el riesgo de obesidad, que es un factor de riesgo para muchas enfermedades crónicas como la diabetes y enfermedades cardíacas.
+
+Además, el ejercicio regular puede mejorar la salud cardiovascular al reducir la presión arterial y el colesterol. También puede mejorar la circulación sanguínea y reducir el riesgo de enfermedades del corazón y accidentes cerebrovasculares.
+
+El ejercicio también puede mejorar la salud mental. La actividad física libera endorfinas, que son hormonas que pueden mejorar el estado de ánimo y reducir la ansiedad y la depresión. También puede mejorar la calidad del sueño y reducir el estrés.
+
+Otro beneficio del ejercicio es que puede mejorar la fuerza muscular y la flexibilidad. Esto puede mejorar la capacidad de realizar actividades diarias y reducir el riesgo de lesiones. Además, el ejercicio puede mejorar la salud ósea y reducir el riesgo de osteoporosis.
+
+Por último, el ejercicio puede mejorar la calidad de vida en general. Puede aumentar la energía y la resistencia, lo que puede mejorar la capacidad para realizar actividades diarias y aumentar la independencia. También puede mejorar la autoestima y la autoimagen, lo que puede tener un impacto positivo en la salud mental.
+
+En conclusión, el ejercicio físico es esencial para la salud en general. Ayuda a controlar el peso, mejorar la salud cardiovascular, la salud mental, la fuerza muscular y la flexibilidad, la salud ósea y la calidad de vida en general. Es importante incorporar la actividad física en la vida diaria, y consultar con un profesional de la salud antes de comenzar cualquier nuevo programa de ejercicio`,
+
+
+`Leer es una actividad que puede tener numerosos beneficios para nuestra vida. En primer lugar, la lectura puede mejorar nuestras habilidades de comunicación y lenguaje, permitiéndonos expresarnos de manera más clara y efectiva.
+
+Además, leer también puede ayudarnos a desarrollar nuestra empatía y comprensión del mundo. Al leer historias de personas y lugares diferentes, podemos expandir nuestra visión del mundo y entender mejor a aquellos que son diferentes a nosotros.
+
+Otro beneficio de la lectura es su capacidad para mejorar nuestra memoria y concentración. La lectura requiere una atención sostenida, lo que puede ayudarnos a fortalecer nuestra capacidad de concentración y recordar detalles importantes.
+
+La lectura también puede ser una herramienta para reducir el estrés y la ansiedad. Al sumergirnos en una historia interesante, podemos olvidarnos de nuestros problemas diarios y relajarnos.
+
+Además, leer también puede ser una forma de aprender sobre diferentes temas y desarrollar nuestro conocimiento. Al leer libros sobre ciencia, historia, cultura y más, podemos ampliar nuestra comprensión del mundo y convertirnos en personas más informadas.
+
+Por último, leer también puede ser una forma de mejorar nuestra calidad de vida. Al dedicar tiempo a leer libros que nos gustan, podemos encontrar alegría y satisfacción en una actividad que nos apasiona.
+
+En conclusión, la lectura puede tener muchos beneficios para nuestra vida. Desde mejorar nuestras habilidades de comunicación y empatía, hasta reducir el estrés y la ansiedad, leer puede ser una actividad altamente gratificante. Es importante dedicar tiempo a la lectura y encontrar libros que nos interesen para poder disfrutar plenamente de sus beneficios`,
+
+`La adolescencia es una etapa de la vida que se caracteriza por una serie de cambios físicos, psicológicos y sociales que pueden resultar desafiantes para quienes la atraviesan. En esta etapa, los jóvenes comienzan a desarrollar su identidad, a experimentar nuevas emociones y a buscar su lugar en el mundo. Es un período lleno de oportunidades y desafíos que pueden influir significativamente en la vida adulta.
+
+Durante la adolescencia, el cuerpo experimenta un rápido crecimiento y cambios hormonales. Los adolescentes pueden sentirse incómodos con su apariencia física y pueden experimentar inseguridad en relación a su imagen corporal. Esto puede resultar en problemas de autoestima y trastornos alimentarios como la anorexia y la bulimia.
+
+En lo que respecta a la psicología, la adolescencia es un período de transición hacia la edad adulta. Los adolescentes pueden sentirse atrapados entre la dependencia de la infancia y la independencia de la edad adulta. Pueden experimentar cambios de humor, sentirse más emocionales y tener dificultades para regular sus emociones.
+
+La adolescencia también es un período de cambios sociales. Los jóvenes pueden sentirse presionados por sus compañeros, buscar nuevas amistades y experimentar con actividades peligrosas como el consumo de drogas y alcohol. Es importante que los adolescentes aprendan a tomar decisiones saludables y a establecer límites claros para mantenerse seguros.
+
+A pesar de los desafíos, la adolescencia también es una época de oportunidades. Los jóvenes pueden descubrir nuevas pasiones y talentos, desarrollar habilidades sociales y aprender a tomar responsabilidades. Es importante que los adolescentes tengan el apoyo de sus familias y amigos durante esta etapa de la vida.
+
+En resumen, la adolescencia es una etapa de cambios y desafíos, pero también de oportunidades. Los adolescentes necesitan apoyo y orientación durante este período para enfrentar los desafíos y aprovechar las oportunidades que se presentan. Con el apoyo adecuado, pueden convertirse en adultos seguros de sí mismos y exitosos`,
+
+
+`La universidad es una institución educativa que ofrece educación superior a los estudiantes que han completado la educación secundaria. Es un lugar donde los estudiantes pueden expandir su conocimiento y desarrollar habilidades que les permitirán tener éxito en su carrera profesional. La universidad también es un lugar para hacer conexiones valiosas y establecer relaciones que duran toda la vida.
+
+Durante los años universitarios, los estudiantes tienen la oportunidad de tomar cursos en una variedad de áreas, lo que les permite explorar diferentes disciplinas y descubrir sus intereses y pasiones. Los estudiantes también tienen acceso a una amplia gama de recursos, como bibliotecas, laboratorios, talleres y actividades extracurriculares que les permiten desarrollar habilidades y experiencias relevantes para su carrera.
+
+Además del aspecto académico, la universidad es un lugar donde los estudiantes pueden desarrollar habilidades sociales y establecer relaciones interpersonales. Los estudiantes tienen la oportunidad de conocer a personas de diferentes orígenes y culturas, lo que les permite expandir su perspectiva y adquirir habilidades de comunicación y liderazgo.
+
+La universidad también es un lugar donde los estudiantes pueden comenzar a establecer su red profesional. Los estudiantes pueden conectarse con profesores y mentores que pueden ayudarles en su carrera, y pueden participar en prácticas profesionales y eventos de reclutamiento que les permiten conectarse con posibles empleadores.
+
+En resumen, la universidad es una institución educativa importante que ofrece oportunidades valiosas para los estudiantes. Los estudiantes pueden expandir su conocimiento, desarrollar habilidades, establecer relaciones interpersonales y establecer su red profesional. La universidad es un lugar donde los estudiantes pueden crecer y desarrollarse de manera integral, preparándolos para tener éxito en su carrera y en su vida personal`,
+
+
 
 
 ];
-/*  .replaceAll("—", "\n-") */
 
-function getData() {
-  console.log(data.length);
-  var rannum = Math.floor(Math.random() * data.length);
-  /*   console.log(data[rannum]);
+function getData(lang) {
+  if (lang == "cat") {
+    var rannum = Math.floor(Math.random() * dataCat.length);
+    /*   console.log(data[rannum]);
   console.log(data[rannum].split(/;\s|\.\s/)); */
-  return data[rannum].split(/;\s|\.\s/);
+    return dataCat[rannum].split(/;\s|\.\s/);
+  } else if (lang == "cast") {
+    var rannum = Math.floor(Math.random() * dataCast.length);
+    /*   console.log(data[rannum]);
+    console.log(data[rannum].split(/;\s|\.\s/)); */
+    return dataCast[rannum].split(/;\s|\.\s/);
+  }
 }
 
 export default getData;

@@ -1314,8 +1314,18 @@ export default Act3;
 
 const Component = styled.div`
   margin-bottom: 1.3rem;
-  margin-left: 4rem;
-  max-width: 35%;
+  margin-left: 1.5rem;
+  width: 30vw;
+  @media (min-width: 1100px) {
+    margin-left: 3rem;
+    width: 30vw;
+  }
+  @media (max-width: 700px) {
+    margin-left: 1rem;
+    width: 20vw;
+  }
+
+
   input {
     border: 1px solid #aaa;
     border-radius: 4px;

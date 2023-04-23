@@ -1,17 +1,36 @@
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 import React, { Children } from "react";
 import styled from "styled-components";
+import ChangeLangButton from "./ChangeLangButton";
+import ReloadButton from "./ReloadButton";
 
-function Book({ chapter, title, subtitle, children, errnum, setcorrecting,correcting, marked, language, exercisenum, setshowErrors, showErrors  }) {
+function Book({
+  chapter,
+  title,
+  subtitle,
+  children,
+  errnum,
+  setcorrecting,
+  correcting,
+  marked,
+  language,
+  exercisenum,
+  setshowErrors,
+  showErrors,
+}) {
   function changeExercise() {
-    window.location.href = `/exercises/${parseInt(exercisenum) + 1}/${language}`;
+    window.location.href = `/exercises/${
+      parseInt(exercisenum) + 1
+    }/${language}`;
   }
   function changePrevExercise() {
-    window.location.href = `/exercises/${parseInt(exercisenum) - 1}/${language}`;
+    window.location.href = `/exercises/${
+      parseInt(exercisenum) - 1
+    }/${language}`;
   }
-  function help(){
-    if(exercisenum == 1){
-      setshowErrors((curr)=>!curr)
+  function help() {
+    if (exercisenum == 1 || exercisenum == 2) {
+      setshowErrors((curr) => !curr);
     }
   }
   return (
@@ -22,18 +41,70 @@ function Book({ chapter, title, subtitle, children, errnum, setcorrecting,correc
           {romanize(chapter)}
         </span>
       </h1> */}
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
+      <TitleComponent>
+        <div>
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+        </div>
+
+        <ToolsContainer>
+          <ReloadButton />
+          <ChangeLangButton language={language} />
+        </ToolsContainer>
+      </TitleComponent>
+
       {children}
       <BookButtons>
         <FirstPageButtons>
-        {exercisenum!=1?<PageButton onClick={changePrevExercise}><b>&larr;</b>Enrere</PageButton>:""}
-          <PageButton onClick={help}>{showErrors?"Amagar errors":"Ajuda"}</PageButton>
-          <PageButton onClick={()=>{setcorrecting((curr)=>!curr)}}>{correcting?"Tornar a intentar":"Corregir"}</PageButton>
+          {exercisenum != 1 ? (
+            <PageButton onClick={changePrevExercise}>
+              <b>&larr;</b>
+              {language == "cat" ? "Enrere" : "Atrás"}
+            </PageButton>
+          ) : (
+            ""
+          )}
+          <PageButton onClick={help}>
+            {language == "cat"
+              ? showErrors
+                ? "Amagar errors"
+                : "Ajuda"
+              : showErrors
+              ? "Esconder errores"
+              : "Ayuda"}
+          </PageButton>
+          <PageButton
+            style={exercisenum == 2 ? { display: "none" } : {}}
+            onClick={() => {
+              setcorrecting((curr) => !curr);
+            }}
+          >
+            {language == "cat"
+              ? correcting
+                ? "Tornar a intentar"
+                : "Corregir"
+              : correcting
+              ? "Volver a intentar"
+              : "Corregir"}
+          </PageButton>
         </FirstPageButtons>
-        <SecondPageButtons style={exercisenum!=1?{justifyContent:"flex-end"}:{}}>
-          {exercisenum==1?<PageButton >ERRORS: {marked}/{errnum}</PageButton>:""}
-          <PageButton onClick={changeExercise} >Següent <b>&rarr;</b></PageButton>
+        <SecondPageButtons
+          style={
+            exercisenum != 1 && exercisenum != 2
+              ? { justifyContent: "flex-end" }
+              : {}
+          }
+        >
+          {exercisenum == 1 || exercisenum == 2 ? (
+            <PageButton>
+              {language == "cat" ? "ERRORS" : "ERRORES"}: {marked}/{errnum}
+            </PageButton>
+          ) : (
+            ""
+          )}
+          <PageButton onClick={changeExercise}>
+            {language == "cat" ? "Següent" : "Siguiente"} <b>&rarr;</b>
+          </PageButton>
         </SecondPageButtons>
       </BookButtons>
     </Container>
@@ -86,14 +157,17 @@ export default Book;
 const Container = styled.div`
   padding: 2rem;
   background-color: white;
-  width: 75vw;
-  height: 700px;
+  width: 85vw;
+  height: 90%;
   border: 1px solid #000;
   border-radius: 10px;
 
-  @media (max-height: 900px){
+  @media (max-height: 900px) {
     height: 85vh;
     width: 65vw;
+  }
+  @media (min-width: 700px) {
+    width: 85vw;
   }
 
   display: flex;
@@ -137,8 +211,9 @@ const Container = styled.div`
 const BookButtons = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100%;  
+  width: 100%;
   align-items: center;
+  margin: -1rem 0;
 `;
 
 const FirstPageButtons = styled.div`
@@ -163,4 +238,21 @@ const PageButton = styled.p`
   letter-spacing: 2px;
   cursor: pointer;
   user-select: none;
+`;
+
+const TitleComponent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const ToolsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  & > * {
+    margin: 0 0.5rem;
+    margin-top: -1.8rem;
+
+}
 `;

@@ -8,6 +8,8 @@ import Act2 from "./components/Pages/Exercises/Activities/Act2/Act2";
 import Act3 from "./components/Pages/Exercises/Activities/Act3/Act3";
 import Act4 from "./components/Pages/Exercises/Activities/Act4/Act4";
 import Act5 from "./components/Pages/Exercises/Activities/Act5/Act5";
+import Act6Cast from "./components/Pages/Exercises/Activities/Act6-cast/Act6-cast";
+import Act6Cat from "./components/Pages/Exercises/Activities/Act6-cat/Act6-cat";
 
 function App() {
   return (
@@ -80,12 +82,11 @@ function App() {
                 <Act4 key={7} />,
                 <Act4 key={8} />,
                 <Act4 key={9} />,
-
               ]}
             />
           }
         ></Route>
-         <Route
+        <Route
           path="/exercises/5/:language"
           element={
             <Page
@@ -100,6 +101,46 @@ function App() {
                 <Act5 key={7} actID={7} />,
                 <Act5 key={8} actID={8} />,
                 <Act5 key={9} actID={9} />,
+              ]}
+            />
+          }
+        ></Route>
+
+        <Route
+          path="/exercises/6/cat"
+          element={
+            <Page
+              chapter={6}
+              activity={[
+                <Act6Cat key={2} />,
+                <Act6Cat key={3} />,
+                <Act6Cat key={4} />,
+                <Act6Cat key={5} />,
+                <Act6Cat key={1} />,
+                <Act6Cat key={6} />,
+                <Act6Cat key={7} />,
+                <Act6Cat key={8} />,
+                <Act6Cat key={9} />,
+              ]}
+            />
+          }
+        ></Route>
+
+<Route
+          path="/exercises/6/cast"
+          element={
+            <Page
+              chapter={6}
+              activity={[
+                <Act6Cast key={1} actID={1} />,
+                <Act6Cast key={2} actID={2} />,
+                <Act6Cast key={3} actID={3} />,
+                <Act6Cast key={4} actID={4} />,
+                <Act6Cast key={5} actID={5} />,
+                <Act6Cast key={6} actID={6} />,
+                <Act6Cast key={7} actID={7} />,
+                <Act6Cast key={8} actID={8} />,
+                <Act6Cast key={9} actID={9} />,
               ]}
             />
           }

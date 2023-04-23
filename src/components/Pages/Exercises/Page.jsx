@@ -20,13 +20,14 @@ function Page({ chapter, activity }) {
 
   const [marked, setmarked] = useState(0);
 
-  const [paragrafs, setparagrafs] = useState(getData());
+  const [paragrafs, setparagrafs] = useState(getData(language));
   var data = activity;
 
   const [numParagrafs, setnumParagrafs] = useState(data.length);
 
   const [correcting, setcorrecting] = useState(false);
   const [showErrors, setshowErrors] = useState(false);
+  const [typeAct6, settypeAct6] = useState(0);
   const textbox = useRef();
   const bookRef = useRef();
 
@@ -81,6 +82,39 @@ function Page({ chapter, activity }) {
           setshowErrors={setshowErrors}
           showErrors={showErrors}
         >
+          {chapter == 6 && language == "cat"? (
+            <div
+              style={{
+                position: "absolute",
+                right: 150,
+                top: 10,
+                cursor: "pointer",
+              }}
+            >
+              <p
+                style={{
+                  margin: ".5rem",
+                  backgroundColor: "#FDFD96",
+                  padding: ".5rem",
+                }}
+              onClick={(e)=>{settypeAct6(1)}}
+              >
+                Marcar assimilacions
+              </p>
+              <p
+                style={{
+                  margin: ".5rem",
+                  backgroundColor: "#77DD77",
+                  padding: ".5rem",
+                }}
+                onClick={(e)=>{settypeAct6(0)}}
+              >
+                Marcar sonoritzacions
+              </p>
+            </div>
+          ) : (
+            ""
+          )}
           <div
             className="textbox"
             ref={textbox}
@@ -95,6 +129,7 @@ function Page({ chapter, activity }) {
                   correcting: correcting,
                   language: language,
                   showErrors: showErrors,
+                  typeAct6:typeAct6,
                 });
               /*  console.log(data.slice(0, numParagrafs)); */
               console.log(paragrafs.length);
@@ -133,6 +168,7 @@ function Page({ chapter, activity }) {
                   correcting: correcting,
                   language: language,
                   showErrors: showErrors,
+                  typeAct6:typeAct6,
                 });
               }
               return React.cloneElement(element, {
@@ -142,6 +178,7 @@ function Page({ chapter, activity }) {
                 correcting: correcting,
                 language: language,
                 showErrors: showErrors,
+                typeAct6:typeAct6,
               });
             })}
           </div>

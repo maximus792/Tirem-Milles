@@ -39,7 +39,7 @@ function MainPage() {
       <Explanation>
         <h1 className="bgtext">Objectius</h1>
         <p>
-          Els objectius d'aquesta web (a part del seu adherent plus &rarr; es broma) és incrementar la competència lingüística dels inexperts estudiants de 2n de Batxillerat del Col·legi Claver de Raïmat. <br />Això es durà a terme mitjançant la realització d'aquesta sèrie de didàctics exercicis que comprenen gran part dels àmbits treballats a classe.<br /> Aquesta coalició entre les lingüísticament poderoses professores de llengua i uns modestos estudiants es convertirà en la raó per què el Claver tornarà a ser el que era. Forma-hi part!
+          Els objectius d'aquesta web (a part del seu adherent plus &rarr; és broma) és incrementar la competència lingüística dels inexperts estudiants de 2n de Batxillerat del Col·legi Claver de Raïmat. <br />Això es durà a terme mitjançant la realització d'aquesta sèrie de didàctics exercicis que comprenen gran part dels àmbits treballats a classe.<br /> Aquesta coalició entre les lingüísticament poderoses professores de llengua i uns modestos estudiants es convertirà en la raó per què el Claver tornarà a ser el que era. Forma-hi part!
         </p>
         
       </Explanation>

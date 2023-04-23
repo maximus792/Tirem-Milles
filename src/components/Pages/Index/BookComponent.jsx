@@ -57,7 +57,8 @@ function BookComponent({ styles, data, clickable, tapa }) {
                       return;
                     console.log(key);
                     console.log("link");
-                    window.location.href = `exercises/${i + 1}/${
+                    console.log("current page: ");
+                    window.location.href = `exercises/${i  + 1 + (key-1)*-5}/${
                       BookDivRef.current.parentElement.id
                     }`;
                   }}

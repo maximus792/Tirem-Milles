@@ -199,7 +199,7 @@ const dataCAT = [
   ["El mariner va marinar la marina que mai marinarà", "Políptoton"],
   [
     "De la seva presència, l'esperança va néixer",
-    "Hipèrbaton amb la paraula 'esperança'",
+    "Hipèrbaton",
   ],
   ["En el bosc el xiuxiueig de les fulles només escoltes", "Hipèrbaton"],
   ["Amb el seu somriure, el cor em vaig alegrar", "Hipèrbaton"],
@@ -1893,7 +1893,6 @@ function Act5({ correcting, language, actID }) {
       ? dataCAT[Math.floor(Math.random() * dataCAT.length)]
       : dataCAST[Math.floor(Math.random() * dataCAST.length)]
   );
-  console.log(fig);
   const [selected, setSelected] = useState("Escull una opció!");
 
   const correctanswer = fig[1];
@@ -1909,15 +1908,13 @@ function Act5({ correcting, language, actID }) {
     });
   }
 
-  console.log("OPTS", options);
 
   const [ops, setOps] = useState(
     [correctanswer].concat(
       [...options].sort(() => (Math.random() > 0.5 ? 1 : -1)).slice(0, 2)
-    )
+    ).sort(() => Math.random() - 0.5)
   );
 
-  console.log("SELECTED", selected);
   return (
     <Component>
       <b>{fig[0]}</b>
@@ -1932,9 +1929,10 @@ function Act5({ correcting, language, actID }) {
           return (
             <>
               <input
+                checked={element==selected}
                 value={element}
                 type="radio"
-                name={"ex" + dataCAST.indexOf(fig).toString()}
+                name={"ex" + actID.toString()}
                 id={i.toString() + "-" + actID.toString()}
                 disabled={correcting}
               />
@@ -1960,8 +1958,16 @@ function Act5({ correcting, language, actID }) {
 const Component = styled.div`
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
-  margin-left: 4rem;
-  max-width: 35%;
+  margin-left: 1.5rem;
+  width: 30vw;
+  @media (min-width: 1100px) {
+    margin-left: 3rem;
+    width: 30vw;
+  }
+  @media (max-width: 700px) {
+    margin-left: 1rem;
+    width: 20vw;
+  }
 
   .correct-answ {
     color: green;

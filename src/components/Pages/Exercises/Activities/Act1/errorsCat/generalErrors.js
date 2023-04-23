@@ -51,6 +51,9 @@ function generalErrors(word) {
   else if (word.toLowerCase() === "descobrir") {
     return "descubrir";
   }
+  else if (word.toLowerCase() === "Xina") {
+    return "CHina";
+  }
 
   /* T FINAL DE LES PARAULES ACABADES EN -ENT*/
   if (
