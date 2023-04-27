@@ -1348,12 +1348,12 @@ const Component = styled.div`
     text-decoration: underline;
   }
   .correct-answer {
-    color: green;
+    color: #2dce2d;
   }
   .wrong-answer {
     color: #ff6961;
   }
   .solution {
-    color: green;
+    color: #2dce2d;
   }
 `;

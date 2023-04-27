@@ -1,30 +1,60 @@
 function generalErrors(word) {
-  /* TREURE GUIÓ de les paraules */
-  if (word.includes("-")) {
-    return word.replace("-", "");
-  }
 
-  /* NO TREURE ACCENT A SOC, O AFEGIR-LO */
-  if (word === "soc" || word === "sóc") {
-    return "sóc";
-  }
-  /* Treure errors */
-  if (word.includes("à")) word = word.replace("à", "a");
-  else if (word.includes("è") || word.includes("é"))
-    word = word.replace("è", "e").replace("é", "e");
-  else if (word.includes("ò") || word.includes("ó"))
-    word = word.replace("ò", "o").replace("ó", "o");
-  else if (word.includes("í") || word.includes("ï"))
-    word = word.replace("í", "i").replace("ï", "i");
-  else if (word.includes("ú") || word.includes("ü"))
-    word = word.replace("ú", "u").replace("ü", "u");
+  /* Treure grafies finals/incicials típiques */
+  if (word.includes("eïtat")) return word.replace("eïtat", "itat");
 
-  /* PARAULES CONCRETES */
+  /* Gentilicis? */
+ /* if (word[word.length-1] == "y" && word[word.length-2] == "n" && word[word.length-3] == "t" ) return word.replace("eïtat", "itat"); */
 
+  /*l, l·l*/
+  if (word.includes("l·l")) return word.replace("l·l", "l");
+  else if (
+    word.includes("l") &&
+    "aeiouàèéíóòú".includes(word[word.indexOf("l") - 1]) &&
+    "aeiouàèéíóòú".includes(word[word.indexOf("l") + 1])
+  )
+    return word.replace("l", "l·l");
+  /* mn /mm /nn /i coses vàries */
+  
+
+  if (word.includes("mn")) return word.replace("mn","n")
+  else if (word.includes("mm")) return word.replace("mm","nm")
+  
+  /* tj - j */
+  if (
+    word.includes("tj")) return word.replace("tj","j")
+  
+   
   if (word.toLowerCase() === "tant") {
     return "tan";
+  } else if (word.toLowerCase() === "rebatut") {
+    return "rebatit";
+  } else if (word.toLowerCase() === "sobretot") {
+    return "sobre tot";
+  } else if (word.toLowerCase() === "cap") {
+    return "ningun";
+  } else if (word.toLowerCase() === "conrear") {
+    return "cultivar";
+  } else if (word.toLowerCase() === "conreu") {
+    return "cultiu";
+  } else if (word.toLowerCase() === "gens") {
+    return "res";
+  } else if (word.toLowerCase() === "endebaddes") {
+    return "en va";
+  } else if (word.toLowerCase() === "mentre") {
+    return "mentres";
+  } else if (word.toLowerCase() === "imbatut") {
+    return "imbatit";
+  } else if (word.toLowerCase() === "debatut") {
+    return "debatit";
+  } else if (word.toLowerCase() === "sabut") {
+    return "sapigut";
+  } else if (word.toLowerCase() === "vincle") {
+    return "víncul";
   } else if (word.toLowerCase() === "tan") {
     return "tant";
+  } else if (word.toLowerCase() === "brasiler") {
+    return "brasileny";  
   } else if (word.toLowerCase() === "milions") {
     return "millons";
   } else if (word.toLowerCase() === "edats") {
@@ -47,13 +77,37 @@ function generalErrors(word) {
     return "cohet";
   } else if (word.toLowerCase() === "començar") {
     return "comensar";
-  }
-  else if (word.toLowerCase() === "descobrir") {
+  } else if (word.toLowerCase() === "descobrir") {
     return "descubrir";
+  } else if (word.toLowerCase() === "medis") {
+    return "mitjans";
+  } else if (word.toLowerCase() === "mitjans") {
+    return "medis";
+  } else if (word.toLowerCase() === "nombrosos") {
+    return "numerosos";
+  } else if (word.toLowerCase() === "termini") {
+    return "plaç";
   }
-  else if (word.toLowerCase() === "Xina") {
-    return "CHina";
+
+  /* TREURE GUIÓ de les paraules */
+  if (word.includes("-")) {
+    return word.replace("-", "");
   }
+
+  /* NO TREURE ACCENT A SOC, O AFEGIR-LO */
+  if (word == "soc" || word == "sóc") {
+    return "sóc";
+  }
+  /* Treure accents */
+  if (word.includes("à")) return word.replace("à", "a");
+  else if (word.includes("è") || word.includes("é"))
+    return word.replace("è", "e").replace("é", "e");
+  else if (word.includes("ò") || word.includes("ó"))
+    return word.replace("ò", "o").replace("ó", "o");
+  else if (word.includes("í") || word.includes("ï"))
+    return word.replace("í", "i").replace("ï", "i");
+  else if (word.includes("ú") || word.includes("ü"))
+    return word.replace("ú", "u").replace("ü", "u");
 
   /* T FINAL DE LES PARAULES ACABADES EN -ENT*/
   if (
@@ -112,10 +166,10 @@ function generalErrors(word) {
 
   switch (word.toLowerCase()) {
     case "em":
-      word = "hem";
+      return "hem";
       break;
     case "hem":
-      word = "em";
+      return "em";
       break;
     default:
       break;

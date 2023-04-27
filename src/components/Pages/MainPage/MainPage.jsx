@@ -11,7 +11,7 @@ function MainPage() {
       <Navbar actualPage={"Inici"} />
       <MainInfo>
         <Titles>
-          <SupTitle>Una web d'alumnes per a alumnes</SupTitle>
+          {/* <SupTitle>Un projecte d'alumnes per alumnes</SupTitle> */}
           <MainTitle>Tirem Milles</MainTitle>
           <p>
             A continuació t’oferim una serie d’exercicis interactius <br /> per
@@ -32,7 +32,7 @@ function MainPage() {
         <h1 className="bgtext">Com funciona</h1>
       
         <p text="justify">
-          Perseverança, rigor, treball, constància, assiduïtat, determinació, fermesa. Aquests són alguns trets que algú ha de tenir per superar un objectiu comú: aprovar batxillerat. <br />Aquesta web, junt amb les explicacions de les comandants lingüístiques Marina Comellas i Marisa Samitier, serviran per a posar-te a prova mitjançant una sèrie d'exercicis que no t'ho posaran fàcil. En aquests, encara que de diferent manera a cada un d'ells, t'enfrontaràs a un repte autocorrectiu on se t'avaluarà competencalment.<br /> Fonètica, corregir errors, conjugació de verbs... A què estàs esperant?
+          Perseverança, rigor, treball, constància, assiduïtat, determinació, fermesa. Aquests són alguns trets que algú ha de tenir per superar un objectiu comú: aprovar batxillerat. <br />Aquesta web, junt amb les explicacions de les comandants lingüístiques Marina Comellas i Marisa Samitier, serviran per a posar-te a prova mitjançant una sèrie d'exercicis que no t'ho posaran fàcil. En aquests, encara que de diferent manera a cada un d'ells, t'enfrontaràs a un repte autocorrectiu on se t'avaluarà competencialment.<br /> Fonètica, corregir errors, conjugació de verbs... A què estàs esperant?
           
         </p>
       </Explanation>

@@ -92,7 +92,12 @@ function Page({ chapter, activity }) {
               }}
             >
               <p
-                style={{
+                style={typeAct6?{
+                  fontWeight:"bold",
+                  margin: ".5rem",
+                  backgroundColor: "#FDFD96",
+                  padding: ".5rem",
+                }:{
                   margin: ".5rem",
                   backgroundColor: "#FDFD96",
                   padding: ".5rem",
@@ -102,7 +107,12 @@ function Page({ chapter, activity }) {
                 Marcar assimilacions
               </p>
               <p
-                style={{
+                style={!typeAct6?{
+                  fontWeight:"bold",
+                  margin: ".5rem",
+                  backgroundColor: "#77DD77",
+                  padding: ".5rem",
+                }:{
                   margin: ".5rem",
                   backgroundColor: "#77DD77",
                   padding: ".5rem",

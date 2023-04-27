@@ -13,6 +13,13 @@ function he_de(word, word2, randomnum) {
         return undefined;
       }
       break;
+    case "com":
+      if (word2 == "a") {
+        word2= ""
+      }
+      else {
+        return undefined;
+      }
 
     case "has":
       if (word2 == "de") {

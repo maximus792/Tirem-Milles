@@ -1900,11 +1900,11 @@ function Act5({ correcting, language, actID }) {
   var options = [];
   if (language == "cat") {
     dataCAT.forEach((element) => {
-      if (!options.includes(element[1])) options.push(element[1]);
+      if (!options.includes(element[1]) && element[1] != correctanswer) options.push(element[1]);
     });
   } else {
     dataCAST.forEach((element) => {
-      if (!options.includes(element[1])) options.push(element[1]);
+      if (!options.includes(element[1]) && element[1] != correctanswer) options.push(element[1]);
     });
   }
 
@@ -1970,7 +1970,7 @@ const Component = styled.div`
   }
 
   .correct-answ {
-    color: green;
+    color: #2dce2d;
   }
 
   .wrong-answ {

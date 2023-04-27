@@ -29,6 +29,7 @@ function App() {
                 <Act1 key={4} />,
                 <Act1 key={5} />,
                 <Act1 key={6} />,
+                <Act1 key={7} />,
               ]}
             />
           }
@@ -42,9 +43,10 @@ function App() {
                 <Act2 key={1} />,
                 <Act2 key={2} />,
                 <Act2 key={3} />,
+                <Act2 key={3} />,
                 <Act2 key={4} />,
-                <Act2 key={5} />,
                 <Act2 key={6} />,
+                <Act2 key={7} />,
               ]}
             />
           }

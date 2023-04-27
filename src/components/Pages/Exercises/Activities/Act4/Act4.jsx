@@ -1775,7 +1775,8 @@ function Act4({ correcting, language }) {
       ? dataCAT[Math.floor(Math.random() * dataCAT.length)]
       : dataCAST[Math.floor(Math.random() * dataCAST.length)]
   );
-  const [selected, setSelected] = useState("Escull una opció!");
+  const defaultMsg = language=="cat"? "Escull una opció!" : "Escoje una opción!"
+  const [selected, setSelected] = useState(defaultMsg);
 
   var options = [];
   if (language == "cat") {
@@ -1804,7 +1805,7 @@ function Act4({ correcting, language }) {
         onChange={(e) => setSelected(e.target.value)}
         disabled={correcting}
         className={
-          correcting && selected != "Escull una opció!"
+          correcting && selected != defaultMsg
             ? selected.toLocaleLowerCase() == correctanswer.toLocaleLowerCase()
               ? "correct-answ"
               : "wrong-answ"
@@ -1812,7 +1813,7 @@ function Act4({ correcting, language }) {
         }
       >
         <option disabled selected="true">
-          Escull una opció!
+          {defaultMsg}
         </option>
         {options.sort().map((element) => {
           return <option>{element}</option>;

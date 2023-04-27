@@ -50,7 +50,10 @@ function Act1({
         //TINC QUE / HE DE   //  i a
         temp = he_de(splittedText[i], splittedText[i + 1]);
 
-        if (temp != undefined && (temp[0] != splittedText[i] || temp[1] != splittedText[1])) {
+        if (
+          temp != undefined &&
+          (temp[0] != splittedText[i] || temp[1] != splittedText[1])
+        ) {
           console.log("HEDE " + splittedText[i]);
           error = true;
           errnum += 1;
@@ -63,29 +66,61 @@ function Act1({
         }
 
         /* Canviar femeni i masculi de paraules amb interferències */
-       /*  if(splittedText[i + 2] != undefined){
-        temp = femMasc(splittedText[i],splittedText[i+1],splittedText[i+2])
-        if (temp !== undefined) {
-          errnum += 1;
-          error = true;
-          words.push({
-            correctText: `${splittedText[i]} ${splittedText[i + 1]} ${splittedText[i + 2]}`,
-            error,
-            errorText: temp,
-          });
-          i += 1;
-        }
-      }
-        else if(splittedText[i + 1] != undefined)
-        temp = femMasc(splittedText[i],splittedText[i+1],"")
-        else temp = femMasc(splittedText[i],splittedText[i+1],"") */
+        if (splittedText[i + 2] != undefined) {
+          if (
+            (splittedText[i].toLowerCase() === "a" &&
+              splittedText[i + 1].toLowerCase() === "les") ||
+            (splittedText[i].toLowerCase() === "a" &&
+              splittedText[i + 1].toLowerCase() === "la")
+          ) {
+            temp = femMasc(
+              `${splittedText[i]} ${splittedText[i + 1]}`,
+              splittedText[i + 2]
+            );
 
-        
+            if (temp !== undefined) {
+              errnum += 1;
+              error = true;
+              words.push({
+                correctText: `${splittedText[i]} ${splittedText[i + 1]}`,
+                error,
+                errorText: temp,
+              });
+              words.push({
+                correctText: splittedText[i + 2],
+                error: false,
+                errorText: temp,
+              });
+              i += 2;
+            }
+          } else {
+            temp = femMasc(splittedText[i], splittedText[i + 1]);
+            if (splittedText[i] == "els") console.log(temp);
+            if (
+              temp !== undefined &&
+              (temp[0] !== splittedText[i] || temp[1] !== splittedText[i + 1])
+            ) {
+              errnum += 1;
+              error = true;
+              words.push({
+                correctText: splittedText[i],
+                error,
+                errorText: temp[0],
+              });
+              words.push({
+                correctText: splittedText[i + 1],
+                error: false,
+                errorText: temp[1],
+              });
+              i += 2;
+            }
+          }
+        }
 
         //ERRORS GENERALS
         temp = generalErrors(splittedText[i]);
         console.log("GENERAL " + splittedText[i]);
-        if (temp !== splittedText[i]) {
+        if (temp !== splittedText[i] && !error) {
           errnum += 1;
           error = true;
           words.push({
@@ -99,7 +134,8 @@ function Act1({
         //PERQUES
         if (
           splittedText[i + 1] != undefined &&
-          perque(splittedText[i], splittedText[i + 1], random) != undefined
+          perque(splittedText[i], splittedText[i + 1], random) != undefined &&
+          !error
         ) {
           /*  console.log(splittedText[i], splittedText[i+1]) */
           /* setrandom(Math.floor(Math.random() * 6)); */
@@ -110,7 +146,8 @@ function Act1({
           if (
             (temp !== splittedText[i] ||
               temp !== `${splittedText[i]} ${splittedText[i + 1]}`) &&
-            temp != undefined
+            temp != undefined &&
+            !error
           ) {
             console.log("PERQUE " + splittedText[i]);
             errnum += 1;
@@ -162,7 +199,6 @@ function Act1({
           i += 1;
         }
       }
-
     }
   }
   seterrnum(errnum);

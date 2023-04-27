@@ -3,6 +3,7 @@ import React, { Children } from "react";
 import styled from "styled-components";
 import ChangeLangButton from "./ChangeLangButton";
 import ReloadButton from "./ReloadButton";
+import Ajuda from "./Activities/Ajuda";
 
 function Book({
   chapter,
@@ -31,20 +32,51 @@ function Book({
   function help() {
     if (exercisenum == 1 || exercisenum == 2) {
       setshowErrors((curr) => !curr);
+    } else {
+      setshowErrors((curr) => !curr);
     }
   }
   return (
     <Container>
+      {showErrors && (
+        <Ajuda
+          exercisenum={exercisenum}
+          title={title}
+          chapter={chapter}
+          subtitle={subtitle}
+          language={language}
+        ></Ajuda>
+      )}
+
       {/* <h1>
         Capítol{" "}
         <span style={{ fontFamily: "JetBrains Mono" }}>
           {romanize(chapter)}
         </span>
       </h1> */}
-      <TitleComponent>
+      <TitleComponent
+        style={
+          showErrors && exercisenum != 1 && exercisenum != 2
+            ? { opacity: 0.6 }
+            : {}
+        }
+      >
         <div>
           <h1>{title}</h1>
-          <h2>{subtitle}</h2>
+          {exercisenum == 2 ? (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <h2 style={{marginRight:"1rem"}}>{subtitle}</h2>
+              <p><b>Reescriu les paraules incorrectes i apreta ENTER</b></p>
+            </div>
+          ) : (
+            <h2>{subtitle}</h2>
+          )}
         </div>
 
         <ToolsContainer>
@@ -67,10 +99,10 @@ function Book({
           <PageButton onClick={help}>
             {language == "cat"
               ? showErrors
-                ? "Amagar errors"
+                ? "Amagar ajuda"
                 : "Ajuda"
               : showErrors
-              ? "Esconder errores"
+              ? "Esconder ayuda"
               : "Ayuda"}
           </PageButton>
           <PageButton
@@ -253,6 +285,5 @@ const ToolsContainer = styled.div`
   & > * {
     margin: 0 0.5rem;
     margin-top: -1.8rem;
-
-}
+  }
 `;

@@ -23,7 +23,7 @@ function getIndex(language){
     },
     {
       title: "Capítol VI",
-      subtitle: "landa",
+      subtitle: "Fonètica, la ciència oblidada",
     },
     {
       title: "Capítol VII",
@@ -62,7 +62,7 @@ function getIndex(language){
     },
     {
       title: "Capítulo VI",
-      subtitle: "derivame esta",
+      subtitle: "Palabras, tipos y arquetipos",
     },
     {
       title: "Capítulo VII",
