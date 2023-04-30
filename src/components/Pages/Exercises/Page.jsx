@@ -82,6 +82,14 @@ function Page({ chapter, activity }) {
           setshowErrors={setshowErrors}
           showErrors={showErrors}
         >
+          {chapter == 2? <div
+              style={{
+                position: "absolute",
+                right: 150, 
+                top: 47,
+                cursor: "pointer",
+              }}
+            ><p><b>{language=="cat"?"Reescriu les paraules incorrectes i apreta ENTER":"Rescribe las palabras y aprieta ENTER"}</b></p></div>:""}
           {chapter == 6 && language == "cat"? (
             <div
               style={{
@@ -93,14 +101,18 @@ function Page({ chapter, activity }) {
             >
               <p
                 style={typeAct6?{
-                  fontWeight:"bold",
                   margin: ".5rem",
                   backgroundColor: "#FDFD96",
                   padding: ".5rem",
+                  transition: "0.3s all ease-in-out"
                 }:{
+                  opacity:0.6,
+                  transform: "scale(0.9)",
                   margin: ".5rem",
                   backgroundColor: "#FDFD96",
                   padding: ".5rem",
+                  transition: "0.3s all ease-in-out"
+
                 }}
               onClick={(e)=>{settypeAct6(1)}}
               >
@@ -108,11 +120,14 @@ function Page({ chapter, activity }) {
               </p>
               <p
                 style={!typeAct6?{
-                  fontWeight:"bold",
                   margin: ".5rem",
                   backgroundColor: "#77DD77",
                   padding: ".5rem",
+                  transition: "0.3s all ease-in-out"
                 }:{
+                  transition: "0.3s all ease-in-out",
+                  opacity:0.6,
+                  transform: "scale(0.9)",
                   margin: ".5rem",
                   backgroundColor: "#77DD77",
                   padding: ".5rem",

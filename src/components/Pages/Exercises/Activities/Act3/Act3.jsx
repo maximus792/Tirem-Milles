@@ -436,7 +436,7 @@ const dataCAST = [
   ],
 
   ["Ver", ["Tercera del singular", "Futuro del indicativo", "verá"]],
-  ["Poder", ["Primera del singular", "Presente del indicativo", "puedo"]],
+  ["Poder", ["Primera del singular", "Presente del subjuntivo", "pueda"]],
   [
     "Querer",
     [

@@ -18,6 +18,7 @@ function Word({
   let afsigns = "";
   let passedWord = false;
   const wordRef = useRef();
+  let isListenerAttached = false;
 
   if (error) {
     for (const char of errText) {
@@ -51,29 +52,79 @@ function Word({
     bgcolor = "#fff6a3b2";
   }
 
-
-
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Enter" && editing) {
-      event.preventDefault();
-      console.log(event.target.innerHTML);
+  const enterFunction = (event) => {
+    if(event.key ==="Enter") {event.preventDefault();
+    if(!editing && !corrected){
+      if (errText === undefined) {
+        wordRef.current.innerHTML = text.replaceAll(/[^\w\sàáäèéëìíïòóöùúü·'\-«»ç]/gi, "");
+        return;
+      } else {
+        wordRef.current.innerHTML = errText.replaceAll(/[^\w\sàáäèéëìíïòóöùúü·'\-«»ç]/gi, "");
+        return;
+      } 
+    }}
+    if (event.key === "Enter" && editing && event.target.nodeName == "SPAN") {
+      console.log(wordRef.current.innerHTML);
       console.log(text);
-      console.log(event.target.innerHTML == text.replace(/[^\w\s]/g, ""));
-      if (event.target.innerHTML == text.replace(/[^\w\sÀ-ÿ'-]|_/g, "")) {
+      console.log(wordRef.current.innerHTML == text.replace(/[^\w\s]/g, ""));
+      if (wordRef.current.innerHTML == text.replace(/[^\w\sÀ-ÿ']|_/g, "")) {
         setmarked((curr) => curr + 1);
         setcorrected(true);
+        setediting(false);
+      } else {
+        console.log(text, errText);
+        setediting(false);
+        if (errText === undefined) {
+          wordRef.current.innerHTML = text.replace(/[^\w\sÀ-ÿ']|_/g, "");
+          return;
+        } else {
+          wordRef.current.innerHTML = errText.replace(/[^\w\sÀ-ÿ']|_/g, "");
+          return;
+        }
       }
     }
-  });
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", enterFunction, false);
+
+    return () => {
+      document.removeEventListener("keydown", enterFunction, false);
+    };
+  }, [enterFunction]);
+  /*   document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" && editing && event.target.nodeName == "SPAN") {
+      event.preventDefault();
+      console.log(wordRef.current.innerHTML);
+      console.log(text);
+      console.log(wordRef.current.innerHTML == text.replace(/[^\w\s]/g, ""));
+      if (wordRef.current.innerHTML == text.replace(/[^\w\sÀ-ÿ']|_/g, "")) {
+        setmarked((curr) => curr + 1);
+        setcorrected(true);
+        setediting(false)
+      } else {
+        console.log(text, errText) ;
+        setediting(false)
+        if (errText === undefined)
+          wordRef.current.innerHTML = text.replace(/[^\w\sÀ-ÿ']|_/g, "");
+        else wordRef.current.innerHTML = errText.replace(/[^\w\sÀ-ÿ']|_/g, "");
+      }
+    }
+  }); */
 
   return (
     <Container>
       <span>{bfsigns}</span>
       <WordSpan
+        onFocus={() => {
+          console.log(text);
+          setediting(true);
+        }}
         onClick={() => {
           setediting(true);
         }}
         contentEditable={!corrected}
+        suppressContentEditableWarning={true}
         ref={wordRef}
         className={marked ? "marked" : ""}
         style={

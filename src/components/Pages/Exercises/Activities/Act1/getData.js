@@ -1,6 +1,6 @@
 const dataCat = [
   `els afores són molt bonics idoneïtat. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. els afores són molt bonics. `,
-  /*   `El sol s'amagava darrere dels turons quan la Martina va arribar a la petita vila de muntanya on havia decidit passar uns dies per desconectar de la feina i la ciutat. Amb el seu equipatge a l'esquena, va caminar fins a la casa rural que havia reservat per internet, una antiga masia de pedra amb vistes a la vall.
+     `El sol s'amagava darrere dels turons quan la Martina va arribar a la petita vila de muntanya on havia decidit passar uns dies per desconectar de la feina i la ciutat. Amb el seu equipatge a l'esquena, va caminar fins a la casa rural que havia reservat per internet, una antiga masia de pedra amb vistes a la vall.
   El propietari de la casa, en Miquel, la va rebre amb un somriure i li va ensenyar la seva habitació, amb una gran finestra des d'on es podia veure el bosc i la muntanya. La Martina va deixar la seva motxilla a un racó i va sortir al pati, on unes gallines picotejaven el sòl.
   La vida a la vila era tranquil·la i pausada, sense sorolls ni presses. La Martina va passar els primers dies fent excursions per la muntanya, respirant aire pur i descobrint paisatges espectaculars. A les tardes, llegia al balcó de la seva habitació, amb una tassa de te i unes galetes que havia comprat al forn del poble.
   Una nit, mentre sopava a la terrassa d'un restaurant del poble, la Martina va conèixer en Joan, un jove de la vila que treballava a la fàbrica de formatge del seu oncle. Van parlar de les seves vides, les seves aficions i les seves preocupacions.`,
@@ -368,7 +368,7 @@ Tot i així, la ultra dreta continua mantenint una important presència en molts
 En aquest context, la clau per a combatre l'emancipació de la ultra dreta radica en la promoció dels valors democràtics i en la lluita contra la desigualtat social. Cal apostar per un discurs inclusiu i tolerant que sigui capaç de connectar amb totes les capes de la societat i no deixar espai per a la intolerància i l'odi.
 
 En definitiva, l'emancipació de la ultra dreta és un fenomen preocupant que exigeix una resposta contundent per part de les institucions i la societat en general. Només així es podrà garantir una convivència pacífica i respectuosa entre tots els ciutadans.`,
- */
+ 
 ];
 
 const dataCast = [

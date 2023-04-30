@@ -1353,7 +1353,7 @@ const dataCAST = [
     "Subordinada adverbial de modo",
   ],
   [
-    ["Voy a estudiarpara ", "sacar buenas notas", ""],
+    ["Voy a estudiar para ", "sacar buenas notas", ""],
     "Subordinada sustantiva",
   ],
 
@@ -1696,8 +1696,8 @@ const dataCAST = [
   ],
   [
     [
-      "Marcel Gruñeiro es buen alumno,",
-      "ya que va a Codelearn",
+      "A diferencia de Matias, Marcel Gruñeiro es buen alumno,",
+      "ya que es muy inteligente",
       "",
     ],
     "Subordinada adverbial causal",

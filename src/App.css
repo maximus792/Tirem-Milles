@@ -70,3 +70,7 @@ cursor: pointer;
   .bgtext:hover {
     background-position: 0 100%;
   }
+
+  h3{
+    font-family: "Karantina", sans-serif;
+  }

@@ -72,7 +72,7 @@ function Book({
               }}
             >
               <h2 style={{marginRight:"1rem"}}>{subtitle}</h2>
-              <p><b>Reescriu les paraules incorrectes i apreta ENTER</b></p>
+              
             </div>
           ) : (
             <h2>{subtitle}</h2>
