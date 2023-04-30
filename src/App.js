@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import MainPage from "./components/Pages/MainPage/MainPage";
 import ExercisesPage from "./components/Pages/Index/ExercisesPage";
 import Page from "./components/Pages/Exercises/Page";
@@ -13,12 +13,13 @@ import Act6Cat from "./components/Pages/Exercises/Activities/Act6-cat/Act6-cat";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
-        <Route path="/exercises" element={<ExercisesPage />}></Route>
+        <Route path="/Tirem-Milles" element={<MainPage />}></Route>
+        <Route path="/Tirem-Milles/exercises" element={<ExercisesPage />}></Route>
         <Route
-          path="/exercises/1/:language"
+          path="/Tirem-Milles/exercises/1/:language"
           element={
             <Page
               chapter={1}
@@ -35,7 +36,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/exercises/2/:language"
+          path="/Tirem-Milles/exercises/2/:language"
           element={
             <Page
               chapter={2}
@@ -52,7 +53,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/exercises/3/:language"
+          path="/Tirem-Milles/exercises/3/:language"
           element={
             <Page
               chapter={3}
@@ -70,7 +71,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/exercises/4/:language"
+          path="/Tirem-Milles/exercises/4/:language"
           element={
             <Page
               chapter={4}
@@ -89,7 +90,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/exercises/5/:language"
+          path="/Tirem-Milles/exercises/5/:language"
           element={
             <Page
               chapter={5}
@@ -109,7 +110,7 @@ function App() {
         ></Route>
 
         <Route
-          path="/exercises/6/cat"
+          path="/Tirem-Milles/exercises/6/cat"
           element={
             <Page
               chapter={6}
@@ -129,7 +130,7 @@ function App() {
         ></Route>
 
 <Route
-          path="/exercises/6/cast"
+          path="/Tirem-Milles/exercises/6/cast"
           element={
             <Page
               chapter={6}
@@ -148,7 +149,7 @@ function App() {
           }
         ></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

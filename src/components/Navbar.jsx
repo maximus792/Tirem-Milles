@@ -11,8 +11,8 @@ function Navbar({ actualPage }) {
           }} style={{fontSize: "30px", userSelect:"none"}}>Tirem Milles</a>
         </div>
         <Pages>
-          <a href="/" style={{ opacity: actualPage == "Inici" ? 1 : 0.5, userSelect:"none" }}>Inici</a>
-          <a href="/exercises" style={{ opacity: actualPage == "Exercises" ? 1 : 0.5,userSelect:"none" }}>
+          <a href="/Tirem-Milles" style={{ opacity: actualPage == "Inici" ? 1 : 0.5, userSelect:"none" }}>Inici</a>
+          <a href="/Tirem-Milles/exercises" style={{ opacity: actualPage == "Exercises" ? 1 : 0.5,userSelect:"none" }}>
             Exercicis
           </a>
         </Pages>
