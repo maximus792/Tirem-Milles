@@ -17,7 +17,7 @@ function Ajuda({ exercisenum, title, subtitle, chapter, language }) {
   if (exercisenum != 1 && exercisenum != 2)
     return (
       <Container>
-        <h1>Ajuda en "{subtitle}"</h1>
+        <h1>{language=="cat"?"Ajuda":"Ayuda"} en "{subtitle}"</h1>
         <Content />
       </Container>
     );
@@ -961,7 +961,7 @@ const ex4CAST = (
       </p>
     </ul>
 
-    <H2>Subordinadas de relativo en castellano</H2>
+    <H2>Subordinadas de relativo</H2>
 
     <Explain>
       <b>Explicación: </b>
@@ -1043,9 +1043,57 @@ const ex4CAST = (
         Iré <b>(al lugar)</b> que tú vayas.
       </p>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
-        <b>Ejemplo:</b> Iré{" "}
-        <span style={{ textDecoration: "underline" }}>donde tú vayas</span> &rarr;
-        Iré <b>(al lugar)</b> que tú vayas.
+        <b>Ejemplo:</b> Lo terminé{" "}
+        <span style={{ textDecoration: "underline" }}>cuando llegaste</span> &rarr;
+        Lo terminé <b>(en el momento)</b> que llegaste.
+      </p>
+    </ul>
+
+    <H2>Subordinadas Adverbiales</H2>
+
+    <Explain>
+      <b>Explicación: </b>
+      Las subordinadas de relativo son un tipo de oración subordinada que
+      funciona como un adjetivo, es decir, que modifica o describe a un
+      sustantivo o pronombre en la oración principal. La subordinada de relativo
+      está introducida por un pronombre relativo, como{" "}
+      <b>"que", "quien", "cual", "cuyo"</b>, y los adverbios relativos{" "}
+      <b>"como","cuando","donde"</b> (Sín accento).
+      <br />
+      <br />
+      Para identificar una subordinada de relativo, se puede sustituir el "que"
+      por "el qual", si funciona correctamente en la oración, es una subordinada
+      de relativo
+    </Explain>
+
+    <p>
+      <p style={{marginBottom:"1rem", fontWeight:"bold"}}>TIPOS:</p>
+    </p>
+
+    <ul>
+      <li>
+        <strong>Subordinada de relativo explicativa:</strong> La subordinada de
+        relativo explicativa se utiliza para dar información adicional sobre el
+        sustantivo o pronombre en la oración principal. Esta subordinada se
+        separa de la oración principal con comas.
+      </li>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> El perro,{" "}
+        <span style={{ textDecoration: "underline" }}>que es muy amigable</span>{" "}
+        , se acercó a mí.
+      </p>
+
+      <li>
+        <strong>Subordinada de relativo especificativa:</strong> La subordinada
+        de relativo especificativa se utiliza para identificar o delimitar al
+        sustantivo o pronombre en la oración principal. Esta subordinada no se
+        separa de la oración principal con comas.
+      </li>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> El perro{" "}
+        <span style={{ textDecoration: "underline" }}>que está ladrando</span>{" "}
+        es de mi vecino. &rarr; El perro <b>el qual</b> está ladrando es de mi
+        vecino.
       </p>
     </ul>
   </div>
