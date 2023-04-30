@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Tirem-Milles/static/css/main.df19aa9e.css",
-    "main.js": "/Tirem-Milles/static/js/main.c4fc15f5.js",
+    "main.js": "/Tirem-Milles/static/js/main.bd5cff64.js",
     "static/js/787.1222be34.chunk.js": "/Tirem-Milles/static/js/787.1222be34.chunk.js",
     "static/media/tapabuida.png": "/Tirem-Milles/static/media/tapabuida.a52abb4d5ffea7a09189.png",
     "index.html": "/Tirem-Milles/index.html",
     "main.df19aa9e.css.map": "/Tirem-Milles/static/css/main.df19aa9e.css.map",
-    "main.c4fc15f5.js.map": "/Tirem-Milles/static/js/main.c4fc15f5.js.map",
+    "main.bd5cff64.js.map": "/Tirem-Milles/static/js/main.bd5cff64.js.map",
     "787.1222be34.chunk.js.map": "/Tirem-Milles/static/js/787.1222be34.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df19aa9e.css",
-    "static/js/main.c4fc15f5.js"
+    "static/js/main.bd5cff64.js"
   ]
 }
