@@ -20,7 +20,7 @@ function MainPage() {
           </p>
         </Titles>
         <BookDiv>
-          <Book src="./images/llibre.png" />
+          <Book src="images/llibre.png" />
           <div className="shadow"></div>
         </BookDiv>
         <AngleDownIcon />
