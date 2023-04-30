@@ -14,8 +14,7 @@ import Act6Cat from "./components/Pages/Exercises/Activities/Act6-cat/Act6-cat";
 function App() {
   console.log(process.env.PUBLIC_URL);
   return (
-    <BrowserRouter>
-      <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
+    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
         <Routes>
           <Route path={"/"} element={<MainPage />}></Route>
           <Route path={"/exercises"} element={<ExercisesPage />}></Route>
@@ -150,7 +149,6 @@ function App() {
             }
           ></Route>
         </Routes>
-      </HashRouter>
     </BrowserRouter>
   );
 }
