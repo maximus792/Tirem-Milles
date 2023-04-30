@@ -7,7 +7,7 @@ function Navbar({ actualPage }) {
       <Nav>
         <div>
           <a onClick={function(){
-            window.location.href='/Tirem-Milles';
+            window.location.href='#';
           }} style={{fontSize: "30px", userSelect:"none"}}>Tirem Milles</a>
         </div>
         <Pages>

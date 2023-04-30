@@ -12,14 +12,14 @@ import Act6Cast from "./components/Pages/Exercises/Activities/Act6-cast/Act6-cas
 import Act6Cat from "./components/Pages/Exercises/Activities/Act6-cat/Act6-cat";
 
 function App() {
+  console.log(process.env.PUBLIC_URL);
   return (
-    <HashRouter>
+    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
       <Routes>
-        <Route path="/" element={<MainPage />}></Route>
-        <Route path="/Tirem-Milles" element={<MainPage />}></Route>
-        <Route path="/Tirem-Milles/exercises" element={<ExercisesPage />}></Route>
+        <Route path={"/"} element={<MainPage />}></Route>
+        <Route path={"/exercises"} element={<ExercisesPage />}></Route>
         <Route
-          path="/Tirem-Milles/exercises/1/:language"
+          path={"/exercises/1/:language"}
           element={
             <Page
               chapter={1}
@@ -36,7 +36,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/Tirem-Milles/exercises/2/:language"
+          path={"/exercises/2/:language"}
           element={
             <Page
               chapter={2}
@@ -53,7 +53,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/Tirem-Milles/exercises/3/:language"
+          path={"/exercises/3/:language"}
           element={
             <Page
               chapter={3}
@@ -71,7 +71,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/Tirem-Milles/exercises/4/:language"
+          path={"/exercises/4/:language"}
           element={
             <Page
               chapter={4}
@@ -90,7 +90,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/Tirem-Milles/exercises/5/:language"
+          path={"/exercises/5/:language"}
           element={
             <Page
               chapter={5}
@@ -110,7 +110,7 @@ function App() {
         ></Route>
 
         <Route
-          path="/Tirem-Milles/exercises/6/cat"
+          path={"/exercises/6/cat"}
           element={
             <Page
               chapter={6}
@@ -130,7 +130,7 @@ function App() {
         ></Route>
 
 <Route
-          path="/Tirem-Milles/exercises/6/cast"
+          path={"/exercises/6/cast"}
           element={
             <Page
               chapter={6}
@@ -149,7 +149,7 @@ function App() {
           }
         ></Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
