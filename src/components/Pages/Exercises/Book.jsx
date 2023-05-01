@@ -25,13 +25,11 @@ function Book({
     navigate(`/exercises/${
       parseInt(exercisenum) + 1
     }/${language}`)
-    navigate(0)
   }
   function changePrevExercise() {
     navigate(`/exercises/${
       parseInt(exercisenum) - 1
     }/${language}`)
-    navigate(0)
   }
   function help() {
     if (exercisenum == 1 || exercisenum == 2) {
