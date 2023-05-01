@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Navbar from "../../Navbar";
 import StartButton from "./StartButton";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import llibre from "../../../images/llibre.png"
 
 function MainPage() {
   return (
@@ -20,7 +21,7 @@ function MainPage() {
           </p>
         </Titles>
         <BookDiv>
-          <Book src="images/llibre.png" />
+          <Book src={llibre} />
           <div className="shadow"></div>
         </BookDiv>
         <AngleDownIcon />

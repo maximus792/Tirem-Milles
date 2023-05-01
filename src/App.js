@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter, Switch } from "react-router-dom";
 import MainPage from "./components/Pages/MainPage/MainPage";
 import ExercisesPage from "./components/Pages/Index/ExercisesPage";
 import Page from "./components/Pages/Exercises/Page";
@@ -16,8 +16,8 @@ function App() {
   return (
     <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
         <Routes>
-          <Route path={"/"} element={<MainPage />}></Route>
-          <Route path={"/exercises"} element={<ExercisesPage />}></Route>
+          <Route exact path={"/"} element={<MainPage />}></Route>
+          <Route exact path={"/exercises"} element={<ExercisesPage />}></Route>
           <Route
             path={"/exercises/1/:language"}
             element={
@@ -64,8 +64,8 @@ function App() {
                   <Act3 key={4} />,
                   <Act3 key={5} />,
                   <Act3 key={6} />,
-                  <Act3 key={6} />,
-                  <Act3 key={6} />,
+                  <Act3 key={7} />,
+                  <Act3 key={8} />,
                 ]}
               />
             }

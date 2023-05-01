@@ -4,6 +4,7 @@ import styled from "styled-components";
 import ChangeLangButton from "./ChangeLangButton";
 import ReloadButton from "./ReloadButton";
 import Ajuda from "./Activities/Ajuda";
+import { useNavigate } from "react-router-dom";
 
 function Book({
   chapter,
@@ -19,15 +20,16 @@ function Book({
   setshowErrors,
   showErrors,
 }) {
+  const navigate = useNavigate()
   function changeExercise() {
-    window.location.href = `/exercises/${
+    navigate(`/exercises/${
       parseInt(exercisenum) + 1
-    }/${language}`;
+    }/${language}`)
   }
   function changePrevExercise() {
-    window.location.href = `/exercises/${
+    navigate(`/exercises/${
       parseInt(exercisenum) - 1
-    }/${language}`;
+    }/${language}`)
   }
   function help() {
     if (exercisenum == 1 || exercisenum == 2) {

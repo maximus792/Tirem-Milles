@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
+import { redirect, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 function BookComponent({ styles, data, clickable, tapa }) {
   const [currentPage, setcurrentPage] = useState(0);
   const BookDivRef = useRef(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     if (!clickable) {
       setcurrentPage(1);
@@ -58,9 +59,15 @@ function BookComponent({ styles, data, clickable, tapa }) {
                     console.log(key);
                     console.log("link");
                     console.log("current page: ");
-                    window.location.href = `exercises/${i  + 1 + (key-1)*-5}/${
-                      BookDivRef.current.parentElement.id
-                    }`;
+                    /* window.location.href = `exercises/${
+                      i + 1 + (key - 1) * -5
+                    }/${BookDivRef.current.parentElement.id}`;
+                   */
+                    navigate(
+                      `./${i + 1 + (key - 1) * -5}/${
+                        BookDivRef.current.parentElement.id
+                      }`
+                    );
                   }}
                 >
                   <b>{page.title}</b> - {page.subtitle}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function Navbar({ actualPage }) {
@@ -11,10 +12,8 @@ function Navbar({ actualPage }) {
           }} style={{fontSize: "30px", userSelect:"none"}}>Tirem Milles</a>
         </div>
         <Pages>
-          <a href="/Tirem-Milles" style={{ opacity: actualPage == "Inici" ? 1 : 0.5, userSelect:"none" }}>Inici</a>
-          <a href="/Tirem-Milles/exercises" style={{ opacity: actualPage == "Exercises" ? 1 : 0.5,userSelect:"none" }}>
-            Exercicis
-          </a>
+          <Link to="/" style={{ opacity: actualPage == "Inici" ? 1 : 0.5, userSelect:"none" }}>Inici</Link>
+          <Link to="/exercises" style={{ opacity: actualPage == "Exercises" ? 1 : 0.5,userSelect:"none" }}>Exercicis</Link>
         </Pages>
       </Nav>
     </Container>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function StartButton() {
   const Icon = () => {
@@ -19,7 +20,7 @@ function StartButton() {
   };
   return (
     <Container>
-      <a href="/exercises">Començar {/* <Icon /> */}</a>
+      <Link to="/exercises">Començar {/* <Icon /> */}</Link>
     </Container>
   );
 }

@@ -1,14 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 
 function ReloadButton(){
-
+const navigate = useNavigate()
     window.onbeforeunload = function(e) {  
         document.getElementById("reload").className = "out";
     };
 
     return <Component>
-        <img className="reloadButton" src="https://bassets.github.io/reload.svg" onClick={()=>{window.location.href=window.location.href}} />
+        <img className="reloadButton" src="https://bassets.github.io/reload.svg" onClick={()=>{navigate(0)}} />
     </Component>
 }
 
