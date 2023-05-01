@@ -1153,6 +1153,18 @@ const ex4CAST = (
         introduce con conjunciones subordinantes como{" "}
         <b>"para que", "a fin de que"</b>, entre otras.
       </li>
+      <li>
+        <strong>Subordinada de relativo(locativo o de lugar):</strong> Indica un
+        lugar o posición, pero en ningún caso es una adverbial, ya que
+        está formada por una subordinada de relativo(Ya sea con un adverbio
+        relativo[donde] o con un nombre tácito).
+      </li>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> Este es el lugar <strong>donde</strong> hemos quedado.
+      </p>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> Este es el lugar <strong>en el qual</strong> hemos quedado. &rarr; Hace referencia a lugar.
+      </p>
     </ul>
   </div>
 );
