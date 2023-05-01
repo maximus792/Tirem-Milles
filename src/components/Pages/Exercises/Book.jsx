@@ -5,6 +5,8 @@ import ChangeLangButton from "./ChangeLangButton";
 import ReloadButton from "./ReloadButton";
 import Ajuda from "./Activities/Ajuda";
 import { useNavigate } from "react-router-dom";
+import getIndex from "../Index/indexes";
+import { useEffect, useState } from "react";
 
 function Book({
   chapter,
@@ -20,16 +22,16 @@ function Book({
   setshowErrors,
   showErrors,
 }) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const [newtitle, setnewtitle] = useState(title)
+  const [newsubtitle, setnewsubtitle] = useState(subtitle)
   function changeExercise() {
-    navigate(`/exercises/${
-      parseInt(exercisenum) + 1
-    }/${language}`)
+    navigate(`/exercises/${parseInt(exercisenum) + 1}/${language}`);
+    /* navigate(0); */
   }
   function changePrevExercise() {
-    navigate(`/exercises/${
-      parseInt(exercisenum) - 1
-    }/${language}`)
+    navigate(`/exercises/${parseInt(exercisenum) - 1}/${language}`);
+    /* navigate(0); */
   }
   function help() {
     if (exercisenum == 1 || exercisenum == 2) {
@@ -38,14 +40,23 @@ function Book({
       setshowErrors((curr) => !curr);
     }
   }
+  useEffect(() => {
+   setnewtitle(getIndex(language)[window.location.href.split("/")[
+    window.location.href.split("/").length - 2
+  ]-1].title)
+  setnewsubtitle(getIndex(language)[window.location.href.split("/")[
+    window.location.href.split("/").length - 2
+  ]-1].subtitle)
+  }, [navigate]);
+
   return (
     <Container>
       {showErrors && (
         <Ajuda
           exercisenum={exercisenum}
-          title={title}
+          title={newtitle}
           chapter={chapter}
-          subtitle={subtitle}
+          subtitle={newsubtitle}
           language={language}
         ></Ajuda>
       )}
@@ -64,7 +75,7 @@ function Book({
         }
       >
         <div>
-          <h1>{title}</h1>
+          <h1>{newtitle}</h1>
           {exercisenum == 2 ? (
             <div
               style={{
@@ -73,11 +84,10 @@ function Book({
                 alignItems: "center",
               }}
             >
-              <h2 style={{marginRight:"1rem"}}>{subtitle}</h2>
-              
+              <h2 style={{ marginRight: "1rem" }}>{newsubtitle}</h2>
             </div>
           ) : (
-            <h2>{subtitle}</h2>
+            <h2>{newsubtitle}</h2>
           )}
         </div>
 
