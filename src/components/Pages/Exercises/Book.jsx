@@ -26,6 +26,7 @@ function Book({
   const [newtitle, setnewtitle] = useState(title)
   const [newsubtitle, setnewsubtitle] = useState(subtitle)
   function changeExercise() {
+    if(exercisenum<=5)
     navigate(`/exercises/${parseInt(exercisenum) + 1}/${language}`);
     /* navigate(0); */
   }
