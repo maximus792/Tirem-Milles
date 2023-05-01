@@ -64,11 +64,7 @@ function ExercisesPage() {
       <Main>
         <h1>Escull el teu idioma</h1>
         <BooksDiv onClick={handleLanguage}>
-          <BookDiv id="cat" 
-              onMouseEnter={()=>{
-                console.log("ep");
-                
-              }}>
+          <BookDiv id="cat">
             <BookComponent
               clickable={clickable}
               styles={{ transform: "scale(0.8)" }}
@@ -111,7 +107,7 @@ const Main = styled.main`
   
 `;
 const BooksDiv = styled.div`
-  margin-top: 3rem;
+
   height: 100%;
   display: flex;
   justify-content: space-around;

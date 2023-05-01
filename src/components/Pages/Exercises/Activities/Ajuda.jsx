@@ -17,7 +17,9 @@ function Ajuda({ exercisenum, title, subtitle, chapter, language }) {
   if (exercisenum != 1 && exercisenum != 2)
     return (
       <Container>
-        <h1>{language=="cat"?"Ajuda":"Ayuda"} en "{subtitle}"</h1>
+        <h1>
+          {language == "cat" ? "Ajuda" : "Ayuda"} en "{subtitle}"
+        </h1>
         <Content />
       </Container>
     );
@@ -979,7 +981,7 @@ const ex4CAST = (
     </Explain>
 
     <p>
-      <p style={{marginBottom:"1rem", fontWeight:"bold"}}>TIPOS:</p>
+      <p style={{ marginBottom: "1rem", fontWeight: "bold" }}>TIPOS:</p>
     </p>
 
     <ul>
@@ -1009,25 +1011,28 @@ const ex4CAST = (
       </p>
     </ul>
 
-    <p style={{marginBottom:"1rem", fontWeight:"bold"}}>ESTRUCTURA:</p>
+    <p style={{ marginBottom: "1rem", fontWeight: "bold" }}>ESTRUCTURA:</p>
 
     <ul>
       <li>
         <strong>QUE pronombre con antecedente:</strong> El "Que" se pude
-        sustituir por "el qual" o uno de sus derivados. La subordinada se puede sustituir por un adjetivo y esta hace referencia a un antecedente determinado.
+        sustituir por "el qual" o uno de sus derivados. La subordinada se puede
+        sustituir por un adjetivo y esta hace referencia a un antecedente
+        determinado.
       </li>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
         <b>Ejemplo:</b> El alumno{" "}
         <span style={{ textDecoration: "underline" }}>que estudia</span>{" "}
-        aprobará &rarr; El alumno el qual estudia aprobará &rarr; El alumno <b>estudioso</b> aprobará
+        aprobará &rarr; El alumno el qual estudia aprobará &rarr; El alumno{" "}
+        <b>estudioso</b> aprobará
       </p>
       <li>
         <strong>QUE pronombre sin antecedente:</strong>
       </li>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
         <b>Ejemplo:</b> El{" "}
-        <span style={{ textDecoration: "underline" }}>que estudie</span> aprobará &rarr;
-        El <b>(alumno)</b> que estudie aprobará
+        <span style={{ textDecoration: "underline" }}>que estudie</span>{" "}
+        aprobará &rarr; El <b>(alumno)</b> que estudie aprobará
       </p>
       <li>
         <strong>Adverbios relativos:</strong> Como, Cuando y Donde.
@@ -1039,62 +1044,115 @@ const ex4CAST = (
       </p>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
         <b>Ejemplo:</b> Iré{" "}
-        <span style={{ textDecoration: "underline" }}>donde tú vayas</span> &rarr;
-        Iré <b>(al lugar)</b> que tú vayas.
+        <span style={{ textDecoration: "underline" }}>donde tú vayas</span>{" "}
+        &rarr; Iré <b>(al lugar)</b> que tú vayas.
       </p>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
         <b>Ejemplo:</b> Lo terminé{" "}
-        <span style={{ textDecoration: "underline" }}>cuando llegaste</span> &rarr;
-        Lo terminé <b>(en el momento)</b> que llegaste.
+        <span style={{ textDecoration: "underline" }}>cuando llegaste</span>{" "}
+        &rarr; Lo terminé <b>(en el momento)</b> que llegaste.
       </p>
     </ul>
 
     <H2>Subordinadas Adverbiales</H2>
 
     <Explain>
-      <b>Explicación: </b>
-      Las subordinadas de relativo son un tipo de oración subordinada que
-      funciona como un adjetivo, es decir, que modifica o describe a un
-      sustantivo o pronombre en la oración principal. La subordinada de relativo
-      está introducida por un pronombre relativo, como{" "}
-      <b>"que", "quien", "cual", "cuyo"</b>, y los adverbios relativos{" "}
-      <b>"como","cuando","donde"</b> (Sín accento).
-      <br />
-      <br />
-      Para identificar una subordinada de relativo, se puede sustituir el "que"
-      por "el qual", si funciona correctamente en la oración, es una subordinada
-      de relativo
+      <b>Definición: </b>Las subordinadas adverbiales son oraciones subordinadas
+      que funcionan como adverbios en la oración principal, es decir, que
+      modifican o aclaran el sentido de un verbo, un adjetivo o un adverbio. La
+      subordinada adverbial se introduce por una conjunción subordinante, como
+      "cuando", "si", "porque", "aunque", entre otras.
     </Explain>
 
-    <p>
-      <p style={{marginBottom:"1rem", fontWeight:"bold"}}>TIPOS:</p>
-    </p>
-
+    <p style={{ fontWeight: "bold" }}>Tipos de subordinadas adverbiales:</p>
+    <br />
     <ul>
       <li>
-        <strong>Subordinada de relativo explicativa:</strong> La subordinada de
-        relativo explicativa se utiliza para dar información adicional sobre el
-        sustantivo o pronombre en la oración principal. Esta subordinada se
-        separa de la oración principal con comas.
+        <strong>Subordinada adverbial de tiempo:</strong> Indica el tiempo en
+        que se realiza la acción de la oración principal. Se introduce con
+        conjunciones subordinantes como{" "}
+        <b>"siempre que", "mientras", "después de que"</b>, entre otras.
       </li>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
-        <b>Ejemplo:</b> El perro,{" "}
-        <span style={{ textDecoration: "underline" }}>que es muy amigable</span>{" "}
-        , se acercó a mí.
+        <b>Ejemplo:</b> Haré los deberes <strong>mientras</strong> llegas.
       </p>
 
       <li>
-        <strong>Subordinada de relativo especificativa:</strong> La subordinada
-        de relativo especificativa se utiliza para identificar o delimitar al
-        sustantivo o pronombre en la oración principal. Esta subordinada no se
-        separa de la oración principal con comas.
+        <strong>Subordinada adverbial de causa:</strong> Indica la causa o
+        motivo de la acción de la oración principal. Se introduce con
+        conjunciones subordinantes como{" "}
+        <b>"porque", "como", "puesto que", "ya que"</b>, entre otras.
       </li>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
-        <b>Ejemplo:</b> El perro{" "}
-        <span style={{ textDecoration: "underline" }}>que está ladrando</span>{" "}
-        es de mi vecino. &rarr; El perro <b>el qual</b> está ladrando es de mi
-        vecino.
+        <b>Ejemplo:</b> No fui al cine <strong>porque</strong> estaba cansado.
       </p>
+
+      <li>
+        <strong>Subordinada adverbial condicional:</strong> Indica una condición
+        necesaria para que se realice la acción de la oración principal. Se
+        introduce con conjunciones subordinantes como{" "}
+        <b>"si", "en caso de que", "a condición de que"</b>, entre otras.
+      </li>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> Saldré a correr <strong>si</strong> hace buen tiempo.
+      </p>
+
+      <li>
+        <strong>Subordinada adverbial de modo:</strong> Indica la forma o el
+        modo en que se realiza la acción de la oración principal. Se introduce
+        con conjunciones subordinantes como <b>"como", "según", "tal como"</b>,
+        entre otras. Se puede sustituir por "así".
+      </li>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> Hazlo <strong>como</strong> te dije. &rarr; Hazlo{" "}
+        <b>así</b>.
+      </p>
+
+      <li>
+        <strong>Subordinada adverbial concesiva:</strong> Indica una concesión o
+        una dificultad que se presenta a pesar de la acción de la oración
+        principal. Se introduce con conjunciones subordinantes como{" "}
+        <b>"aunque", "a pesar de que", "por mucho que"</b>, entre otras.
+      </li>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> <strong>Aunque</strong> hace frío, saldré a correr.
+      </p>
+
+      <li>
+        <strong>Subordinada adverbial consecutiva:</strong> Indica una
+        consecuencia de la acción de la oración principal. Se introduce con
+        conjunciones subordinantes como{" "}
+        <b>"tan...que", "tanto...que", "de tal modo que"</b>, entre otras.
+      </li>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> Hace <strong>tanto</strong> frío, <strong>que</strong>{" "}
+        no quiero salir de casa.
+      </p>
+      <br />
+      <hr />
+      <br />
+      <br />
+    </ul>
+    <p style={{ fontWeight: "bold", marginBottom: "1rem" }}>
+      No son Adverbiales:
+    </p>
+    <ul>
+      <li>
+        <strong>Construcción Comparativa:</strong> Indica una comparación entre
+        dos oraciones, por lo tanto, no es subordinante, sino coordinante. Se
+        introduce con conjunciones subordinantes como{" "}
+        <b>"como", "más que", "menos que"</b>, entre otras.
+      </li>
+      <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
+        <b>Ejemplo:</b> Él habla español <strong>como</strong> un nativo.
+      </p>
+
+      <li>
+        <strong>Subordinada Sustantiva (de finalidad):</strong> Indica la
+        finalidad o el propósito de la acción de la oración principal. Se
+        introduce con conjunciones subordinantes como{" "}
+        <b>"para que", "a fin de que"</b>, entre otras.
+      </li>
     </ul>
   </div>
 );
@@ -1667,49 +1725,128 @@ const ex5CAST = (
     <hr />
     <br />
     <H3>Sinécdoque</H3>
-<Explain>
-La sinécdoque es una figura retórica que consiste en utilizar una parte de algo para referirse al todo o viceversa, o bien tomar el nombre de una materia por la cosa misma.
-</Explain>
-<i><u>Ex:</u> Tengo cuatro bocas que alimentar (cuatro personas).</i><br /><br /><hr /><br/>
-<H3>Sinestesia</H3>
-<Explain>
-La sinestesia es una figura retórica que consiste en mezclar o asociar sensaciones o percepciones de diferentes sentidos en una misma expresión.
-</Explain>
-<i><u>Ex:</u> El amarillo tiene un sabor dulce (mezcla de los sentidos del gusto y de la vista).</i><br /><br /><hr /><br/>
-<H3>Metáfora</H3>
-<Explain>
-La metáfora es una figura retórica que consiste en establecer una relación de semejanza entre dos elementos sin usar la palabra "como" o "parece".
-</Explain>
-<i><u>Ex:</u> Eres un sol (se establece una relación de semejanza entre la persona y el sol).</i><br /><br /><hr /><br/>
-<H3>Interrogación Retórica</H3>
-<Explain>
-La interrogación retórica es una figura retórica que consiste en hacer una pregunta que no requiere una respuesta, sino que se utiliza para enfatizar una idea o hacer una afirmación.
-</Explain>
-<i><u>Ex:</u> ¿Acaso no somos todos seres humanos? (la pregunta es retórica y no requiere una respuesta, sino que se utiliza para enfatizar la idea de que todos somos iguales).</i><br /><br /><hr /><br/>
-<H3>Paralelismo</H3>
-<Explain>
-El paralelismo es una figura retórica que consiste en repetir una estructura sintáctica similar en varias frases u oraciones para crear un efecto rítmico y enfatizar una idea.
-</Explain>
-<i><u>Ex:</u> Veni, vidi, vici (repetición de la estructura "verbo + pronombre + verbo" en tres frases sucesivas).</i><br /><br /><hr /><br/>
-<H3>Parábola</H3>
-<Explain>
-La parábola es una figura retórica que consiste en una narración que tiene una intención didáctica o moralizante, y que utiliza una historia sencilla para ilustrar una enseñanza o una verdad universal.
-</Explain>
-<i><u>Ex:</u> La parábola del sembrador (relato que ilustra la importancia de sembrar en buena tierra para obtener una buena cosecha).</i><br /><br /><hr /><br/>
-<H3>Metonimia</H3>
-<Explain>
-La metonimia es una figura retórica que consiste en utilizar un término para designar algo relacionado con él, pero que no es lo mismo, o bien sustituir un nombre propio por una característica o atributo que lo identifica.
-</Explain>
-<i><u>Ex:</u> Bebió un vaso (el término "vaso" se utiliza para referirse al contenido que contiene).</i><br /><br /><hr /><br/> 
-<H3>Sarcasmo</H3>
-<Explain>
-El sarcasmo es una figura retórica que consiste en decir lo contrario de lo que se quiere dar a entender, con la intención de ridiculizar o expresar desprecio hacia algo o alguien. Se suele utilizar en tono irónico y suele estar cargado de humor negro. 
-</Explain>
-<i><u>Ex:</u> "¡Qué inteligente eres! No se te escapa una" (dirigido a alguien que acaba de cometer un error garrafal)</i><br /><br /><hr /><br/>
-<H3>Hipérbaton</H3>
-<Explain>
-El hipérbaton es una figura retórica que consiste en alterar el orden natural de las palabras en una oración con el objetivo de generar un efecto poético o enfatizar una idea en particular. El hipérbaton puede crear una sensación de desorden o desconcierto, pero también puede ser utilizado para crear un ritmo o una cadencia especial en el discurso.
-</Explain>
-<i><u>Ex:</u> "A la orilla del agua, sentado en un banco, estaba él" en lugar de "Él estaba sentado en un banco a la orilla del agua."</i>
+    <Explain>
+      La sinécdoque es una figura retórica que consiste en utilizar una parte de
+      algo para referirse al todo o viceversa, o bien tomar el nombre de una
+      materia por la cosa misma.
+    </Explain>
+    <i>
+      <u>Ex:</u> Tengo cuatro bocas que alimentar (cuatro personas).
+    </i>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <H3>Sinestesia</H3>
+    <Explain>
+      La sinestesia es una figura retórica que consiste en mezclar o asociar
+      sensaciones o percepciones de diferentes sentidos en una misma expresión.
+    </Explain>
+    <i>
+      <u>Ex:</u> El amarillo tiene un sabor dulce (mezcla de los sentidos del
+      gusto y de la vista).
+    </i>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <H3>Metáfora</H3>
+    <Explain>
+      La metáfora es una figura retórica que consiste en establecer una relación
+      de semejanza entre dos elementos sin usar la palabra "como" o "parece".
+    </Explain>
+    <i>
+      <u>Ex:</u> Eres un sol (se establece una relación de semejanza entre la
+      persona y el sol).
+    </i>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <H3>Interrogación Retórica</H3>
+    <Explain>
+      La interrogación retórica es una figura retórica que consiste en hacer una
+      pregunta que no requiere una respuesta, sino que se utiliza para enfatizar
+      una idea o hacer una afirmación.
+    </Explain>
+    <i>
+      <u>Ex:</u> ¿Acaso no somos todos seres humanos? (la pregunta es retórica y
+      no requiere una respuesta, sino que se utiliza para enfatizar la idea de
+      que todos somos iguales).
+    </i>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <H3>Paralelismo</H3>
+    <Explain>
+      El paralelismo es una figura retórica que consiste en repetir una
+      estructura sintáctica similar en varias frases u oraciones para crear un
+      efecto rítmico y enfatizar una idea.
+    </Explain>
+    <i>
+      <u>Ex:</u> Veni, vidi, vici (repetición de la estructura "verbo +
+      pronombre + verbo" en tres frases sucesivas).
+    </i>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <H3>Parábola</H3>
+    <Explain>
+      La parábola es una figura retórica que consiste en una narración que tiene
+      una intención didáctica o moralizante, y que utiliza una historia sencilla
+      para ilustrar una enseñanza o una verdad universal.
+    </Explain>
+    <i>
+      <u>Ex:</u> La parábola del sembrador (relato que ilustra la importancia de
+      sembrar en buena tierra para obtener una buena cosecha).
+    </i>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <H3>Metonimia</H3>
+    <Explain>
+      La metonimia es una figura retórica que consiste en utilizar un término
+      para designar algo relacionado con él, pero que no es lo mismo, o bien
+      sustituir un nombre propio por una característica o atributo que lo
+      identifica.
+    </Explain>
+    <i>
+      <u>Ex:</u> Bebió un vaso (el término "vaso" se utiliza para referirse al
+      contenido que contiene).
+    </i>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <H3>Sarcasmo</H3>
+    <Explain>
+      El sarcasmo es una figura retórica que consiste en decir lo contrario de
+      lo que se quiere dar a entender, con la intención de ridiculizar o
+      expresar desprecio hacia algo o alguien. Se suele utilizar en tono irónico
+      y suele estar cargado de humor negro.
+    </Explain>
+    <i>
+      <u>Ex:</u> "¡Qué inteligente eres! No se te escapa una" (dirigido a
+      alguien que acaba de cometer un error garrafal)
+    </i>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <H3>Hipérbaton</H3>
+    <Explain>
+      El hipérbaton es una figura retórica que consiste en alterar el orden
+      natural de las palabras en una oración con el objetivo de generar un
+      efecto poético o enfatizar una idea en particular. El hipérbaton puede
+      crear una sensación de desorden o desconcierto, pero también puede ser
+      utilizado para crear un ritmo o una cadencia especial en el discurso.
+    </Explain>
+    <i>
+      <u>Ex:</u> "A la orilla del agua, sentado en un banco, estaba él" en lugar
+      de "Él estaba sentado en un banco a la orilla del agua."
+    </i>
   </div>
 );
