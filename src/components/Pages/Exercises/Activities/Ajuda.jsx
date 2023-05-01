@@ -1153,7 +1153,7 @@ const ex4CAST = (
         introduce con conjunciones subordinantes como{" "}
         <b>"para que", "a fin de que"</b>, entre otras.
       </li>
-      <li>
+      <li style={{marginTop:"1.5rem"}}>
         <strong>Subordinada de relativo(locativo o de lugar):</strong> Indica un
         lugar o posición, pero en ningún caso es una adverbial, ya que
         está formada por una subordinada de relativo(Ya sea con un adverbio

@@ -8,7 +8,7 @@ function ExercisesPage() {
   const [lang, setlang] = useState("cat");
   var index = getIndex(lang);
 
-  var chunkSize = 5;
+  var chunkSize = 3;
   var chunkedIndex = index.reduce((resultArray, item, i) => {
     const chunkIndex = Math.floor(i / chunkSize);
 
@@ -107,7 +107,6 @@ const Main = styled.main`
   
 `;
 const BooksDiv = styled.div`
-
   height: 100%;
   display: flex;
   justify-content: space-around;

@@ -63,8 +63,15 @@ function BookComponent({ styles, data, clickable, tapa }) {
                       i + 1 + (key - 1) * -5
                     }/${BookDivRef.current.parentElement.id}`;
                    */
+                  if(key === 2)
                     navigate(
-                      `./${i + 1 + (key - 1) * -5}/${
+                      `./${i + 1 }/${
+                        BookDivRef.current.parentElement.id
+                      }`
+                    );
+                    else if (key === 1)
+                    navigate(
+                      `./${i + 1 + 3}/${
                         BookDivRef.current.parentElement.id
                       }`
                     );
@@ -202,13 +209,14 @@ const PageData = styled.div`
   flex-direction: column;
   justify-content: space-around;
 
-  a {
+  button {
     color: black;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     padding: 0.5rem;
+    font-size: 1rem;
   }
-  a:hover {
+  button:hover {
     transform: scale(1.1);
   }
 
