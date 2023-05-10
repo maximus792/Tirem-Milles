@@ -12,6 +12,7 @@ function Ajuda({ exercisenum, title, subtitle, chapter, language }) {
     else if (exercisenum == 4 && language == "cast") return ex4CAST;
     else if (exercisenum == 5 && language == "cat") return ex5CAT;
     else if (exercisenum == 5 && language == "cast") return ex5CAST;
+    else if (exercisenum == 6 && language == "cat") return ex6CAT;
   };
 
   if (exercisenum != 1 && exercisenum != 2)
@@ -1153,17 +1154,18 @@ const ex4CAST = (
         introduce con conjunciones subordinantes como{" "}
         <b>"para que", "a fin de que"</b>, entre otras.
       </li>
-      <li style={{marginTop:"1.5rem"}}>
+      <li style={{ marginTop: "1.5rem" }}>
         <strong>Subordinada de relativo(locativo o de lugar):</strong> Indica un
-        lugar o posición, pero en ningún caso es una adverbial, ya que
-        está formada por una subordinada de relativo(Ya sea con un adverbio
+        lugar o posición, pero en ningún caso es una adverbial, ya que está
+        formada por una subordinada de relativo(Ya sea con un adverbio
         relativo[donde] o con un nombre tácito).
       </li>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
         <b>Ejemplo:</b> Este es el lugar <strong>donde</strong> hemos quedado.
       </p>
       <p style={{ color: "red", marginTop: "0.4rem", marginBottom: "1.3rem" }}>
-        <b>Ejemplo:</b> Este es el lugar <strong>en el qual</strong> hemos quedado. &rarr; Hace referencia a lugar.
+        <b>Ejemplo:</b> Este es el lugar <strong>en el qual</strong> hemos
+        quedado. &rarr; Hace referencia a lugar.
       </p>
     </ul>
   </div>
@@ -1860,5 +1862,268 @@ const ex5CAST = (
       <u>Ex:</u> "A la orilla del agua, sentado en un banco, estaba él" en lugar
       de "Él estaba sentado en un banco a la orilla del agua."
     </i>
+  </div>
+);
+
+const ex6CAT = (
+  <div>
+    <Explain>
+      La fonètica és la branca de la lingüística que s'ocupa de l'estudi dels
+      sons del llenguatge. A través de la fonètica, podem descriure i
+      classificar els sons que produïm al parlar. Una eina fonamental per a
+      aquesta tasca és l'alfabet fonètic internacional <b>(AFI)</b>, que
+      consisteix en un conjunt de símbols que representen cada so fonètic d'una
+      manera estandarditzada.
+      <br></br>
+      <br></br>
+      <b>Les assimilacions i sonoritzacions</b> són processos fonètics que tenen
+      lloc quan pronunciem paraules o frases. Les assimilacions són canvis que
+      es produeixen en els sons perquè siguin més fàcils de pronunciar en
+      contextos determinats. Per exemple, quan pronunciem la paraula{" "}
+      <b>"impossible"</b>, la consonant <b>"m"</b> es converteix en un so nasal
+      i sonor a causa de la influència de la consonant <b>"n"</b> que la
+      segueix. Les sonoritzacions són canvis en la sonoritat d'un so, que pot
+      passar de ser sord a sonor o viceversa, en funció dels sons que el
+      rodegen.
+    </Explain>
+
+    <H2>Grups fonètics segons el Mode d'articulació</H2>
+    <p>
+      Cal recalcar que les respectives sonoritzacions es troben en el mateix
+      grup fonètic, per exemple, la sonorització de <b>[p]</b> és <b>[b]</b>.
+    </p>
+    <H3>Oclusius</H3>
+    <ul>
+      <li>
+        <b>Sonors: </b>[ b ] [ d ] [ g ] &rarr;{" "}
+        <i style={{ color: "red" }}>"bodega"</i>
+        <ul>
+          <li>
+            Recorda que el so <b>[ g ]</b> fa referència a sons com{" "}
+            <i>"g + a"</i>, no <i>"g + e"</i> &rarr;{" "}
+            <i style={{ color: "red" }}>"gat"</i>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Sords: </b>[ p ] [ t ] [ k ] &rarr;{" "}
+        <i style={{ color: "red" }}>"petaca"</i>
+        <ul>
+          <li>
+            Recorda que el so <b>[ k ]</b> també fa referència a sons com{" "}
+            <i>"c + a"</i> &rarr; <i style={{ color: "red" }}>"casa"</i>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <H3>Fricatius</H3>
+    <ul>
+      <li>
+        <b>Sonors: </b>[ v ] [ ʒ ] [ z ] &rarr;{" "}
+        <i style={{ color: "red" }}>"veges-ho"</i>
+        <ul style={{ margin: "0.5rem 0" }}>
+          <li>
+            <b>[ ʒ ]: </b>Recorda que el so <b>[ ʒ ]</b> fa referència a sons
+            com <i>"g + e"</i> o <i>"j + a"</i> &rarr;{" "}
+            <i style={{ color: "red" }}>"gerra"</i>
+          </li>
+        </ul>
+        <ul style={{ margin: "0.5rem 0" }}>
+          <li>
+            <b>[ z ]: </b>Recorda que el so <b>[ z ]</b> fa referència a la{" "}
+            <b>S sonora</b>, per exemple: <i>"vocal + S + vocal"</i>, &rarr;{" "}
+            <i style={{ color: "red" }}>"casa"</i>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Sords: </b>[ f ] [ ʃ ] [ s ] &rarr;{" "}
+        <i style={{ color: "red" }}>"feixos"</i>
+        <ul style={{ margin: "0.5rem 0" }}>
+          <li>
+            <b>[ ʃ ]: </b>Recorda que el so <b>[ ʃ ]</b> fa referència a la so
+            de la <b>X</b>, &rarr; <i style={{ color: "red" }}>"ximple"</i>
+          </li>
+        </ul>
+        <ul style={{ margin: "0.5rem 0" }}>
+          <li>
+            <b>[ z ]: </b>Recorda que el so <b>[ s ]</b> fa referència a la{" "}
+            <b>S sorda</b>, per exemple: &rarr;{" "}
+            <i style={{ color: "red" }}>"sol"</i>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <H3>Africats</H3>
+    <p>Sonoritzacions:</p>
+    <ul>
+      <li>
+        <b>[ tʃ ]</b> // <b>[ dʒ ]</b> &rarr; enuig // fetge
+      </li>
+
+      <li>
+        <b>[ ks ]</b> // <b>[ gz ]</b> &rarr; extens // examen
+      </li>
+
+      <li>
+        <b>[ ts ]</b> // <b>[ dz ]</b> &rarr; pots // realitzar
+      </li>
+    </ul>
+
+    <H3>Laterals</H3>
+    <ul>
+      <li>
+        [ l ] [ λ ] &rarr; <i style={{ color: "red" }}>cala // calla</i>
+      </li>
+    </ul>
+
+    <H3>Vibrants</H3>
+    <ul>
+      <li>
+        [ ɾ̼ ] [ r ] &rarr; <i style={{ color: "red" }}>cara // carro</i>
+      </li>
+    </ul>
+
+    <H3>Nasals</H3>
+    <ul>
+      <li>
+        [ m ] [ n ] [ ɲ ] &rarr;{" "}
+        <i style={{ color: "red" }}>mare // nena // senyor</i>
+      </li>
+    </ul>
+
+    <H3>Assimilacions</H3>
+
+    <ul>
+      <li style={{ margin: "0.5rem 0" }}>
+        <b>[ m ]</b> &nbsp;&nbsp;//&nbsp;&nbsp; <b>[ n ]</b> + <b>[ f ]</b>{" "}
+        <span style={{ fontSize: "1.5rem" }}>
+          &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+        </span>{" "}
+        <b>[ ɱ ]</b>{" "}
+        <i style={{ color: "red" }}>
+          <span style={{ fontSize: "1.5rem" }}>
+            &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+          </span>{" "}
+          emfasi <b>[ eɱfazi ]</b>
+        </i>
+      </li>
+      <li style={{ margin: "0.5rem 0" }}>
+        <b>[ n ]</b> + <b>[ g ]</b> &nbsp;&nbsp;//&nbsp;&nbsp; <b>[ k ]</b>{" "}
+        <span style={{ fontSize: "1.5rem" }}>
+          &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+        </span>{" "}
+        <b>[ ŋ ]</b>{" "}
+        <i style={{ color: "red" }}>
+          <span style={{ fontSize: "1.5rem" }}>
+            &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+          </span>{" "}
+          banquer <b>[ baŋké ]</b>
+        </i>
+      </li>
+      <li style={{ margin: "0.5rem 0" }}>
+        <b>[ n ]</b> + <b>[ ʒ ]</b> &nbsp;&nbsp;//&nbsp;&nbsp; <b>[ ʃ ]</b>{" "}
+        &nbsp;&nbsp;//&nbsp;&nbsp; <b>[ ɲ ]</b> &nbsp;&nbsp;//&nbsp;&nbsp;{" "}
+        <b>[ λ ]</b>
+        <span style={{ fontSize: "1.5rem" }}>
+          &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+        </span>{" "}
+        <b>[ ɲ ]</b>{" "}
+        <i style={{ color: "red" }}>
+          <span style={{ fontSize: "1.5rem" }}>
+            &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+          </span>
+          un llibre <b>[ uɲλibɾ̼e ]</b>
+        </i>
+      </li>
+      <li style={{ margin: "0.5rem 0" }}>
+        <b>[ l ]</b> + <b>[ ʒ ]</b> &nbsp;&nbsp;//&nbsp;&nbsp; <b>[ ʃ ]</b>{" "}
+        &nbsp;&nbsp;//&nbsp;&nbsp; <b>[ ɲ ]</b> &nbsp;&nbsp;//&nbsp;&nbsp;{" "}
+        <b>[ λ ]</b>
+        <span style={{ fontSize: "1.5rem" }}>
+          &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+        </span>{" "}
+        <b>[ λ ]</b>{" "}
+        <i style={{ color: "red" }}>
+          <span style={{ fontSize: "1.5rem" }}>
+            &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+          </span>
+          el ximple <b>[ eλʃimple ]</b>
+        </i>
+      </li>
+      <li style={{ margin: "0.5rem 0" }}>
+        <b>[ n ]</b> + <b>[ b ]</b> &nbsp;&nbsp;//&nbsp;&nbsp; <b>[ p ]</b>{" "}
+        &nbsp;&nbsp;//&nbsp;&nbsp; <b>[ m ]</b>
+        <span style={{ fontSize: "1.5rem" }}>
+          &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+        </span>{" "}
+        <b>[ m ]</b>{" "}
+        <i style={{ color: "red" }}>
+          <span style={{ fontSize: "1.5rem" }}>
+            &nbsp;&nbsp; &rarr;&nbsp;&nbsp;
+          </span>
+          enmig <b>[ emi</b>tʃ ]
+        </i>
+      </li>
+    </ul>
+    <br />
+    <H3>Sonoritzacions</H3>
+    <ul>
+      <li>
+        <b>[ tʃ ]</b> &rarr; [ dʒ ]
+        <ul style={{ margin: "0.5rem 0" }}>
+          <li>
+            <b>[ tʃ ]</b>:{" "}
+            <i style={{ color: "red" }}>
+              "x<b>ocolata</b>" [ tʃ ]
+            </i>
+          </li>
+          <li>
+            Sonorització:{" "}
+            <i style={{ color: "red" }}>
+              "ra<b>ig</b> extens" [ dʒ ]
+            </i>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>[ ks ]</b> &rarr; [ gz ]
+        <ul style={{ margin: "0.5rem 0" }}>
+          <li>
+            <b>[ ks ]</b>:{" "}
+            <i style={{ color: "red" }}>
+              "e<b>x</b>tens" [ ks ]
+            </i>
+          </li>
+          <li>
+            Sonorització:{" "}
+            <i style={{ color: "red" }}>
+              "e<b>x</b>amen " [ gz ]
+            </i>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <b>[ ts ]</b> &rarr; [ dz ]
+        <ul style={{ margin: "0.5rem 0" }}>
+          <li>
+            <b>[ ts ]</b>:{" "}
+            <i style={{ color: "red" }}>
+              "po<b>ts</b>" [ ts ]
+            </i>
+          </li>
+          <li>
+            Sonorització:{" "}
+            <i style={{ color: "red" }}>
+              "po<b>ts</b> oberts " [ dz ]
+            </i>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
 );

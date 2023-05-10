@@ -24,7 +24,7 @@ function getIndex(language){
     {
       title: "Capítol VI",
       subtitle: "Fonètica, la ciència oblidada",
-    },
+    },/* 
     {
       title: "Capítol VII",
       subtitle: "Troba els errors",
@@ -36,7 +36,7 @@ function getIndex(language){
     {
       title: "Capítol IX",
       subtitle: "Troba els errors",
-    }, 
+    },  */
   ];
 
   const indexCAST = [
@@ -63,7 +63,7 @@ function getIndex(language){
     {
       title: "Capítulo VI",
       subtitle: "Palabras, tipos y arquetipos",
-    },
+    },/* 
     {
       title: "Capítulo VII",
       subtitle: "Troba els errors",
@@ -75,14 +75,13 @@ function getIndex(language){
     {
       title: "Capítulo IX",
       subtitle: "Troba els errors",
-    }, 
+    },  */
   ];
 
   if(language == "cat")
   return indexCAT
   else if(language=="cast")
   return indexCAST
-  else return indexCAT
 }
 
   export default getIndex

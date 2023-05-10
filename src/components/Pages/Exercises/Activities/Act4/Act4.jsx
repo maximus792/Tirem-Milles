@@ -392,8 +392,8 @@ const dataCAT = [
     "Subordinada adverbial consecutiva",
   ],
   [
-    ["Vull que em compres", "una bicicleta nova", ""],
-    "Subordinada adverbial de finalitat",
+    ["Vull", "que em compris una bicicleta nova", ""],
+    "Subordinada substantiva",
   ],
   [
     ["Els meus amics van ballar", "com si no hi hagués demà", ""],
@@ -583,7 +583,7 @@ const dataCAT = [
   ],
   [
     ["En Marcel va cridar", "perquè estava molt enfadat", ""],
-    "Subordinada adverbial de finalitat",
+    "Subordinada adverbial causal",
   ],
   [
     [

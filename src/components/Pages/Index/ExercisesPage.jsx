@@ -27,37 +27,37 @@ function ExercisesPage() {
     var target = e.currentTarget;
     var targetId = e.target.parentElement.parentElement.id;
     console.log(targetId);
-    setlang(targetId);
+    if (targetId == "cat" || targetId == "cast") {
+      setlang(targetId);
 
-    if (targetId === "cat") {
-      target.lastChild.style.transform = "translate(200%)";
-      target.firstChild.style.transform = "translate(100%)";
-      marisaRef.current.style.bottom = "70px";
-      marinaRef.current.style.bottom = "-50%";
-      fightRef.current.style.opacity = "0";
-      setclickable(true);
-    } else if (targetId === "cast") {
-      target.firstChild.style.transform = "translate(-200%)";
-      target.lastChild.style.transform = "translate(-100%)";
-      marisaRef.current.style.bottom = "-50%";
-      marinaRef.current.style.bottom = "40px";
-      fightRef.current.style.opacity = "0";
-      setclickable(true);
-    } else if (targetId === "main") {
-      setclickable(false);
-      target.firstChild.style.transform = "translate(0%)";
-      target.lastChild.style.transform = "translate(0%)";
-      marisaRef.current.style.bottom = "-50%";
-      marinaRef.current.style.bottom = "-50%";
-      fightRef.current.style.opacity = "1";
-      
+      if (targetId === "cat") {
+        target.lastChild.style.transform = "translate(200%)";
+        target.firstChild.style.transform = "translate(100%)";
+        marisaRef.current.style.bottom = "70px";
+        marinaRef.current.style.bottom = "-50%";
+        fightRef.current.style.opacity = "0";
+        setclickable(true);
+      } else if (targetId === "cast") {
+        target.firstChild.style.transform = "translate(-200%)";
+        target.lastChild.style.transform = "translate(-100%)";
+        marisaRef.current.style.bottom = "-50%";
+        marinaRef.current.style.bottom = "40px";
+        fightRef.current.style.opacity = "0";
+        setclickable(true);
+      } else if (targetId === "main") {
+        setclickable(false);
+        target.firstChild.style.transform = "translate(0%)";
+        target.lastChild.style.transform = "translate(0%)";
+        marisaRef.current.style.bottom = "-50%";
+        marinaRef.current.style.bottom = "-50%";
+        fightRef.current.style.opacity = "1";
+      }
     }
   };
 
-
-  var marisaRef = useRef()
-  var marinaRef = useRef()
-  var fightRef = useRef()
+  var marisaRef = useRef();
+  var marinaRef = useRef();
+  var fightRef = useRef();
   return (
     <Container id="main">
       <Navbar actualPage={"Exercises"} />
@@ -81,9 +81,27 @@ function ExercisesPage() {
             />
           </BookDiv>
         </BooksDiv>
-        <Marisaimg id="marisaImage" ref={marisaRef} src="images/marisa.png" alt="" srcset="" />
-        <Marinaimg id="marinaImage" ref={marinaRef} src="images/marina.png" alt="" srcset="" />
-        <FightImg id="fightImage" ref={fightRef} src="images/fight.png" alt="" srcset="" />
+        <Marisaimg
+          id="marisaImage"
+          ref={marisaRef}
+          src="images/marisa.png"
+          alt=""
+          srcset=""
+        />
+        <Marinaimg
+          id="marinaImage"
+          ref={marinaRef}
+          src="images/marina.png"
+          alt=""
+          srcset=""
+        />
+        <FightImg
+          id="fightImage"
+          ref={fightRef}
+          src="images/fight.png"
+          alt=""
+          srcset=""
+        />
       </Main>
     </Container>
   );
@@ -104,7 +122,6 @@ const Main = styled.main`
     letter-spacing: 0.3rem;
     text-transform: uppercase;
   }
-  
 `;
 const BooksDiv = styled.div`
   height: 100%;
@@ -123,26 +140,26 @@ const BookDiv = styled.div`
 `;
 
 const Marisaimg = styled.img`
-position: absolute;
-right: -30px;
-bottom: -50%;
-transform: rotate(-10deg);
-transition: all 1s ease-in-out;
-`
+  position: absolute;
+  right: -30px;
+  bottom: -50%;
+  transform: rotate(-10deg);
+  transition: all 1s ease-in-out;
+`;
 const Marinaimg = styled.img`
-position: absolute;
-left: -30px;
-bottom: -50%;
-transform: rotate(10deg);
-transition: all 1s ease-in-out;
-`
+  position: absolute;
+  left: -30px;
+  bottom: -50%;
+  transform: rotate(10deg);
+  transition: all 1s ease-in-out;
+`;
 const FightImg = styled.img`
-position: absolute;
-left: 50%;
-bottom: 25%;
-transform: translate(-50%,-50%);
-width: 30vh;
-transition: all 1s ease-in-out;
-`
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+  transform: translate(-50%, -50%);
+  width: 30vh;
+  transition: all 1s ease-in-out;
+`;
 
 export default ExercisesPage;

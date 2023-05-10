@@ -63,13 +63,13 @@ function BookComponent({ styles, data, clickable, tapa }) {
                       i + 1 + (key - 1) * -5
                     }/${BookDivRef.current.parentElement.id}`;
                    */
-                  if(key === 2)
+                  if(key === 1)
                     navigate(
                       `./${i + 1 }/${
                         BookDivRef.current.parentElement.id
                       }`
                     );
-                    else if (key === 1)
+                    else if (key === 0)
                     navigate(
                       `./${i + 1 + 3}/${
                         BookDivRef.current.parentElement.id
