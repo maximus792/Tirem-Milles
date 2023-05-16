@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const dataCAT = [
 "El Maties ha tret un deu al TDR, tot i haver sotmès al Marcel i al Xavi a fer-lo tot.",
-"La mare d'en Maties està molt enfadada, ja que el seu fill no ha encès el rentaplats.",
+ "La mare d'en Maties està molt enfadada, ja que el seu fill no ha encès el rentaplats.",
 "En Maties soluciona les seves inseguretats insultant als seus amics.",
 "El pare d'en Maties i d'en Xavier són completament oposats.",
 "El pare d'en Maties és una persona molt respectada en el món de les enganyifes a Hisenda.",
@@ -140,7 +140,7 @@ const dataCAT = [
   "El rei va construir un castell fort i resistent per protegir el seu regne.",
   "El matí va ser fred i brumós, però el sol es va aixecar més tard.",
   "El mussol nocturn va sortir a caçar ratolins i altres animals petits.",
-  "El pilot va pujar a l'avió potent i modern per iniciar el vol.",
+  "El pilot va pujar a l'avió potent i modern per iniciar el vol.", 
   /* --------------------- */
 ];
 
@@ -237,61 +237,61 @@ function Act6Cat({ correcting, language, typeAct6 }) {
 
           if (
             ("ptc".includes(lletra.toLocaleLowerCase()) &&
-              text.split("")[i + 1].toLocaleLowerCase() == " " &&
-              "bdgzjvlrmnz".includes(text.split("")[i + 2].toLocaleLowerCase())) ||
+              text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == " " &&
+              "bdgzjvlrmnz".includes(text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase())) ||
             ("fxs".includes(lletra.toLocaleLowerCase()) &&
-              text.split("")[i + 1].toLocaleLowerCase() == " " &&
-              "bdgzjvaeiolrmnzuàèéíóòú".includes(text.split("")[i + 2].toLocaleLowerCase()))
+              text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == " " &&
+              "bdgzjvaeiolrmnzuàèéíóòú".includes(text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase()))
           )
             son = true;
           if (i >= 4)
             if (
-              text.split("")[i - 4].toLocaleLowerCase() == "t" &&
-              text.split("")[i - 3].toLocaleLowerCase() == "r" &&
-              text.split("")[i - 2].toLocaleLowerCase() == "a" &&
-              text.split("")[i - 1].toLocaleLowerCase() == "n" &&
-              text.split("")[i].toLocaleLowerCase() == "s" &&
-              "bdgzjvlrmnzaeiouàèéíóòú".includes(text.split("")[i + 1].toLocaleLowerCase())
+              text.split("")[i - 4].replaceAll("h","").toLocaleLowerCase() == "t" &&
+              text.split("")[i - 3].replaceAll("h","").toLocaleLowerCase() == "r" &&
+              text.split("")[i - 2].replaceAll("h","").toLocaleLowerCase() == "a" &&
+              text.split("")[i - 1].replaceAll("h","").toLocaleLowerCase() == "n" &&
+              text.split("")[i].replaceAll("h","").toLocaleLowerCase() == "s" &&
+              "bdgzjvlrmnzaeiouàèéíóòú".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase())
             )
               son = true;
 
           if (i >= 3) {
             if (
-              text.split("")[i - 3].toLocaleLowerCase() == "d" &&
-              text.split("")[i - 2].toLocaleLowerCase() == "i" &&
-              text.split("")[i - 1].toLocaleLowerCase() == "n" &&
-              text.split("")[i].toLocaleLowerCase() == "s" &&
-              "bdgzjvlrmnzaeiouàèéíóòú".includes(text.split("")[i + 1].toLocaleLowerCase())
+              text.split("")[i - 3].replaceAll("h","").toLocaleLowerCase() == "d" &&
+              text.split("")[i - 2].replaceAll("h","").toLocaleLowerCase() == "i" &&
+              text.split("")[i - 1].replaceAll("h","").toLocaleLowerCase() == "n" &&
+              text.split("")[i].replaceAll("h","").toLocaleLowerCase() == "s" &&
+              "bdgzjvlrmnzaeiouàèéíóòú".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase())
             )
               son = true;
             if (
-              text.split("")[i - 3].toLocaleLowerCase() == "f" &&
-              text.split("")[i - 2].toLocaleLowerCase() == "o" &&
-              text.split("")[i - 1].toLocaleLowerCase() == "n" &&
-              text.split("")[i].toLocaleLowerCase() == "s" &&
-              "bdgzjvlrmnzaeiouàèéíóòú".includes(text.split("")[i + 1].toLocaleLowerCase())
+              text.split("")[i - 3].replaceAll("h","").toLocaleLowerCase() == "f" &&
+              text.split("")[i - 2].replaceAll("h","").toLocaleLowerCase() == "o" &&
+              text.split("")[i - 1].replaceAll("h","").toLocaleLowerCase() == "n" &&
+              text.split("")[i].replaceAll("h","").toLocaleLowerCase() == "s" &&
+              "bdgzjvlrmnzaeiouàèéíóòú".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase())
             )
               son = true;
           }
 
           if (
             "s".includes(lletra.toLocaleLowerCase()) &&
-            "aeiouàèéíóòú".includes(text.split("")[i + 1].toLocaleLowerCase()) &&
-            "aeiouàèéíóòú".includes(text.split("")[i - 1].toLocaleLowerCase())
+            "aeiouàèéíóòú".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase()) &&
+            "aeiouàèéíóòú".includes(text.split("")[i - 1].replaceAll("h","").toLocaleLowerCase())
           )
             son = true;
           if (i > 1)
             if (
-              "eèé".includes(text.split("")[i - 1].toLocaleLowerCase()) &&
-              text.split("")[i].toLocaleLowerCase() == "x" &&
-              "bdgzjvlrmnzaeiouàèéíóòú".includes(text.split("")[i + 1].toLocaleLowerCase())
+              "eèé".includes(text.split("")[i - 1].replaceAll("h","").toLocaleLowerCase()) &&
+              text.split("")[i].replaceAll("h","").toLocaleLowerCase() == "x" &&
+              "bdgzjvlrmnzaeiouàèéíóòú".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase())
             )
               son = true;
           if (
-            text.split("")[i].toLocaleLowerCase() == "i" &&
-            text.split("")[i + 1].toLocaleLowerCase() == "g" &&
-            text.split("")[i + 2].toLocaleLowerCase() == " " &&
-            "bdgzjvaeiolrmnuàèéíóòú".includes(text.split("")[i + 3].toLocaleLowerCase())
+            text.split("")[i].replaceAll("h","").toLocaleLowerCase() == "i" &&
+            text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == "g" &&
+            text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase() == " " &&
+            "bdgzjvaeiolrmnuàèéíóòú".includes(text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase())
           ) {
             son = true;
             lletra = "ig";
@@ -299,20 +299,20 @@ function Act6Cat({ correcting, language, typeAct6 }) {
           }
 
           if (
-            text.split("")[i].toLocaleLowerCase() == "t" &&
-            text.split("")[i + 1].toLocaleLowerCase() == "s" &&
-            text.split("")[i + 2].toLocaleLowerCase() == " " &&
-            "bdgzjvaeiolrmnzuàèéíóòú".includes(text.split("")[i + 3].toLocaleLowerCase())
+            text.split("")[i].replaceAll("h","").toLocaleLowerCase() == "t" &&
+            text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == "s" &&
+            text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase() == " " &&
+            "bdgzjvaeiolrmnzuàèéíóòú".includes(text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase())
           ) {
             son = true;
             lletra = "ts";
             exception += 1;
           }
           if (
-            text.split("")[i].toLocaleLowerCase() == "c" &&
-            text.split("")[i + 1].toLocaleLowerCase() == "s" &&
-            text.split("")[i + 2].toLocaleLowerCase() == " " &&
-            "bdgzjvaeiolrmnzuàèéíóòú".includes(text.split("")[i + 3].toLocaleLowerCase())
+            text.split("")[i].replaceAll("h","").toLocaleLowerCase() == "c" &&
+            text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == "s" &&
+            text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase() == " " &&
+            "bdgzjvaeiolrmnzuàèéíóòú".includes(text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase())
           ) {
             son = true;
             lletra = "cs";
@@ -320,9 +320,9 @@ function Act6Cat({ correcting, language, typeAct6 }) {
           }
           if (
             lletra.toLocaleLowerCase() == "t" &&
-            text.split("")[i + 1].toLocaleLowerCase() == "x" &&
-            text.split("")[i + 2].toLocaleLowerCase() == " " &&
-            "bdgzjvaeiolrmnzuàèéíóòú".includes(text.split("")[i + 3].toLocaleLowerCase())
+            text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == "x" &&
+            text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase() == " " &&
+            "bdgzjvaeiolrmnzuàèéíóòú".includes(text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase())
           ) {
             lletra = "tx";
             son = true;
@@ -331,37 +331,37 @@ function Act6Cat({ correcting, language, typeAct6 }) {
 
           if (
             ("n".includes(lletra.toLocaleLowerCase()) &&
-              "bmpgcfxtd".includes(text.split("")[i + 1].toLocaleLowerCase())) ||
-            ("m".includes(lletra.toLocaleLowerCase()) && "f".includes(text.split("")[i + 1].toLocaleLowerCase())) ||
-            ("l".includes(lletra.toLocaleLowerCase()) && "jx".includes(text.split("")[i + 1].toLocaleLowerCase()))
+              "bmpgcfxtd".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase())) ||
+            ("m".includes(lletra.toLocaleLowerCase()) && "f".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase())) ||
+            ("l".includes(lletra.toLocaleLowerCase()) && "jx".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase()))
           )
             assim = true;
           if (
             ("n".includes(lletra.toLocaleLowerCase()) &&
-              text.split("")[i + 1].toLocaleLowerCase() == " " &&
-              "bmpgcfxtd".includes(text.split("")[i + 2].toLocaleLowerCase())) ||
+              text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == " " &&
+              "bmpgcfxtd".includes(text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase())) ||
             ("m".includes(lletra.toLocaleLowerCase()) &&
-              text.split("")[i + 1].toLocaleLowerCase() == " " &&
-              "f".includes(text.split("")[i + 2].toLocaleLowerCase())) ||
+              text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == " " &&
+              "f".includes(text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase())) ||
             ("nl".includes(lletra.toLocaleLowerCase()) &&
-              text.split("")[i + 1].toLocaleLowerCase() == " " &&
-              "n".includes(text.split("")[i + 2].toLocaleLowerCase()) &&
-              "y".includes(text.split("")[i + 3].toLocaleLowerCase())) ||
+              text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == " " &&
+              "n".includes(text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase()) &&
+              "y".includes(text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase())) ||
             ("n".includes(lletra.toLocaleLowerCase()) &&
-              "l".includes(text.split("")[i + 1].toLocaleLowerCase()) &&
-              "l".includes(text.split("")[i + 2].toLocaleLowerCase())) ||
+              "l".includes(text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase()) &&
+              "l".includes(text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase())) ||
             ("nl".includes(lletra.toLocaleLowerCase()) &&
-              text.split("")[i + 1].toLocaleLowerCase() == " " &&
-              "l".includes(text.split("")[i + 2].toLocaleLowerCase()) &&
-              "l".includes(text.split("")[i + 3].toLocaleLowerCase())) ||
+              text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == " " &&
+              "l".includes(text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase()) &&
+              "l".includes(text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase())) ||
             ("l".includes(lletra.toLocaleLowerCase()) &&
-              text.split("")[i + 1].toLocaleLowerCase() == " " &&
-              "g".includes(text.split("")[i + 2].toLocaleLowerCase()) &&
-              ("e".includes(text.split("")[i + 3].toLocaleLowerCase()) ||
-                "i".includes(text.split("")[i + 3].toLocaleLowerCase()))) ||
+              text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == " " &&
+              "g".includes(text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase()) &&
+              ("e".includes(text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase()) ||
+                "i".includes(text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase()))) ||
             ("l".includes(lletra.toLocaleLowerCase()) &&
-              text.split("")[i + 1].toLocaleLowerCase() == "g" &&
-              (text.split("")[i + 2].toLocaleLowerCase() == "e" || text.split("")[i + 3].toLocaleLowerCase() == "i"))
+              text.split("")[i + 1].replaceAll("h","").toLocaleLowerCase() == "g" &&
+              (text.split("")[i + 2].replaceAll("h","").toLocaleLowerCase() == "e" || text.split("")[i + 3].replaceAll("h","").toLocaleLowerCase() == "i"))
           )
             assim = true;
 

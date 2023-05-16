@@ -68,10 +68,7 @@ const dataCAT = [
     ["Parla amb calma", "perquè et pugui entendre millor", ""],
     "Subordinada adverbial de mode",
   ],
-  [
-    ["On vas anar de vacances?", "Vaig a l'illa de Menorca", ""],
-    "Subordinada adverbial de lloc",
-  ],
+  
   [
     ["Vaig comprar una casa", "que estava a prop de la platja", ""],
     "Subordinada de relatiu",
@@ -90,13 +87,10 @@ const dataCAT = [
     "Subordinada adverbial comparativa",
   ],
   [
-    ["Si no vas al metge", "la teva malaltia es pot agreujar", ""],
+    ["","Si no vas al metge", "la teva malaltia es pot agreujar"],
     "Subordinada adverbial condicional",
   ],
-  [
-    ["Va sortir corrent", "de manera que va arribar tard", ""],
-    "Subordinada adverbial consecutiva",
-  ],
+  
   [
     ["Estudiem", "perquè podem treballar en el futur", ""],
     "Subordinada adverbial de finalitat",
@@ -151,7 +145,7 @@ const dataCAT = [
     "Subordinada adverbial causal",
   ],
   [
-    ["El llibre que vaig llegir", "era molt interessant", ""],
+    ["El llibre", "que vaig llegir", "era molt interessant"],
     "Subordinada de relatiu",
   ],
   [
@@ -225,7 +219,7 @@ const dataCAT = [
     "Subordinada adverbial de mode",
   ],
   [["La casa", "on vaig néixer", "era petita"], "Subordinada de relatiu"],
-  [["El llibre", "que estic llegint", ""], "Subordinada de relatiu"],
+  [["El llibre", "que estic llegint", "va sobre l'ira del Marcel"], "Subordinada de relatiu"],
   [
     ["El parc", "on jugàvem de petits", "era molt gran"],
     "Subordinada de relatiu",
@@ -242,7 +236,7 @@ const dataCAT = [
     ["El parc", "on hi ha molts arbres", "és molt bonic"],
     "Subordinada de relatiu",
   ],
-  [["El meu gos", "que és molt juganer", ""], "Subordinada de relatiu"],
+  [["El meu gos", "que és molt juganer", "va mossegar el Marcel"], "Subordinada de relatiu"],
   [
     ["La ciutat", "on van passar les vacances", "era molt interessant"],
     "Subordinada de relatiu",
@@ -252,7 +246,7 @@ const dataCAT = [
     "Subordinada de relatiu",
   ],
   [
-    ["El jardí", "on van fer la festa", "era molt ben decorat"],
+    ["El jardí", "on van fer la festa", "estava molt ben decorat"],
     "Subordinada de relatiu",
   ],
   [
@@ -337,11 +331,11 @@ const dataCAT = [
 
   [
     ["Vaig buscar per internet", "on podria comprar entrades", ""],
-    "Subordinada adverbial de mode",
+    "Subordinada adverbial de temps",
   ],
 
   [
-    ["Després que vaig acabar el treball", "em vaig anar a dormir", ""],
+    ["","Després que vaig acabar el treball", "em vaig anar a dormir"],
     "Subordinada adverbial de temps",
   ],
 
@@ -384,7 +378,7 @@ const dataCAT = [
     "Subordinada adverbial comparativa",
   ],
   [
-    ["Si tens temps", "podem anar al cinema", ""],
+    ["","Si tens temps", "podem anar al cinema"],
     "Subordinada adverbial condicional",
   ],
   [
@@ -412,7 +406,7 @@ const dataCAT = [
     "Subordinada adverbial comparativa",
   ],
   [
-    ["Si vols aconseguir-ho", "has de treballar més dur", ""],
+    ["","Si vols aconseguir-ho", "has de treballar més dur"],
     "Subordinada adverbial condicional",
   ],
   [
@@ -421,7 +415,7 @@ const dataCAT = [
   ],
   [
     ["El gos és tan petit", "que cap a la meva mà", ""],
-    "Subordinada adverbial comparativa",
+    "Subordinada adverbial consecutiva",
   ],
   [
     ["No em preocuparé", "si em dius que vindràs", ""],
@@ -444,9 +438,9 @@ const dataCAT = [
     "Subordinada adverbial de temps",
   ],
   [["No entenc", "el que dius", ""], "Subordinada substantiva"],
-  [["El llibre", "que em van regalar", ""], "Subordinada de relatiu"],
+  [["El llibre", "que em van regalar", "és absurd"], "Subordinada de relatiu"],
   [["M'agrada", "que estiguis aquí", ""], "Subordinada substantiva"],
-  [["El restaurant", "on vam anar ahir", ""], "Subordinada de relatiu"],
+  [["El restaurant", "on vam anar ahir", "era terrorífic"], "Subordinada de relatiu"],
   [["Em preocupa", "com anirà tot", ""], "Subordinada substantiva"],
   [["El concert", "al que van assistir", ""], "Subordinada de relatiu"],
   [["No sé", "què fer", ""], "Subordinada substantiva"],
@@ -472,7 +466,7 @@ const dataCAT = [
     ["La gata", "que van adoptar", "és molt carinyosa"],
     "Subordinada de relatiu",
   ],
-  [["M'agrada", "quan fas això", ""], "Subordinada substantiva"],
+  
   [
     ["El professor", "que ens va explicar la teoria", ""],
     "Subordinada de relatiu",
@@ -489,8 +483,8 @@ const dataCAT = [
     ["Hem de sortir ara", "per arribar a temps", ""],
     "Subordinada adverbial de temps",
   ],
-  [["No estic segur", "de si he pagat", ""], "Subordinada adverbial de mode"],
-  [["El llibre", "que està a la taula", ""], "Subordinada de relatiu"],
+  [["No estic segur de", "si he pagat", ""], "Subordinada substantiva"],
+  [["El llibre", "que està a la taula", "és nefast"], "Subordinada de relatiu"],
   [["Vull saber", "si podré anar a la festa", ""], "Subordinada substantiva"],
   [
     ["La Laura va arribar tard", "perquè es va perdre pel camí", ""],
@@ -504,9 +498,9 @@ const dataCAT = [
     ["Em preocupa", "que no hi hagi prou menjar", ""],
     "Subordinada substantiva",
   ],
-  [["El llibre", "que em vas recomanar", ""], "Subordinada de relatiu"],
+
   [
-    ["Si no fa bon temps", "no sortiré de casa", ""],
+    ["","Si no fa bon temps", "no sortiré de casa"],
     "Subordinada adverbial condicional",
   ],
   [
@@ -514,7 +508,7 @@ const dataCAT = [
     "Subordinada de relatiu",
   ],
   [
-    ["Mentre menjàvem", "van començar a ploure", ""],
+    ["","Mentre menjàvem", "vacomençar a ploure"],
     "Subordinada adverbial de temps",
   ],
   [
@@ -522,7 +516,7 @@ const dataCAT = [
     "Subordinada adverbial comparativa",
   ],
   [
-    ["En Xavier", "que és un pingüí molt simpàtic", "no sap programar"],
+    ["En Xavier,", "que és un pingüí molt simpàtic", "no sap programar"],
     "Subordinada de relatiu",
   ],
   [
@@ -599,7 +593,7 @@ const dataCAT = [
   ],
 
   [
-    ["Si en Marcel no va a teràpia", "no podrà millorar", ""],
+    ["","Si en Marcel no va a teràpia", "no podrà millorar"],
     "Subordinada adverbial condicional",
   ],
   [
@@ -619,7 +613,7 @@ const dataCAT = [
     "Subordinada adverbial causal",
   ],
   [
-    ["El treball de Marcel", "a Codelearn", "és una tortura"],
+    ["El treball de Marcel,", "que és a Codelearn", ",és una tortura"],
     "Subordinada de relatiu",
   ],
   [
@@ -627,8 +621,8 @@ const dataCAT = [
     "Subordinada substantiva",
   ],
   [
-    ["En Marcel no es sent bé amb", "la situació actual de Codelearn", ""],
-    "Subordinada substantiva",
+    ["En Marcel no es sent bé amb la situació actual de Codelearn,", "que és nefasta.", ""],
+    "Subordinada de relatiu",
   ],
   [
     [
@@ -667,24 +661,24 @@ const dataCAT = [
     "Subordinada de relatiu",
   ],
   [
-    ["En Marcel vol ajudar", "a millorar la situació de Codelearn", ""],
+    ["En Marcel vol ajudar a", "millorar la situació de Codelearn", ""],
     "Subordinada substantiva",
   ],
   [
     [
-      "El pare d'en Maties és el director de 'tecnologia' a Fajas Tortas",
+      "El pare d'en Maties és el director de 'tecnologia' a Fajas Tortas,",
       "on ha fet una carrera molt exitosa",
       "",
     ],
-    "Subordinada adverbial de lloc",
+    "Subordinada de relatiu",
   ],
   [
     [
-      "En Xavier no vol treballar a Fajas Tortas",
+      "En Xavier no vol treballar a Fajas Tortas,",
       "on el pare del Maties és molt respectat",
       "",
     ],
-    "Subordinada adverbial de lloc",
+    "Subordinada de relatiu",
   ],
   [
     [
@@ -692,7 +686,7 @@ const dataCAT = [
       "com si fos la millor empresa del món",
       "",
     ],
-    "Subordinada adverbial comparativa",
+    "Subordinada adverbial de mode",
   ],
   [
     [
@@ -716,7 +710,7 @@ const dataCAT = [
       "on és molt respectat i admirat",
       "",
     ],
-    "Subordinada adverbial de lloc",
+    "Subordinada de relatiu",
   ],
   [
     [
@@ -921,7 +915,7 @@ const dataCAST = [
   ],
   [
     ["Compré un abrigo nuevo por", "-que hacía mucho frío", ""],
-    "Subordinada Sustantiva",
+    "Subordinada sustantiva",
   ],
   [
     ["Habló tan bajo", "que nadie le entendió", ""],

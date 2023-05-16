@@ -596,8 +596,44 @@ const ex3CAST = (
 const ex6CAST = (
   <div>
     <H2>Tipos de palabaras </H2>
-    Las palabras se clasifican en funcion de su composición (lexemas y morfemas)
+    Las palabras se clasifican en función de su composición (lexemas y morfemas)
     <br />
+    <H3>Morfemas flexivos</H3>
+    <Explain>
+      El <b>morfema flexivo</b> es un tipo de morfema gramatical que se agrega a
+      una raíz o base léxica para expresar una categoría gramatical o una
+      relación gramatical específica. <br />
+      <br />
+      Los morfemas flexivos no alteran la categoría léxica de la palabra, sino
+      que modifican su forma gramatical. Estos morfemas pueden indicar el número{" "}
+      <b>(singular o plural)</b>, el género
+      <b>(masculino o femenino)</b>, el tiempo verbal{" "}
+      <b>(pasado, presente o futuro)</b>, el modo verbal{" "}
+      <b>(indicativo, subjuntivo, imperativo)</b>, entre otros. <br />
+      <br></br>
+      <p>
+        Por ejemplo, en español, la palabra{" "}
+        <i style={{ fontWeight: "bold" }}>"gato"</i> puede flexionarse mediante
+        el morfema flexivo de número, transformándose en{" "}
+        <i style={{ fontWeight: "bold" }}>"gatos"</i> para indicar pluralidad.
+        En este caso, el morfema{" "}
+        <b>
+          <i>"-s"</i>
+        </b>{" "}
+        cumple la función de marcar el plural.
+      </p>
+    </Explain>
+    <H3>Morfemas derivativos</H3>
+    <Explain>
+      El morfema derivativo es aquel que se añade a una raíz o base léxica para
+      formar una nueva palabra con un significado diferente o ampliado. <br/><br/>Estos
+      morfemas derivativos cambian la categoría gramatical de la palabra
+      original o le agregan un <b>prefijo</b> o <b>sufijo</b> que modifica su significado. <br/><br/>Por
+      ejemplo, la palabra <i style={{fontWeight:"bold"}}>"tristeza"</i> se deriva de la raíz léxica <i>"triste"</i> y el
+      sufijo <i>"-eza"</i>. La adición de este morfema derivativo transforma el {" "}
+      <span style={{textDecoration:"underline"}}>adjetivo</span> <i style={{fontWeight:"bold"}}>"triste"</i> en un <span style={{textDecoration:"underline"}}>sustantivo</span> que representa el estado o la cualidad
+      de ser triste.
+    </Explain>
     <br />
     <H3>Palabras Primitivas</H3>
     Solo cuentan con <b> un lexema</b>. Ej: <i className="example">Silla</i>
@@ -610,6 +646,91 @@ const ex6CAST = (
     </i>
     <br />
     <br />
+    <H3>Palabras Complejas</H3>
+    
+    <ul>
+      <li>
+        <H3>Derivada</H3>
+        Formada por <b>un lexema</b> y <b>un morfema derivativo</b>. Ej {" "} 
+        <i className="example">
+          Sill<u>ita</u>
+        </i>
+      </li>
+      <li>
+        <H3>Compuesta</H3>
+        Formada por tan solo <b>2 o más lexemas</b>. Ej {" "}
+        <i className="example">
+          Balón + Cesto = <u>Baloncesto</u>
+        </i>
+      </li>
+      <li>
+        <H3>Parasintética</H3>
+        <ul>
+          <li>
+            <H3>Por composición</H3>
+            Formada <b>2 o más lexemas</b> y <b>un morfema derivativo</b>. Ej {" "}
+            <i className="example">
+              Siete + mes + (morfema derivativo) = <u>Sietemesino</u>
+            </i>
+          </li>
+        <li>
+          <H3>Por derivación</H3>
+          Formada por <b>un lexema</b> entre <b>dos morfema derivativos</b>. Ej {" "}
+          <i className="example">
+            (morfema derivativo) + Alma + (morfema derivativo) = <u>Desalmado</u>
+          </i>
+        </li>
+      </ul>
+      </li>
+    </ul>
+
+    <br />
+    <br />
+    <hr />
+    <br />
+    <h1>💡Recuerda!</h1>
+    <br/>
+    Existe un método para diferenciar rapidamente las palabras <b>derivadas</b> de las <b>parasintéticas por derivación</b>!
+    <br />
+    <br />
+    Este proceso implica separar los componentes de cada palabra (lexemas y morfemas), para analizarlos y ver si tienen sentido por separado.
+    <br/>
+    <br/>
+    <div>
+      <h2>Pre <span style={{color: "red"}}>/</span> cal <span style={{color: "red"}}>/</span> entamiento</h2>
+      <br/>
+      <ul>
+        <li><u>Pregalentar</u> ✔️</li>  
+        <li><u>Calentamiento</u> ✔️</li>  
+      </ul>
+      <br/>
+      Esta palabra es <b>Derivada</b>
+    </div>
+    <br/>
+    <div>
+      <h2>Des <span style={{color: "red"}}>/</span> alm <span style={{color: "red"}}>/</span> ado</h2>
+      <br/>
+      <ul>
+        <li><u>Desalma</u> ❌</li>  
+        <li><u>Almado</u> ❌</li>  
+      </ul>
+      <br/>
+      Esta palabra es <b>Parasintética por Derivación</b>
+    </div>
+    <br/>
+    <div>
+      <h2>Im <span style={{color: "red"}}>/</span> posib <span style={{color: "red"}}>/</span> ilidad <span style={{color: "red"}}>/</span> es</h2>
+      <br/>
+      <ul>
+        <li><u>Posibilidades</u> ✔️</li>  
+        <li><u>Imposible</u> ✔️</li>  
+      </ul>
+      <br/>
+      Esta palabra es <b>Derivada</b>
+    </div>
+
+    
+    
   </div>
 );
 const ex4CAT = (
