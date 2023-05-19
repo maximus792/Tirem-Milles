@@ -1,7 +1,8 @@
 function he_de(word, word2, randomnum) {
   if (word.toLowerCase() === "i" && word2.toLowerCase() === "a") {
-    return ["hi", "ha"];
-  }
+    return ["hi", "ha"];}
+  else if (word.toLowerCase() === "hi" && word2.toLowerCase() === "ha") {
+    return ["i", "a"];}
 
 
   switch (word.toLowerCase()) {

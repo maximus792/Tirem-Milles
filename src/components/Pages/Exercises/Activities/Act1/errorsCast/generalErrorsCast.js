@@ -26,8 +26,21 @@ function generalErrorsCast(word) {
   /* PARAULES CONCRETES */
 
   if (word.toLowerCase() === "desde") return word.replace("esd", "es d");
+  if (word.toLowerCase() === "haber") return word.replace("haber", "a ver");
+  
   if (word.toLowerCase().includes("encia"))
+  
     return word.replace("encia", "éncia");
+    if (word.toLowerCase()==="hay")  return word.replace("hay","ahí")
+    if(word.toLowerCase().includes("trans")) return word.replace("trans","tras")
+    if (word.toLowerCase()==="ahí")  return word.replace("ahí","hay")
+    if (word.toLowerCase()==="hubo")  return word.replace("hubo","habió")
+    if (word.toLowerCase()==="aparte")  return word.replace("aparte","a parte")
+    if (word.toLowerCase()==="siquiera")  return word.replace("siquiera","si quiera")
+    if (word.toLowerCase()==="valla")  return word.replace("valla","vaya")
+    if (word.toLowerCase()==="vaya")  return word.replace("vaya","valla")
+    if (word.toLowerCase()==="sino")  return word.replace("sino","si no")
+
   if (word.toLowerCase().includes("mb")) return word.replace("mb", "nv");
   if (word.toLowerCase() === "prever") return word.replace("prever", "preveer");
   if (word.toLowerCase() === "y") return word.replace("y", "i");
@@ -39,6 +52,7 @@ function generalErrorsCast(word) {
   if (word.toLowerCase() === "colocar") return word.replace("colocar", "poner");
   if (word.toLowerCase() === "son") return word.replace("son", "són");
   if (word.toLowerCase() === "es") return word.replace("es", "és");
+
 
   if (word.toLowerCase() === "hacia") return word.replace("hacia", "hacía");
 
@@ -59,7 +73,12 @@ function generalErrorsCast(word) {
     return result;
   } else if (word.includes("v") && word.indexOf("v") != 0 && word.length > 2) {
     return word.replace("v", "b");
-  } else if (
+
+    
+  } 
+  else if (word.includes("s") && word[word.indexOf("s")+1]==="c"){return word.replace("s","x")}
+  else if (word.includes("x") && word[word.indexOf("x")+1]==="c"){return word.replace("x","s")}
+  else if (
     word.includes("b") &&
     word.indexOf("b") != 0 &&
     word.indexOf("b") != word.length &&
@@ -69,17 +88,7 @@ function generalErrorsCast(word) {
     word[word.indexOf("b") + 1] != "r"
   ) {
     return word.replace("b", "v");
-  } else if (word.includes("ss")) {
-    return word.replace("ss", "s");
-  } else if (
-    word.includes("s") &&
-    word.indexOf("s") > 1 &&
-    word.indexOf("s") < word.length - 1 &&
-    "aeiou".includes(word[word.indexOf("s") - 1]) &&
-    "aeiou".includes(word[word.indexOf("s") + 1])
-  ) {
-    return word.replace("s", "ss");
-  }
+  } 
 
   switch (word.toLowerCase()) {
     case "ha":

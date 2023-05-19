@@ -7,6 +7,7 @@ import perque from "./errorsCat/perque";
 import Word from "./Word";
 import getData from "./getData";
 import generalErrorsCast from "./errorsCast/generalErrorsCast";
+import he_deCast from "./errorsCast/he_deCast";
 import femMasc from "./errorsCat/fem-masc";
 
 function Act1({
@@ -190,6 +191,23 @@ function Act1({
             errorText: temp,
           });
           i += 1;
+        }
+
+        temp = he_deCast(splittedText[i], splittedText[i + 1]);
+
+        if (
+          temp != undefined &&
+          (temp[0] != splittedText[i] || temp[1] != splittedText[1])
+        ) {
+          console.log("HEDE " + splittedText[i]);
+          error = true;
+          errnum += 1;
+          words.push({
+            correctText: `${splittedText[i]} ${splittedText[i + 1]}`,
+            error,
+            errorText: `${temp[0]} ${temp[1]}`,
+          });
+          i += 2;
         } else {
           error = false;
           words.push({

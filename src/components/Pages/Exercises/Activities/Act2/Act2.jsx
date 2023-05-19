@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import generalErrors from "../Act1/errorsCat/generalErrors";
 import he_de from "../Act1/errorsCat/he_de";
+import he_deCast from "../Act1/errorsCast/he_deCast";
 import perque from "../Act1/errorsCat/perque";
 import Word from "./Word";
 import getData from "./getData";
@@ -196,7 +197,27 @@ function Act2({
             errorText: temp,
           });
           i += 1;
-        } else {
+        } 
+        
+        
+        temp = he_deCast(splittedText[i], splittedText[i + 1]);
+
+        if (
+          temp != undefined &&
+          (temp[0] != splittedText[i] || temp[1] != splittedText[1])
+        ) {
+          console.log("HEDE " + splittedText[i]);
+          error = true;
+          errnum += 1;
+          words.push({
+            correctText: `${splittedText[i]} ${splittedText[i + 1]}`,
+            error,
+            errorText: `${temp[0]} ${temp[1]}`,
+          });
+          i += 2;
+        }
+
+        else {
           error = false;
           words.push({
             correctText: splittedText[i],
@@ -204,6 +225,7 @@ function Act2({
           });
           i += 1;
         }
+
       }
     }
   }
