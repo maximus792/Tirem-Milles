@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Navbar from "../../Navbar";
 import StartButton from "./StartButton";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import llibre from "../../../images/llibre.png"
+import llibre from "../../../images/llibre.png";
 
 function MainPage() {
   return (
@@ -31,25 +31,49 @@ function MainPage() {
 
       <Explanation id="first-explanation">
         <h1 className="bgtext">Com funciona</h1>
-      
+
         <p text="justify">
-          Perseverança, rigor, treball, constància, assiduïtat, determinació, fermesa. Aquests són alguns trets que algú ha de tenir per superar un objectiu comú: aprovar batxillerat. <br />Aquesta web, junt amb les explicacions de les comandants lingüístiques Marina Comellas i Marisa Samitier, serviran per a posar-te a prova mitjançant una sèrie d'exercicis que no t'ho posaran fàcil. En aquests, encara que de diferent manera a cada un d'ells, t'enfrontaràs a un repte autocorrectiu on se t'avaluarà competencialment.<br /> Fonètica, corregir errors, conjugació de verbs... A què estàs esperant?
-          
+          Perseverança, rigor, treball, constància, assiduïtat, determinació,
+          fermesa. Aquests són alguns trets que algú ha de tenir per superar un
+          objectiu comú: aprovar batxillerat. <br />
+          Aquesta web, junt amb les explicacions de les comandants lingüístiques
+          Marina Comellas i Marisa Samitier, serviran per a posar-te a prova
+          mitjançant una sèrie d'exercicis que no t'ho posaran fàcil. En
+          aquests, encara que de diferent manera a cada un d'ells, t'enfrontaràs
+          a un repte autocorrectiu on se t'avaluarà competencialment.
+          <br /> Fonètica, corregir errors, conjugació de verbs... A què estàs
+          esperant?
         </p>
       </Explanation>
       <Explanation>
         <h1 className="bgtext">Objectius</h1>
         <p>
-          Els objectius d'aquesta web (a part del seu adherent plus &rarr; és broma) és incrementar la competència lingüística dels inexperts estudiants de 2n de Batxillerat del Col·legi Claver de Raïmat. <br />Això es durà a terme mitjançant la realització d'aquesta sèrie de didàctics exercicis que comprenen gran part dels àmbits treballats a classe.<br /> Aquesta coalició entre les lingüísticament poderoses professores de llengua i uns modestos estudiants es convertirà en la raó per què el Claver tornarà a ser el que era. Forma-hi part!
+          Els objectius d'aquesta web (a part del seu adherent plus &rarr; és
+          broma) és incrementar la competència lingüística dels inexperts
+          estudiants de 2n de Batxillerat del Col·legi Claver de Raïmat. <br />
+          Això es durà a terme mitjançant la realització d'aquesta sèrie de
+          didàctics exercicis que comprenen gran part dels àmbits treballats a
+          classe.
+          <br /> Aquesta coalició entre les lingüísticament poderoses
+          professores de llengua i uns modestos estudiants es convertirà en la
+          raó per què el Claver tornarà a ser el que era. Forma-hi part!
         </p>
-        
       </Explanation>
       <Explanation>
         <h1 className="bgtext">Qui som</h1>
         <p>
-          Bé, som 3 estudiants de 2n de Batxillerat que troben l'aprenentatge més resolutiu amb mètodes com l'ús de les tecnologies.<br /> En primer lloc tenim en Marcel, un adolescent amb problemes d'autocontrol i ira que presumeix de ser professor d'una escola de programació obsoleta. <br />En segon lloc, en Xavier, un alumne amb un clar trastorn narcissista que, a més a més, té un clar semblant a un pingüí.<br /> I, per últim, en Matías, un noi guapo, intel·ligent, racional, honest, autoexigent, sensible, sincer, agradable, amable, generós i perseverant, entre moltes altres qualitats, a més de ser, com no podríeu mai endevinar, qui ha escrit això. <br /> Disfruteu de la web!
+          Bé, som 3 estudiants de 2n de Batxillerat que troben l'aprenentatge
+          més resolutiu amb mètodes com l'ús de les tecnologies.
+          <br /> En primer lloc tenim en Marcel, un adolescent amb problemes
+          d'autocontrol i ira que presumeix de ser professor d'una escola de
+          programació. <br />
+          En segon lloc, en Xavier, un alumne amb un clar trastorn narcissista
+          que, a més a més, té un clar semblant a un pingüí.
+          <br /> I, per últim, en Matías, un noi guapo, intel·ligent, racional,
+          honest, autoexigent, sensible, sincer, agradable, amable, generós i
+          perseverant, entre moltes altres qualitats, a més de ser, com no
+          podríeu mai endevinar, qui ha escrit això. <br /> Disfruteu de la web!
         </p>
-        
       </Explanation>
       <StartButton />
     </Container>
