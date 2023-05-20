@@ -613,58 +613,6 @@ const dataCAT = [
     "Subordinada adverbial causal",
   ],
   [
-    ["El treball de Marcel,", "que és a Codelearn", ",és una tortura"],
-    "Subordinada de relatiu",
-  ],
-  [
-    ["En Marcel té por de", "perdre la feina a Codelearn", ""],
-    "Subordinada substantiva",
-  ],
-  [
-    ["En Marcel no es sent bé amb la situació actual de Codelearn,", "que és nefasta.", ""],
-    "Subordinada de relatiu",
-  ],
-  [
-    [
-      "El sou d'en Marcel a Codelearn",
-      ", que és precari, ",
-      "no és suficient per viure",
-    ],
-    "Subordinada de relatiu",
-  ],
-  [
-    [
-      "En Marcel va començar a buscar feina",
-      "quan va veure la situació de Codelearn",
-      "",
-    ],
-    "Subordinada adverbial de temps",
-  ],
-  [
-    ["En Marcel no vol deixar Codelearn", "perquè té amics allà", ""],
-    "Subordinada adverbial causal",
-  ],
-  [
-    ["El director de Codelearn", "que és el cap de Marcel", "no té cap idea"],
-    "Subordinada de relatiu",
-  ],
-  [
-    ["Marcel ha estat treballant a Codelearn", "des de fa més de 5 anys", ""],
-    "Subordinada adverbial de temps",
-  ],
-  [
-    [
-      "Marcel va ser promès amb una millora de sou a Codelearn",
-      "que mai va arribar",
-      "",
-    ],
-    "Subordinada de relatiu",
-  ],
-  [
-    ["En Marcel vol ajudar a", "millorar la situació de Codelearn", ""],
-    "Subordinada substantiva",
-  ],
-  [
     [
       "El pare d'en Maties és el director de 'tecnologia' a Fajas Tortas,",
       "on ha fet una carrera molt exitosa",
